@@ -1,0 +1,237 @@
+@media (max-width: 52rem) {
+    .headerMainLeft {
+        display: grid;
+        grid-template-rows: 2;
+    }
+
+    .logoDd {
+        grid-template-rows: 1;
+        margin-bottom: 1.6rem;
+    }
+
+    .myName {
+        grid-template-rows: 2;
+    }
+
+    .headerMainRight {
+        margin-left: 20%;
+    }
+
+    .cvTitleAttach,
+    .contactsHeader {
+        display: none;
+    }
+
+    .contactLinksTop {
+        border-top: none;
+    }
+
+    .linkCvPlaceholder {
+        display: flex;
+    }
+
+    .headerLinkCurriculumVitae {
+        align-self: flex-end;
+    }
+
+    .mePhoto {
+        width: 90px;
+    }
+
+    .cvHelloText {
+        font-size: 1.4rem;
+        grid-column: span 2;
+        grid-row: 2;
+        padding-top: 2.4rem;
+    }
+
+    .portfolioWord {
+        grid-column: 2;
+        grid-row: 1;
+        display: flex;
+        justify-self: left;
+    }
+
+    .portfolioPresentation {
+        grid-column: 2;
+        grid-row: 1;
+        display: flex;
+        justify-content: left;
+    }
+
+    /*****************/
+    /*****************/
+    /*****************/
+    .cvLeftRight,
+    .grid--2-cols1fr2fr {
+        grid-template-columns: 1;
+        grid-template-rows: 2;
+    }
+
+    .cvSectionLeft {
+        grid-row: 2;
+    }
+
+    .cvSectionRight {
+        width: 100%;
+        grid-column: span 2;
+        grid-row: 1;
+        margin-bottom: 8.8rem;
+    }
+
+    /*****************/
+    /*****************/
+    /*****************/
+    .cvSectionTitleEducation {
+        display: inline-block;
+        justify-content: center;
+    }
+
+
+    .date-info,
+    .grid--2-cols--3-rows-cv {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 6;
+    }
+
+    /************************/
+    .date {
+        justify-self: left;
+        margin-bottom: 0.8rem;
+    }
+
+    .info {
+        margin-bottom: 1.6rem;
+    }
+
+    .date01 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .info01 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .date02 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .info02 {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .date03 {
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    .info03 {
+        grid-column: 1;
+        grid-row: 6;
+    }
+
+    /***********************/
+
+
+
+    /*****************/
+    /*****************/
+    /*****************/
+
+    .softwareSkillsLevel,
+    .grid--3-cols--4-rows-sk {
+        grid-template-columns: 1;
+        grid-template-rows: 6;
+        margin-bottom: 2.4rem;
+    }
+
+    .infoSoftware {
+        grid-column: 1;
+        grid-row: 1;
+        ;
+    }
+
+    .infoSoftware-skill01 {
+        grid-column: 1;
+        grid-row: 1;
+        ;
+    }
+
+    .infoSoftware-skill02 {
+        grid-column: 1;
+        grid-row: 2;
+
+    }
+
+    .infoSoftware-skill03 {
+        grid-column: 1;
+        grid-row: 3;
+
+    }
+
+    .infoSoftware-skill04 {
+        grid-column: 1;
+        grid-row: 4;
+
+    }
+
+    .infoSoftware-skill05 {
+        grid-column: 1;
+        grid-row: 5;
+
+    }
+
+    .infoSoftware-skill06 {
+        grid-column: 1;
+        grid-row: 6;
+
+    }
+
+    .sectionLine {
+        margin-bottom: 8.8rem;
+    }
+
+    /**********************/
+    /**********************/
+    /**********************/
+    /**********************/
+
+    .cvSectionTitleComputerSkills,
+    .grid--3-cols--1-row-sk {
+        grid-template-columns: 1;
+        grid-template-rows: 2;
+
+    }
+
+    .infoSoftware-skill06 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .infoSoftware-skill07 {
+        grid-column: 1;
+        grid-row: 2;
+        justify-self: left;
+    }
+
+    /**********************/
+    /**********************/
+    .date-info,
+    .grid--2-cols--2-rows-cv {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2;
+    }
+
+    /*****************/
+    /* CV SECTION LEFT/ BOTTOM */
+    /*****************/
+    .cvSectionLeft {
+        grid-column: span 2;
+    }
+}

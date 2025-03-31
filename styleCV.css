@@ -53,8 +53,8 @@ body {
 /* HEADER MAIN */
 /* *********** */
 header {
-    margin-top: 8.4rem;
-    margin-bottom: 8.4rem;
+    margin-top: 8.8rem;
+    margin-bottom: 8.8rem;
 }
 
 /* headerMain */
@@ -84,20 +84,50 @@ header {
 /* ***************** */
 
 .headerMainRight {
-    margin-left: 24rem;
+    margin-left: 50%;
 }
 
 .contactsHeader {
     align-self: self-end;
 }
 
-.contactMailLinks {
+
+.contactLinksTop {
+    border-top: 1px solid #333;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+.contactMail,
+.jewelryDesignBrand {
+    padding-right: 1.6rem;
+}
+
+.contactLinksBottom {
+    padding-bottom: 0.8rem;
+}
+
+.contactLinksTop,
+.contactLinksBottom {
+    display: flex;
     font-size: 1.2rem;
     font-weight: 300;
     color: #555;
-    border-top: 1px solid #333;
-    padding-top: 0.4rem;
-    padding-bottom: 0.8rem;
+}
+
+.contactHeaderGithub:link,
+.contactHeaderLinkedin:link,
+.contactHeaderGithub:visited,
+.contactHeaderLinkedin:visited {
+    transition: all 0.3s;
+}
+
+.contactHeaderGithub:hover,
+.contactHeaderLinkedin:hover,
+.contactHeaderGithub:active,
+.contactHeaderLinkedin:active {
+    background-color: black;
+    color: white;
 }
 
 .headerLinkCurriculumVitae,
@@ -107,10 +137,7 @@ header {
     color: #333;
 }
 
-.contactLinksSpacing {
-    padding-right: 1.6rem;
-}
-
+.jewelryDesignBrand,
 .contactHeaderLinkedin,
 .contactHeaderGithub {
     text-decoration: none;
@@ -129,25 +156,20 @@ header {
 /* *************************** */
 
 .cvPresentationPlaceholder {
-    /*height: 16rem;*/
     width: 100%;
     font-size: 1.4rem;
+    margin-bottom: 9.6rem;
 }
 
 .cvPresentationPhoto {
     display: flex;
     justify-content: center;
+    align-items: flex-end;
 
-}
-
-.cvInvertedLogo {
-    width: 70px;
-    align-self: self-end;
 }
 
 .mePhoto {
     width: 100px;
-
 }
 
 .cvHelloText {
@@ -160,28 +182,46 @@ header {
 .portfolioWord {
     display: flex;
     align-items: center;
-    padding-top: 4px;
-    padding-left: 20%;
+    justify-self: end;
+    padding-right: 1.6rem;
+
+}
+
+.portfolioWordPlaceholder {
+    display: flex;
+    text-decoration: none;
+    cursor: pointer;
+    color: #555;
+    font-size: 12;
 }
 
 .drawLetter {
     height: 20px;
+    padding-left: 0.2rem;
 }
 
-.soon {
-    align-self: center;
-    padding-left: 8px;
+.portfolioWordPlaceholder:link,
+.portfolioWordPlaceholder:visited {
+    transition: all 0.3s;
 }
 
-.portfolioPromisse {
-    margin-bottom: 8.8rem;
-    padding-left: 20%;
+.portfolioWordPlaceholder:hover,
+.portfolioWordPlaceholder:active {
+    background-color: #DE5F2A;
+    color: #FCDC4A;
+}
+
+.portfolioPresentation {
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    justify-content: right;
 }
 
 .landingLogos {
-    height: 16px;
-    margin-top: 4px;
-    padding-right: 4px;
+    height: 1.6rem;
+    margin-top: 0.4rem;
+    padding-right: 0.4rem;
 }
 
 .cvSectionLeft {
@@ -214,7 +254,6 @@ header {
     margin-bottom: 8.8rem;
 }
 
-
 .cvPersonalInfoTitle,
 .cvSectionTitlePreviousEducation,
 .cvSectionTitlePreviousWorkExperience,
@@ -223,6 +262,10 @@ header {
 .cvSectionTitleLanguage,
 .cvSectionTitleComputerSkills {
     margin-bottom: 1.6rem;
+}
+
+.cvSectionTitleEducation {
+    display: flex;
 }
 
 .cvSectionTitle {
@@ -266,11 +309,6 @@ header {
     grid-row: 3;
 }
 
-/*
-.skillLevel {
-    border: 1px solid red;
-}
-*/
 .infoSoftware-skill01,
 .infoSoftware-skill03,
 .infoSoftware-skill05,
@@ -307,12 +345,6 @@ header {
     margin-top: 4.2rem;
 }
 
-
-/*
-8-16-24-32-40-48-56-64-72-80-88-96-104-112-120-
-128-136-144-152-160-168-176-184-192-200-208-216-
-224----...280-288-296-304-312
-*/
 
 /* ****************************** */
 /* FONT-SIZES */
@@ -360,6 +392,10 @@ header {
     grid-template-rows: repeat(4, 3.6rem);
 }
 
+.grid--2-rows {
+    grid-template-rows: 2;
+}
+
 .grid--2-cols--2-rows-cv {
     grid-template-columns: 0.55fr 2.55fr;
     grid-template-rows: 3.6rem 3.6rem;
@@ -378,30 +414,9 @@ header {
     grid-template-rows: 3.6rem;
 }
 
-/* ************* */
-/* ************* */
-/* ************* */
 
 
 
-
-/* ************************** */
-/* ************************** */
-/* ************************** */
-
-/* ************************** */
-/* SECTION - BIO PRESENTATION */
-/* ************************** */
-.biographyText {
-    font-size: 1.4rem;
-    margin-bottom: 4.2rem;
-}
-
-.cvSectionTitleBio {
-    margin-bottom: 0.8rem;
-}
-
-/* ************************** */
 
 /* ****** */
 /* FOOTER */
