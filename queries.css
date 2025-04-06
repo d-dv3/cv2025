@@ -201,11 +201,10 @@
     /**********************/
     /**********************/
 
-    .cvSectionTitleComputerSkills,
+
     .grid--3-cols--1-row-sk {
         grid-template-columns: 1;
-        grid-template-rows: 2;
-
+        grid-template-rows: 3.6rem 3.6rem;
     }
 
     .infoSoftware-skill06 {
