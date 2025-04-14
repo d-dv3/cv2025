@@ -844,7 +844,7 @@ footer {
 /* LECTURE DEVELOPMENT - 01-EMPATHIZE */
 /* ********************************** */
 .uxMethodology {
-    margin-bottom: 8.8rem;
+    margin-bottom: 12rem;
 }
 
 .uxMethodology-empathize {
@@ -867,6 +867,7 @@ footer {
     margin-bottom: 2.4rem;
 }
 
+.defineTitle,
 .empathizeTitle {
     font-size: 1.4rem;
     font-weight: 400;
@@ -902,6 +903,14 @@ footer {
     margin-bottom: 1.6rem;
 }
 
+.roundBackground {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: #FCDC4A;
+    align-items: center;
+}
+
 .txtMark,
 .arrowTxt {
     display: flex;
@@ -911,10 +920,10 @@ footer {
     margin-bottom: 0.8rem;
 }
 
-.arrowTxtyellow {
-    font-size: 2.4rem;
-    font-weight: 800;
-    color: #FCDC4A;
+.arrowTxtBlue {
+    font-size: 1.6rem;
+
+    color: #292562;
 }
 
 .txtCenter {
@@ -967,6 +976,7 @@ footer {
     justify-content: center;
     align-items: end;
     color: #292562;
+    font-weight: 400;
 }
 
 /*
@@ -984,24 +994,44 @@ footer {
 /* CONTENT SELECTION - BUILDING PROTO PERSONAS */
 /* ******************************************* */
 .protoPersonasContentSelection {
-    margin-bottom: 8.8rem;
+    margin-bottom: 12em;
 }
 
 .protoPersonasContentSelectionTitles {
+    font-size: 1.6rem;
     margin-bottom: 0.8rem;
 }
 
-.contentProtoPersonas {}
+.targetAudience p {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.txtTarget {
+    color: #292562;
+    font-weight: 400;
+
+}
+
+.contentProtoPersonas {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.personasResearchSubtitle {}
 
 .contentProtoPersonas-right,
 .contentProtoPersonas-left {
-    width: 80%;
+    width: 33%;
+    justify-content: center;
 }
 
+/*
 .contentProtoPersonas-right {
     display: flex;
     justify-content: right;
-}
+}*/
 
 
 
@@ -1044,7 +1074,7 @@ footer {
     border: 1px solid #292562;
 
     border-radius: 16px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 400;
     color: #292562;
     padding: 0.8rem;
@@ -1055,7 +1085,7 @@ footer {
 
 .personasResearchAntonio,
 .personasResearchLaura {
-    background-color: rgba(201, 200, 216, 0.5);
+    background-color: rgba(201, 200, 216, 0.2);
     border-radius: 16px;
     margin-top: 0.8rem;
 }
@@ -1098,14 +1128,20 @@ footer {
 /* ***************************** */
 
 .interviewTitles {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 1.4;
-    margin-bottom: 4.8rem;
+    margin-bottom: 0.8rem;
 }
 
-.interviewGuide {
-    padding-left: 0.8rem;
-    padding-top: 0.8rem;
+.grid--2-colsInterview {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.4rem;
+}
+
+.interviewGuideRight,
+.interviewGuideLeft {
+    padding-left: 2.4rem;
+    padding-top: 2.4rem;
     background-color: rgba(201, 200, 216, 0.2);
     border-radius: 2.4rem;
     margin-bottom: 2.4rem;
@@ -1114,15 +1150,12 @@ footer {
 /* ********************** */
 /* INTERVIEW GUIDE - left */
 /* ********************** */
-.interviewGuideLeft {
-    padding-right: 2.4rem;
-}
 
 
 .interviewGuideQuestions {}
 
 .interviewDrawing {
-    height: 4rem;
+    height: 6rem;
     padding-bottom: 0.8rem;
 }
 
@@ -1152,7 +1185,10 @@ footer {
 }
 
 .competition {
-    margin-bottom: 8.4rem;
+    width: 33%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 12rem;
 }
 
 .competitorsLogoPlaceholder {
@@ -1247,9 +1283,21 @@ footer {
 /* ******************************* */
 /* LECTURE DEVELOPMENT - 02-DEFINE */
 /* ******************************* */
-.uxSheme-phaseDefine {
-    margin-bottom: 8.8rem;
+
+.uxMethodologyPhaseDefine {
+    margin-bottom: 12rem;
 }
+
+.uxMethodology-define {
+    padding-left: 2.4rem;
+    padding-top: 2.4rem;
+    padding-right: 2.4rem;
+    padding-bottom: 2.4rem;
+    border-radius: 2.4rem;
+    background-color: rgba(201, 200, 216, 0.2);
+}
+
+
 
 
 /* LECTURE ux methodology - SECTION */
@@ -1269,7 +1317,7 @@ footer {
 
 .refinedPersonas {
     color: #555;
-    margin-bottom: 8.8rem;
+    margin-bottom: 12rem;
 }
 
 .personasResearchTitle {
@@ -1290,10 +1338,11 @@ footer {
 .personasRefinedTelmo,
 .personasRefinedMaria,
 .personasRefinedMargarida {
-    border-radius: 16px;
+    width: 33%;
+    border-radius: 1.6rem;
     padding-left: 1.6rem;
     padding-bottom: 1.6rem;
-    background-color: rgba(201, 200, 216, 0.1);
+    background-color: rgba(201, 200, 216, 0.2);
 }
 
 /* **************************** */
@@ -1569,7 +1618,7 @@ footer {
 }
 
 .grid--8-rowsEmpathize {
-    grid-template-rows: 1fr 1fr 2fr 1fr 0.3fr 0.3fr 0.3fr 0.3fr;
+    grid-template-rows: 1fr 1fr 3fr 1fr 0.3fr 0.3fr 0.3fr 0.3fr;
 }
 
 .grid--9-rows {
