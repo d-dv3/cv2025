@@ -1,0 +1,264 @@
+/* **************** */
+/* 00 DESIGN SYSTEM */
+/* **************** */
+
+
+/* ******************** */
+/* 01 TYPOGRAPHY SYSTEM */
+/* ******************** */
+
+/*
+--- google fonts: inter, sans-serif
+
+font sizes (px) *******************************
+
+title-1_ 16px
+title-2_ 14px
+paragraph-1_ 12px
+paragraph-2_ 10px
+
+22px(h1)  14px(header links) 13px(presentation text)
+
+myName_22px
+
+
+204
+
+
+
+font weights *********************************
+
+default: 400
+
+font heights
+default: 1
+
+SPACING SYSTEM (px)
+8px / 16px / 24px / 42px / 88px
+108px / 132px / 156px / 180px
+204px / 228px / 252px / 276px / 300px
+
+/*
+8-16-24-32-40-48-56-64-72-80-88-96-104-112-120-
+128-136-144-152-160-168-176-184-192-200-208-216-
+224----...280-288-296-304-312
+*/
+
+
+/* ********* */
+/* 02 COLORS */
+/* ********* */
+/*
+primary: #
+rgba(201, 200, 216, 0.1)
+rgba(201, 200, 216, 0.5)
+#BFBDD0;
+#292562;
+
+secondary: #
+edit #FCDC4A
+flag #DE5F2A
+
+terciary (greys): #
+#999
+#555
+#333
+#222
+#111
+
+/* ********* */
+/* ********* */
+/* ********* */
+
+
+
+
+/*
+rgba 
+
+background-color: #fcdb4a11; ???? A CONFIRMAR
+
+tints:
+#eee
+shades:
+accents:
+
+--- 05 SHADOWS
+--- 06 BORDER-RADIUS
+--- 07 WHITESPACE
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *********************************** */
+/* LVHA - link; visited; hover; active */
+/* *********************************** */
+
+/* HEADER */
+
+/* logo em negativo para hover/ active? */
+/*
+.logoDd:link,
+.logoDd:visited,
+
+/*
+.logoDd:hover,
+.logoDd:active,
+*/
+
+.myName:link,
+.myName:visited {
+    transition: all 0.3s;
+}
+
+.myName:hover,
+.myName:active {
+    background-color: #111;
+    color: white;
+}
+
+
+/* NavMain - NavSecond - Left */
+.navCsTitleLink:link,
+.navCsTitleLink:visited {
+    transition: all 0.3s;
+}
+
+.navCsTitleLink:hover,
+.navCsTitleLink:active {
+    background-color: #111;
+    color: white;
+}
+
+.headerLinkPortfolio:link,
+.headerLinkPortfolio:visited,
+.headerLinkCurriculumVitae:link,
+.headerLinkCurriculumVitae:visited,
+.contactHeaderLinkedin:link,
+.contactHeaderLinkedin:visited,
+.contactHeaderGithub:link,
+.contactHeaderGithub:visited {
+    transition: all 0.3s;
+}
+
+.headerLinkCurriculumVitae:hover,
+.headerLinkCurriculumVitae:active,
+.contactHeaderLinkedin:hover,
+.contactHeaderLinkedin:active,
+.contactHeaderGithub:hover,
+.contactHeaderGithub:active {
+    background-color: #111;
+    color: white;
+}
+
+.headerLinkPortfolio:hover,
+.headerLinkPortfolio:active {
+    background-color: #292562;
+    color: white;
+}
+
+
+
+
+
+/*
+.csTitle-1:link,
+.csTitle-1:visited,
+.csTitle-2:link,
+.csTitle-2:visited,
+.csTitle-3:link,
+.csTitle-3:visited {
+    transition: all 0.3s;
+}
+
+.csTitle-1:hover,
+.csTitle-1:active {
+    background-color: #FCDC4A;
+    color: white;
+}
+
+.csTitle-2:hover,
+.csTitle-2:active {
+    background-color: #680794;
+    color: white;
+}
+
+.csTitle-3:hover,
+.csTitle-3:active {
+    background-color: #0e59fe;
+    color: white;
+}
+*/
+
+.cvLinkedin:link,
+.cvLinkedin:visited,
+.cvGithub:link,
+.cvGithub:visited {
+    transition: all 0.3s;
+}
+
+.cvLinkedin:hover,
+.cvLinkedin:active,
+.cvGithub:hover,
+.cvGithub:active {
+    background-color: #111;
+    color: white;
+}
+
+
+
+
+/**************************/
+/* GENERAL REUSABLE COMPONENTS */
+/* REUSABLE GRID */
+/**************************/
+
+.grid--2-cols1fr2fr {
+    grid-template-columns: 1fr 2fr;
+}
+
+.grid--2-cols-2-rows {
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+}
+
+.grid--3-cols-3-rows {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 3;
+}
+
+.grid--4-cols {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--6-cols-2-rows {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+/* rows */
+
+.grid--2-rows {
+    grid-template-rows: 1fr 1fr;
+}
+
+.grid--3-rows {
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.grid--4-rows {
+    grid-template-rows: repeat(4, 1fr);
+}

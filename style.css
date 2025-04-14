@@ -1,0 +1,2131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* font-size default 16px */
+    font-size: 62.5%;
+    /* 10px/ 16px= 0.625= 62.5%*/
+    /* percentage of user's browser font-size setting */
+    overflow-x: hidden;
+    background-color: #eeeeee;
+}
+
+body {
+    /* weight from 100 to 900 */
+    font-family: "Inter", sans-serif;
+    line-height: 1;
+    font-weight: 200;
+    color: #111;
+    overflow-x: hidden;
+    max-width: 120rem;
+    padding-right: 8.4rem;
+    padding-left: 8.4rem;
+    margin: auto;
+    background-color: white;
+}
+
+/* *********** */
+/* HEADER MAIN */
+/* *********** */
+header {
+    margin-top: 8.8rem;
+    margin-bottom: 8.8rem;
+}
+
+.headerMain {
+    margin-bottom: 12rem;
+    /* before 4.2 */
+}
+
+/* **************** */
+/* HEADER MAIN-left */
+/* **************** */
+.grid {
+    display: grid;
+}
+
+.grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.headerMainLeft {
+    display: flex;
+    align-items: center;
+}
+
+.logoDd {
+    padding-right: 2.4rem;
+    height: 4.2rem;
+}
+
+.myName {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: #111;
+}
+
+
+/* ***************** */
+/* HEADER MAIN-right */
+/* ***************** */
+.headerMainContacts,
+.headerMainCv,
+.headerMainPortfolio {
+    margin-right: 20%;
+    font-size: 1.2rem;
+}
+
+.linkPortfolioPlaceholder {
+    border-top: 2px solid #292562;
+}
+
+.linkCvPlaceholder {
+    border-top: 2px solid #FCDC4A;
+}
+
+.headerLinkPortfolio {
+    margin-top: 0.8rem;
+    padding-right: 1.6rem;
+}
+
+.headerLinkPortfolio,
+.headerLinkCurriculumVitae {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #333;
+}
+
+.contactsHeader {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #333;
+}
+
+
+.contactsHeader {
+    align-self: self-end;
+}
+
+.contactLinksTop {
+    border-top: 1px solid #292562;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+.contactMail,
+.jewelryDesignBrand {
+    padding-right: 1.6rem;
+}
+
+.contactLinksBottom {
+    padding-bottom: 0.8rem;
+}
+
+.contactLinksTop,
+.contactLinksBottom {
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #555;
+}
+
+.contactHeaderGithub:link,
+.contactHeaderLinkedin:link,
+.contactHeaderGithub:visited,
+.contactHeaderLinkedin:visited {
+    transition: all 0.3s;
+}
+
+.contactHeaderGithub:hover,
+.contactHeaderLinkedin:hover,
+.contactHeaderGithub:active,
+.contactHeaderLinkedin:active {
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+.jewelryDesignBrand,
+.contactHeaderLinkedin,
+.contactHeaderGithub {
+    text-decoration: none;
+    cursor: pointer;
+    color: #555;
+}
+
+.headerLinkPortfolio,
+.headerLinkCurriculumVitae {
+    text-decoration: none;
+    cursor: pointer;
+    color: #333;
+}
+
+
+
+/* *************** */
+/* CV-PRESENTATION */
+/* *************** */
+
+.cvPresentationPlaceholder {
+    width: 100%;
+    font-size: 1.4rem;
+    margin-bottom: 7.2rem;
+}
+
+.cvPresentationPhoto {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.mePhoto {
+    width: 100px;
+}
+
+.cvHelloText {
+    justify-self: center;
+    align-self: center;
+    font-size: 1.8rem;
+    line-height: 1.4;
+}
+
+.portfolioWord {
+    display: flex;
+    align-items: center;
+    justify-self: end;
+    padding-right: 1.6rem;
+
+}
+
+.portfolioWordPlaceholder {
+    display: flex;
+    text-decoration: none;
+    cursor: pointer;
+    color: #555;
+    font-size: 12;
+}
+
+.drawLetter {
+    height: 20px;
+    padding-left: 0.2rem;
+}
+
+.portfolioWordPlaceholder:link,
+.portfolioWordPlaceholder:visited {
+    transition: all 0.3s;
+}
+
+.portfolioWordPlaceholder:hover,
+.portfolioWordPlaceholder:active {
+    background-color: #DE5F2A;
+    color: #FCDC4A;
+}
+
+.portfolioPresentation {
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    justify-content: right;
+}
+
+.landingLogos {
+    height: 1.6rem;
+
+    margin-top: 0.4rem;
+    padding-right: 0.4rem;
+}
+
+/* *************** */
+/* CURRICULUM-MAIN */
+/* *************** */
+.cvMain {
+    margin-bottom: 8.8rem;
+}
+
+/* ******* */
+/* CV-LEFT */
+/* ******* */
+.grid--2-cols1fr2fr {
+    grid-template-columns: 1fr 2fr;
+}
+
+.cvSectionLeft {
+    padding-right: 8rem;
+}
+
+.cvTitleAttach {
+    display: flex;
+}
+
+.heading-1 {
+
+    font-size: 3rem;
+    font-weight: 350;
+    margin-bottom: 4.2rem;
+}
+
+.personalInfo {
+    margin-bottom: 4.2rem;
+}
+
+.cvLinkedin,
+.cvGithub {
+    text-decoration: none;
+    cursor: pointer;
+    color: #555;
+    font-size: 1.2rem;
+}
+
+.softSkills {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-bottom: 4.2rem;
+}
+
+.cvPersonalInfoTitle,
+.cvSectionTitlePreviousEducation,
+.cvSectionTitlePreviousWorkExperience,
+.cvSectionTitlePreviousWork,
+.cvSectionTitleEducation,
+.cvSectionTitleLanguage,
+.cvSectionTitleComputerSkills {
+    margin-bottom: 1.6rem;
+}
+
+.cvSectionTitle {
+    margin-bottom: 2.4rem;
+}
+
+.personalInterests {
+    margin-bottom: 8.8rem;
+}
+
+/* ******** */
+/* CV-RIGHT */
+/* ******** */
+.cvSectionTitleEducation {
+    font-size: 1.6rem;
+    font-weight: 300;
+    display: flex;
+}
+
+.grid--2-cols--3-rows-cv {
+    grid-template-columns: 0.55fr 2.55fr;
+    grid-template-rows: 3.6rem 3.6rem 3.6rem;
+    column-gap: 0.8rem;
+    margin-bottom: 1.6rem;
+}
+
+.date {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    justify-self: right;
+}
+
+.date01,
+.date02,
+.date03 {
+    grid-column: span 1;
+}
+
+.info {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}
+
+.date01,
+.info01 {
+    grid-row: 1;
+}
+
+.date02,
+.info02 {
+    grid-row: 2;
+}
+
+.date03,
+.info03 {
+    grid-row: 3;
+}
+
+.grid--3-cols--4-rows-sk {
+    grid-template-columns: 0.55fr 1.25fr 1.25fr;
+    grid-template-rows: repeat(4, 3.6rem);
+}
+
+.infoSoftware-skill01,
+.infoSoftware-skill03,
+.infoSoftware-skill05,
+.infoSoftware-skill07 {
+    grid-column: 2;
+}
+
+.infoSoftware-skill01,
+.infoSoftware-skill02 {
+    grid-row: 1;
+}
+
+.infoSoftware-skill02,
+.infoSoftware-skill04,
+.infoSoftware-skill06,
+.infoSoftware-skill08 {
+    grid-column: 3;
+    justify-self: right;
+}
+
+.infoSoftware-skill03,
+.infoSoftware-skill04 {
+    grid-row: 2;
+}
+
+.infoSoftware-skill05,
+.infoSoftware-skill06 {
+    grid-row: 3;
+}
+
+.infoSoftwareJS,
+.infoSoftwareCSS,
+.infoSoftwareHTML,
+.infoSoftwareFIG,
+.infoSoftwareILLUST,
+.infoSoftwareINDES {
+    font-size: 1.2rem;
+}
+
+.sectionLine {
+    margin-top: 2.4rem;
+    border-bottom: 1px solid #999;
+}
+
+.previousExperience {
+    margin-top: 4.2rem;
+}
+
+.grid--2-cols--2-rows-cv {
+    grid-template-columns: 0.55fr 2.55fr;
+    grid-template-rows: 3.6rem 3.6rem;
+    column-gap: 0.8rem;
+}
+
+
+.grid--3-cols--1-row-sk {
+    grid-template-columns:
+        0.55fr 1.25fr 1.25fr;
+    grid-template-rows: 3.6rem;
+}
+
+/* ************ */
+/* CV biography */
+/* ************ */
+
+.biographyTitle {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-bottom: 1.6rem;
+}
+
+.biographySentence {
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-bottom: 0.8rem;
+}
+
+.biographyText {
+    font-size: 1.2rem;
+    margin-bottom: 4.2rem;
+    line-height: 1.6rem;
+}
+
+.biographyText p {
+    margin-bottom: 0.8rem;
+}
+
+
+/* ****** */
+/* FOOTER */
+/* ****** */
+
+footer {
+    height: 8rem;
+    border-top: 0.5px solid #999;
+    margin-top: 8.8rem;
+}
+
+.footerContent {
+    justify-self: right;
+    color: #333;
+    display: flex;
+}
+
+.currentYear,
+.footerMyName {
+    align-self: center;
+    font-size: 1.2rem;
+}
+
+.registeredMark {
+    font-size: 2.4rem;
+    padding-top: 0.6rem;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+}
+
+/* ******************************** */
+/* ******************************** */
+/* REVISÃO 11 ABRIL - DRY */
+/* REVISÃO 11 ABRIL - DRY */
+/* REVISÃO 11 ABRIL - DRY */
+/* ******************************** */
+/* ******************************** */
+
+
+/* ***************** */
+/* SITE-PRESENTATION */
+/* ***************************************** */
+/* LECTURE-BRIEFING-PRESENTATION-METHODOLOGY */
+/* ***************************************** */
+
+.sitePresentation {
+    height: 30rem;
+
+    margin-bottom: 12rem;
+    /*margin-bottom: 8.8rem;*/
+}
+
+.sitePresentation-SlideshowContainer {
+    height: 30rem;
+    /*
+    position: relative;
+    width: 100%;*/
+    max-width: 120rem;
+    /*margin: 0 auto;*/
+
+    margin-bottom: 8.8rem;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/************ BANNER ?? ****************/
+/************ SLIDER ?? ****************/
+
+/* SLIDER 01 */
+
+
+/* COL-01 */
+.slideItem-03Template,
+.slideItem-02Template,
+.slideItem-01Template {
+    height: 30rem;
+    /*width: 33%;*/
+}
+
+.grid--2cols--3rows-briefing {
+    grid-template-columns: 2;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.briefingEdit-logo {
+    background-color: black;
+    grid-column: 1;
+    grid-row: 1;
+    padding-left: 0.8rem;
+}
+
+
+.briefingTitle {
+    background-color: black;
+    grid-column: 1;
+    grid-row: 2;
+
+    display: flex;
+    align-items: end;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+    padding-left: 0.8rem;
+}
+
+.briefingWord {
+    font-size: 1rem;
+    font-weight: 100;
+    color: #fff;
+}
+
+.titleWhiteLettersSmall {
+    font-size: 1.1rem;
+
+}
+
+.briefingCol01-Row03 {
+    grid-column: 1;
+    grid-row: 3;
+    background-color: black;
+}
+
+/* COL-02 */
+.briefingCol02-Row01 {
+    grid-column: 2;
+    grid-row: 1;
+    background-color: rgba(201, 200, 216, 0.2);
+}
+
+.briefingSubTitle {
+    background-color: rgba(201, 200, 216, 0.2);
+    display: flex;
+    align-items: end;
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.subTitleYellowBackground {
+    background-color: #FCDC4A;
+    padding-right: 0.2rem;
+    padding-left: 0.2rem;
+    display: flex;
+    align-items: end;
+}
+
+.arrowYellow {
+    font-size: 1rem;
+}
+
+.briefingCol02-Row03 {
+    grid-column: 2;
+    grid-row: 3;
+    background-color: rgba(201, 200, 216, 0.2);
+}
+
+/* SLIDER 02 */
+.slideItem-02Template {
+    padding-left: 0.4rem;
+    background-color: rgba(201, 200, 216, 0.2);
+}
+
+.grid--3rows-briefingSmallText {
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.lectureTitlePlaceholder {
+    grid-row: 2;
+    display: flex;
+    align-items: end;
+}
+
+.lectureTitleBriefing {
+    color: #292562;
+    font-size: 32px;
+    font-weight: 350;
+}
+
+.briefingTxt {
+    grid-row: 3;
+    font-size: 1rem;
+    line-height: 1.2;
+    padding-right: 1.6rem;
+}
+
+/* SLIDER 03 */
+
+.slideItem-03Template {
+    /* display: flex;
+    align-items: center;
+    justify-content: center;*/
+    background-color: rgba(201, 200, 216, 0.2);
+    /*padding-left: 4.8rem;
+    padding-right: 4.8rem;*/
+}
+
+/* row-1 right 
+.briefingHexagons {
+    display: flex;
+    grid-row: 1;
+    align-items: end;
+    justify-content: end;
+    padding-bottom: 0.8rem;
+    padding-right: 0.8rem;
+}*/
+
+/* row-2 */
+/* row-1 right */
+.grid--3-rowsBriefing {
+    grid-template-rows: 3;
+}
+
+.briefingHexagonsSubtitles {
+    grid-row: 1;
+    font-family: 1rem;
+    display: flex;
+    justify-content: end;
+    font-size: 0.8rem;
+    line-height: 1.2;
+    padding-right: 0.8rem;
+    padding-top: 0.8rem;
+}
+
+/* row-2 */
+/* row-2 middle */
+
+/*
+.briefingTxtConditions {
+    grid-row: 2;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}*/
+
+.caseStudySubTitleHeader {
+    display: flex;
+    align-items: end;
+    grid-row: 3;
+}
+
+.navCsSubtitle-1-Header {
+    font-size: 1.6rem;
+
+    font-weight: 300;
+    color: #292562;
+}
+
+/* row-23 */
+.caseStudySubTitleText {
+    grid-row: 3;
+}
+
+.navCsSubtitle-2-Header {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin-bottom: 0.4rem;
+}
+
+
+
+
+
+
+
+/* ********************************** */
+/* LECTURE DEVELOPMENT - 01-EMPATHIZE */
+/* ********************************** */
+
+
+
+
+
+
+
+.caseStudyTopTitle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.6rem;
+    margin-top: 1.6rem;
+}
+
+.navCsTitleHeader {
+    font-size: 2.4rem;
+    font-weight: 300;
+    color: #333;
+    margin-bottom: 0.8rem;
+}
+
+
+
+
+
+.paragraph-1 {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+/* ***************************************** */
+/* LECTURE-BRIEFING-PRESENTATION-METHODOLOGY */
+/* ***************************************** */
+
+
+
+
+
+
+
+
+
+
+
+
+.briefingEmpathize a,
+.briefingDefine a,
+.briefingIdeate a,
+.briefingPrototype a,
+.briefingTest a {
+    text-decoration: none;
+    color: #111;
+    cursor: pointer;
+    font-weight: 400;
+    background-color: #FCDC4A;
+}
+
+.briefingEmpathize,
+.briefingDefine,
+.briefingIdeate,
+.briefingPrototype,
+.briefingTest {
+    align-self: self-end;
+    justify-items: center;
+    grid-row: 2;
+}
+
+
+
+
+/*
+.briefingEdit-sliderItem-02 {
+    background-color: ;
+}
+
+.portfolioChoicesSliderItem {
+    background-color: ;
+}
+*/
+/*
+.briefingTextLeftSliderItem,
+.uxMethodologySliderItem,
+.portfolioChoicesSliderItem {
+    min-width: 33%;
+}
+*/
+
+
+
+
+
+
+.briefingEdit-sliderItem-03 {
+    align-self: center;
+    justify-self: center;
+}
+
+.uxMethodologyTitle {
+    font-size: 1.2rem;
+    margin-bottom: 2.4rem;
+}
+
+.uxPolygon {
+    margin-bottom: 2.4rem;
+}
+
+.uxDoubleDiamondTitle,
+.uxPolygonTitle {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+/************ BANNER ****************/
+
+
+
+
+/* ********************************** */
+/* LECTURE DEVELOPMENT - 01-EMPATHIZE */
+/* ********************************** */
+.uxMethodology {
+    margin-bottom: 8.8rem;
+}
+
+.uxMethodology-empathize {
+    padding-left: 2.4rem;
+    padding-top: 2.4rem;
+    padding-right: 2.4rem;
+    padding-bottom: 2.4rem;
+    border-radius: 2.4rem;
+    background-color: rgba(201, 200, 216, 0.2);
+}
+
+/* EMPATHIZE col-01 */
+/* **************** */
+.empathize-col-left {}
+
+.hexagon-title {
+    display: flex;
+    align-items: center;
+    margin-top: 0.8rem;
+    margin-bottom: 2.4rem;
+}
+
+.empathizeTitle {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #555;
+    padding-left: 1.6rem;
+    background-color: #fff;
+}
+
+.visionStatementText-answer,
+.visionStatementTextquestion {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    padding-right: 2.4rem;
+
+}
+
+
+
+.txtColor {
+    color: #292562;
+    font-weight: 400;
+}
+
+.txt {
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding-left: 1.6rem;
+    background-color: #FCDC4A;
+}
+
+.visionStatementText-answer p,
+.visionStatementText-question p {
+    margin-bottom: 1.6rem;
+}
+
+.txtMark,
+.arrowTxt {
+    display: flex;
+    justify-content: center;
+    color: #292562;
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.arrowTxtyellow {
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: #FCDC4A;
+}
+
+.txtCenter {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 1.6rem;
+}
+
+/* EMPATHIZE col-02 */
+/* **************** */
+
+.empathize-col-right {
+    display: flex;
+    align-items: center;
+
+}
+
+.empathize-userImg-questions {}
+
+.empathize-userImg-questions {}
+
+.circleEmpathize {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.empathize-userQuestions {
+    font-size: 1.2rem;
+
+    padding-left: 3.2rem;
+}
+
+.empathizeQMark {
+    margin-bottom: 2.4rem;
+}
+
+.grid--2-colsQMark {
+    grid-template-columns: 2fr 1fr;
+}
+
+.empathizeProcess {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: #292562;
+}
+
+/*
+.empathize-userQuestions p {
+    margin-bottom: 1.6rem;
+}*/
+
+.txtMark {
+    color: #292562;
+    font-size: 1.4rem;
+    background-color: #fff;
+}
+
+/* ******************************************* */
+/* CONTENT SELECTION - BUILDING PROTO PERSONAS */
+/* ******************************************* */
+.protoPersonasContentSelection {
+    margin-bottom: 8.8rem;
+}
+
+.protoPersonasContentSelectionTitles {
+    margin-bottom: 0.8rem;
+}
+
+.contentProtoPersonas {}
+
+.contentProtoPersonas-right,
+.contentProtoPersonas-left {
+    width: 80%;
+}
+
+.contentProtoPersonas-right {
+    display: flex;
+    justify-content: right;
+}
+
+
+
+.grid--3-rows-figJam {
+    grid-template-rows: 2rem 2rem 5rem;
+}
+
+.brainstorming {
+    display: flex;
+}
+
+.brainstorming-title {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.votingStickers {
+    display: flex;
+    align-items: center;
+}
+
+.votingStickersInitials {
+    padding-right: 1.6rem;
+}
+
+.contentFigjam-2 {
+    display: flex;
+    justify-content: center;
+}
+
+.contentProtoPersonasPostIts {
+    display: flex;
+    align-items: end;
+}
+
+.contentProtoPersonas-left,
+.contentProtoPersonas-right {}
+
+.contentProtoPersonas-title {
+    border: 1px solid #292562;
+
+    border-radius: 16px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #292562;
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.personasResearchAntonio,
+.personasResearchLaura {
+    background-color: rgba(201, 200, 216, 0.5);
+    border-radius: 16px;
+    margin-top: 0.8rem;
+}
+
+
+
+.photoAbout {
+    margin-left: 2.4rem;
+    margin-bottom: 0.8rem;
+    padding-top: 0.8rem;
+}
+
+.drawingSize,
+.photoAbout img {
+    height: 100px;
+}
+
+.about {
+    align-self: center;
+}
+
+.personaName,
+.habits,
+.needs,
+.obstacles {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.personasTxt {
+    padding-right: 2.4rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1.6rem;
+}
+
+/* ***************************** */
+/* UX RESEARCH - INTERVIEW GUIDE */
+/* ***************************** */
+
+.interviewTitles {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin-bottom: 4.8rem;
+}
+
+.interviewGuide {
+    padding-left: 0.8rem;
+    padding-top: 0.8rem;
+    background-color: rgba(201, 200, 216, 0.2);
+    border-radius: 2.4rem;
+    margin-bottom: 2.4rem;
+}
+
+/* ********************** */
+/* INTERVIEW GUIDE - left */
+/* ********************** */
+.interviewGuideLeft {
+    padding-right: 2.4rem;
+}
+
+
+.interviewGuideQuestions {}
+
+.interviewDrawing {
+    height: 4rem;
+    padding-bottom: 0.8rem;
+}
+
+.interviewAnswers-col01,
+.interviewAnswers-col02,
+.interviewAnswers-col03 {
+    font-size: 1.2rem;
+    padding-right: 1.6rem;
+}
+
+.Q-A-title,
+.interviewAnswers p,
+.Q-A {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+
+
+
+
+/* ********************************** */
+/* COMPETITORS ANALYSES - table-right */
+/* ********************************** */
+.competitorsAnalysesTableRight {
+    display: flex;
+}
+
+.competition {
+    margin-bottom: 8.4rem;
+}
+
+.competitorsLogoPlaceholder {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logos {
+    scale: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btnDropdownComparisons,
+.btnDropdown {
+    height: 2.4rem;
+    width: 100%;
+    border: 0.5px solid #555;
+    border-radius: 16px;
+    color: #555;
+    font-size: 1.2rem;
+    background-color: white;
+    cursor: pointer;
+}
+
+.btnDropdown:link,
+.btnDropdown:visited,
+.btnDropdownComparisons:link,
+.btnDropdownComparisons:visited {
+    transition: all 0.3s;
+}
+
+.btnDropdown:hover,
+.btnDropdown:active,
+.btnDropdownComparisons:hover,
+.btnDropdownComparisons:active {
+    background-color: #555;
+    border-radius: 16px;
+    color: white;
+}
+
+.analisesContent {
+    display: flex;
+    padding: 0.8rem 0.8rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.response {
+    justify-self: center;
+    align-self: center;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.responseTxt {
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.middleText {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+
+.iconStar {
+    color: #555;
+}
+
+.comparisonsTitle {
+    height: 2.4em;
+    border-bottom: 0.5px dashed #999;
+    align-items: center;
+}
+
+.grid--4-cols05fr1fr {
+    grid-template-columns: 0.5fr 0.5fr 1fr 1fr;
+}
+
+.tableSubTitle {
+    padding-left: 1.6rem;
+}
+
+.tableMiddle {
+    justify-self: center;
+}
+
+/* ******************************* */
+/* LECTURE DEVELOPMENT - 02-DEFINE */
+/* ******************************* */
+.uxSheme-phaseDefine {
+    margin-bottom: 8.8rem;
+}
+
+
+/* LECTURE ux methodology - SECTION */
+.uxStepTest,
+.uxStepPrototype,
+.uxStepIdeate,
+.uxStepDefine {
+    display: flex;
+    align-items: center;
+}
+
+/* ******************************** */
+
+/* ******************************* */
+/* REFINED PERSONAS - USER JOURNEY */
+/* ******************************* */
+
+.refinedPersonas {
+    color: #555;
+    margin-bottom: 8.8rem;
+}
+
+.personasResearchTitle {
+    margin-bottom: 8px;
+}
+
+.refinedPersonasSubtitle {
+    margin-bottom: 8px;
+}
+
+.refinedPersonasAll {
+    font-size: 12px;
+    margin-top: 16px;
+    display: flex;
+    gap: 1.6rem;
+}
+
+.personasRefinedTelmo,
+.personasRefinedMaria,
+.personasRefinedMargarida {
+    border-radius: 16px;
+    padding-left: 1.6rem;
+    padding-bottom: 1.6rem;
+    background-color: rgba(201, 200, 216, 0.1);
+}
+
+/* **************************** */
+/* FINAL PERSONA - USER JOURNEY */
+/* **************************** */
+
+.finalPersonaInformation {
+    height: 28rem;
+    background-color: rgba(201, 200, 216, 0.4);
+    border-radius: 4.8rem;
+}
+
+.personaMargaridaLeft {
+    padding-left: 3.2rem;
+}
+
+.personaMargaridaLeft,
+.personaMargaridaRight,
+.personaMargaridaMiddle {
+    align-self: center;
+    justify-self: center;
+}
+
+
+.personaMargaridaLeftHabits,
+.personaMargaridaLeftNeeds,
+.personaMargaridaLeftObstacules {
+    padding-bottom: 1.6rem;
+    font-size: 1.2rem;
+}
+
+.habitsMargarida,
+.needsMargarida,
+.obstaclesMargarida {
+    color: #222;
+    font-weight: 400;
+}
+
+.circleMargarida {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.grid--2rowsCircle {
+    grid-template-rows: 2fr 1fr;
+}
+
+.roundMargaridaPlaceholder {
+    align-self: self-end;
+    justify-self: center;
+}
+
+.personaTxtCircle,
+.personaNameCircle {
+    justify-self: center;
+}
+
+.userJourneyScenario-txt,
+.userJourneyExpectations-txt {
+    padding-left: 0.8rem;
+    padding-top: 2.4rem;
+}
+
+/* ************************* */
+/* USER JOURNEY - CHANGE JOB */
+/* ************************* */
+.journeyGoalPresentation,
+.userJourneyPresentation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+}
+
+.userJourneyPresentation {
+    margin-top: 2.4rem;
+}
+
+/*
+.userJourneyProcessDefinition {
+    margin-bottom: 2rem;
+}*/
+
+/* ****************************** */
+/* MARGARIDA USER JOURNEY TO GOAL */
+/* ****************************** */
+
+.margaridaUserJourneyToGoal {
+    margin-bottom: 8.8rem;
+}
+
+.userJourneyStepsButton {
+    color: #fff;
+    height: 4.8rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 32px;
+    background-color: rgba(41, 37, 98, 0.8);
+}
+
+.userJourneySteps p {
+    padding-right: 0.8rem;
+    padding-left: 0.8rem;
+}
+
+.userJourneyStepsButton:link,
+.userJourneyStepsButton:visited {
+    transition: all 0.3s;
+}
+
+.userJourneyStepsButton:hover,
+.userJourneyStepsButton:active {
+    background-color: rgba(201, 200, 216, 1);
+    color: white;
+}
+
+.grid--9-cols {
+    grid-template-columns: repeat(9, 1fr);
+}
+
+.userJourneyStepsMainTitle,
+.userJourneySteps {
+    font-size: 1.2rem;
+    display: flex;
+    /*text-align: center;*/
+    align-items: center;
+    justify-content: center;
+}
+
+.userJourneyStepsMainTitle {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+/* **************** */
+/* USER JOURNEY MAP */
+/* **************** */
+.userJourneyMap {
+    display: none;
+    margin-bottom: 8.8rem;
+}
+
+.userJourneyMap {
+    background-color: rgba(201, 200, 216, 0.1);
+    border-radius: 1.6rem;
+    /* border: 1px solid rgba(201, 200, 216, 1);*/
+}
+
+.userJourneyMap {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.userJourneyMap.visible {
+    display: block;
+    opacity: 1;
+}
+
+.grid--9-cols-4-rows {
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 4;
+}
+
+.titleRow {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    padding-top: 1.6rem;
+    text-align: center;
+}
+
+.userJourneyAnswers {
+    /* text-align: center;*/
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    padding-top: 1.6rem;
+}
+
+.userJourneySingleAnswer {
+    margin-bottom: 0.4rem;
+}
+
+.userJourneyAnswersEmojis {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    padding-top: 1.6rem;
+    font-size: 2.4rem;
+    justify-self: center;
+}
+
+/* **************************** */
+/* ANALYSES MAP - OPPORTUNITIES */
+/* **************************** */
+.opportunitiesSelection {
+    margin-bottom: 8.8rem;
+}
+
+.opportunitiesFromJourneyMapBtn {
+    width: 100%;
+    color: #fff;
+    height: 4.8rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 32px;
+    background-color: rgba(41, 37, 98, 0.8);
+}
+
+.allOpportunitiesPostIt {
+    background-color: rgba(201, 200, 216, 0.1);
+    border-radius: 0 0 1.6rem 1.6rem;
+    padding-bottom: 2.4rem;
+}
+
+.opportunitiesPostIt-col-1,
+.opportunitiesPostIt-col-2,
+.opportunitiesPostIt-col-3,
+.opportunitiesPostIt-col-4,
+.opportunitiesPostIt-col-5,
+.opportunitiesPostIt-col-6,
+.opportunitiesPostIt-col-7,
+.opportunitiesPostIt-col-8,
+.opportunitiesPostIt-col-9 {
+    padding-top: 1.6rem;
+}
+
+.opportunitiesPostIt-col-4 {
+    margin-bottom: 0.8rem;
+}
+
+.subtitle-right-bottom {
+    align-content: end;
+}
+
+/* **************************************** */
+/* LECTURE - 03-IDEATE - REDEFINE CHALLENGE */
+/* **************************************** */
+.uxSheme-phaseIdeate {
+    margin-bottom: 1.6rem;
+}
+
+.uxStepDefine {
+    margin-bottom: 1.6rem;
+}
+
+.redefineChallenge {
+    margin-bottom: 8.8rem;
+}
+
+.sentenceToInsight {
+    color: #292562;
+    border: 1px solid #292562;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 2.4rem;
+    margin-top: 2.4rem;
+}
+
+.sentenceToInsight-3-3,
+.sentenceToInsight-2-3,
+.sentenceToInsight-1-3 {
+    display: flex;
+    align-items: center;
+    padding-left: 0.8rem;
+}
+
+
+.grid--6-rows {
+    grid-template-rows: 6;
+}
+
+.grid--8-rowsEmpathize {
+    grid-template-rows: 1fr 1fr 2fr 1fr 0.3fr 0.3fr 0.3fr 0.3fr;
+}
+
+.grid--9-rows {
+    grid-template-rows: repeat(9, 1fr);
+}
+
+
+.grid--7-rows {
+    grid-template-rows: 7;
+}
+
+/**/
+
+/* ************ */
+/* HOW MIGHT WE */
+/* ************ */
+.grid--15-rows {
+    grid-template-rows: 15;
+}
+
+/**/
+
+/* *********************************** */
+/* HOW MIGHT WE - PROPOSITIONS MATRIX  */
+/* *********************************** */
+.matrixPlaceholder {
+    margin-top: 2.4rem;
+    margin-bottom: 8.8rem;
+}
+
+/* MATRIX --- GRID - ALL-BUTTONS + ARROWS */
+.matrixBtnArrowDown,
+.matrixBtnArrowUp,
+.matrixBtnArrowRight,
+.matrixBtnArrowLeft {
+    display: flex;
+}
+
+.matrixBtnArrowDown,
+.matrixBtnArrowUp {
+    justify-content: center;
+}
+
+.arrow-left,
+.arrow-right {
+    align-self: center;
+}
+
+.matrixBtnArrowRight {
+    justify-content: right;
+    align-items: center;
+}
+
+.matrixBtnArrowLeft {
+    align-self: center;
+}
+
+.lowImpactBtn,
+.highEffortBtn,
+.lowEffortBtn,
+.highImpactBtn {
+    padding: 0.6rem;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    background-color: #292562;
+    color: white;
+}
+
+.highEffortBtnPlaceholder {
+    display: flex;
+    justify-content: right;
+}
+
+
+.lowEffortBtnPlaceholder {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+
+.arrow-up {
+    border-right: 0.8rem solid transparent;
+    border-left: 0.8rem solid transparent;
+    border-bottom: 1.2rem solid rgba(201, 200, 216, 1);
+    margin-top: 1.6rem;
+}
+
+.arrow-left,
+.arrow-right {
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+}
+
+.arrow-down {
+    border-left: 0.8rem solid transparent;
+    border-right: 0.8rem solid transparent;
+    border-top: 1.2rem solid rgba(201, 200, 216, 1);
+    margin-bottom: 1.6rem;
+}
+
+.arrow-left {
+    border-top: 0.8rem solid transparent;
+    border-bottom: 0.8rem solid transparent;
+    border-right: 1.2rem solid rgba(201, 200, 216, 1);
+
+}
+
+/* MATRIX --- BTN - UP - DOWN - LEFT - RIGHT */
+.matrixBtnArrowUp {
+    grid-column: 5;
+    grid-row: 1;
+    display: inline;
+    justify-items: center;
+}
+
+.matrixBtnArrowDown {
+    grid-column: 5;
+    grid-row: 9;
+    display: inline;
+    justify-items: center;
+}
+
+.matrixBtnArrowLeft {
+    grid-column: 1;
+    grid-row: 5;
+}
+
+.matrixBtnArrowRight {
+    grid-column: 9;
+    grid-row: 5;
+}
+
+
+/* MATRIX --- LOW EFFORT - HIGH IMPACT - top-left */
+.lowEffort-highImpact {
+    grid-column: 2 / 5;
+    grid-row: 2 / 5;
+    border-bottom: 1px solid #292562;
+    border-right: 1px solid #292562;
+    background-color: rgba(201, 200, 216, 0.5);
+}
+
+.topLeft-01 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.topLeft-02 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.topLeft-03 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.topLeft-04 {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.topLeft-05 {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.topLeft-06 {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.topLeft-07 {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+/* MATRIX --- HIGH IMPACT - HIGH EFFORT - top-right */
+.highImpact-highEffort {
+    grid-column: 6 / 9;
+    grid-row: 2 / 5;
+    border-bottom: 1px solid #292562;
+    border-left: 1px solid #292562;
+    background-color: rgba(201, 200, 216, 0.1);
+}
+
+.topRight-01 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.topRight-02 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.topRight-03 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.topRight-04 {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.topRight-05 {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.topRight-06 {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+/* MATRIX --- LOW IMPACT - LOW EFFORT - bottom-left */
+.lowImpact-lowEffort {
+    grid-column: 2 / 5;
+    grid-row: 6 / 9;
+    border-top: 1px solid #292562;
+    border-right: 1px solid #292562;
+    background-color: rgba(201, 200, 216, 0.1);
+}
+
+.bottomLeft-01 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.bottomLeft-02 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.bottomLeft-03 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.bottomLeft-04 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.bottomLeft-05 {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+/* MATRIX --- LOW IMPACT - HIGH EFFORT - bottom-right */
+.lowImpact-highEffort {
+    grid-column: 6 / 9;
+    grid-row: 6 / 9;
+    border-top: 1px solid #292562;
+    border-left: 1px solid #292562;
+    background-color: rgba(201, 200, 216, 0.1);
+}
+
+.bottomRight-01 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+/***  ***/
+.proposal {
+    font-size: 1rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-top: 0.8rem;
+}
+
+
+
+/* ************************************** */
+/* HOW MIGHT WE - SKETCHING / STORYBOARD  */
+/* ************************************** */
+
+
+.grid--5-colsStoryboard {
+    grid-template-columns: 1.25fr 1.25fr 1.25fr 1.25fr 2fr;
+}
+
+.grid--3-colsStoryboard {
+    grid-template-columns: 1fr 1fr 2fr;
+}
+
+
+/**/
+
+/* ********************** */
+/* LECTURE - 04-PROTOTYPE */
+/* ********************** */
+
+
+/**/
+
+
+/* ***************** */
+/* LECTURE - 05-TEST */
+/* ***************** */
+
+
+/* usabilityTestReporting */
+/* usabilityTestReporting-steps*/
+
+.grid--6-cols {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.uxSheme-phaseTest,
+.uxSheme-phasePrototype {
+    margin-top: 2rem;
+    margin-bottom: 8.8rem;
+}
+
+/* usabilityTestReporting-prototype */
+/* usabilityTestReporting-plan */
+
+.circleDiamondScheme {
+    display: flex;
+    align-items: center;
+    margin-top: 2.4rem;
+    margin-bottom: 8.8rem;
+}
+
+.circle {
+    display: flex;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    border: 1px solid #292562;
+    margin-right: 3rem;
+}
+
+.txtUsabilityTestSchemeDiamond {
+    transform: rotate(-45deg);
+}
+
+.txtUsabilityTestSchemeDiamond,
+.txtUsabilityTestScheme {
+    font-size: 1rem;
+    align-self: center;
+    text-align: center;
+}
+
+.arrow-rightTestScheme,
+.arrow-right,
+.arrow-left,
+.arrow-down,
+.arrow-up {
+    height: 0;
+    width: 0;
+}
+
+.arrow-rightTestScheme,
+.arrow-right {
+    border-top: 0.8rem solid transparent;
+    border-bottom: 0.8rem solid transparent;
+    border-left: 1.2rem solid rgba(201, 200, 216, 1);
+}
+
+.arrow-rightTestScheme {
+    margin-right: 3rem;
+}
+
+.diamond {
+    display: flex;
+    width: 6.4rem;
+    height: 6.4rem;
+    border: 1px solid #292562;
+    transform: rotate(45deg);
+    margin-right: 3rem;
+}
+
+/* usabilityTestReporting-script*/
+/* usabilityTestReporting-test */
+/* usabilityTestReporting-report */
+
+/* ************** FOOTER ************************* */
+
+
+
+
+
+/* ****************************************** */
+/* ****************************************** */
+/* ****************************************** */
+
+
+.hexagon {
+    transform: rotate(90deg);
+    width: 50px;
+    height: 29px;
+    background-color: #292562;
+    position: relative;
+    margin: 25px;
+}
+
+.hexagon::before,
+.hexagon::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+}
+
+.hexagon::before {
+    top: -14.5px;
+    border-bottom: 14.5px solid #292562;
+}
+
+.hexagon::after {
+    bottom: -14.5px;
+    border-top: 14.5px solid #292562;
+}
+
+
+/* ********************************************************************************************** */
+
+/*
+8-16-24-32-40-48-56-64-72-80-88-96-104-112-120-
+128-136-144-152-160-168-176-184-192-200-208-216-
+224----...280-288-296-304-312
+*/
+.title-1 {
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.title-2 {
+    font-size: 14px;
+}
+
+.paragraph-2 {
+    font-size: 10px;
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+
+.grid--5-rows {
+    grid-template-rows: repeat (5, 1fr);
+}
+
+.icon {
+    font-size: 24px;
+    color: #555;
+}
+
+/* *************************************** */
+/* *************************************** */
+
+.linkSamePage {
+    display: flex;
+    font-size: 10px;
+}
+
+.linkTo {
+    text-decoration: none;
+    color: #fff;
+    border-radius: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-right: 8px;
+}
+
+/* *************************************** */
+/* *************************************** */
+/* *************************************** */
+/* *************************************** */
+/* *************************************** */
+/*** ******************************************** ***/
+/*** ******************************************** ***/
+/*** ******************************************** ***/
+/* *************************************** */
+/* *************************************** */
+
+#buttonImageContainer .buttonImage {
+    background-image: url("/img/ux/uxEmpathizeBtnNoBackground.svg");
+    background-size: cover;
+    transition: background-image 0.3s ease;
+}
+
+#buttonImageContainer:hover .buttonImage {
+    background-image: url("/img/ux/uxEmpathizeBtnBackground.svg")
+}
+
+#buttonImageContainer:active .buttonImage {
+    background-image: url("/img/ux/uxEmpathizeBtnBackground.svg")
+}
+
+/*
+#buttonImage:link #buttonImage:hover #buttonImage:visited #buttonImage:active*/
+.uxMethodScheme,
+.uxDefine,
+.uxIdeate,
+.uxPrototype,
+.uxTest {
+    border: 1px solid green;
+}
+
+.uxMethodSchemeRight {
+    scale: 50%;
+}
+
+.uxMethodSchemeRight,
+.uxDefineRight,
+.uxIdeateRight,
+.uxPrototypeRight,
+.uxTestRight {
+    justify-self: right;
+}
+
+/* ************* */
+
+.underConstructionWheels {
+    align-self: center;
+    height: 8rem;
+}
+
+.underConstructionSubtitle {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #333;
+}
+
+/*********************************************/
+
+.grid--2-colsTable {
+    width: 100%;
+    grid-template-columns: 1fr, 1fr;
+}
+
+.presentationHomepage {
+    height: 16rem;
+    margin-bottom: 6.4rem;
+}
+
+.uxStepTest img,
+.uxStepPrototype img,
+.uxStepIdeate img,
+.uxStepDefine img,
+.uxMethodology-empathize img {
+    padding-right: 4px;
+}
+
+.uxStepTest p,
+.uxStepPrototype p,
+.uxStepIdeate p,
+.uxStepDefine p,
+.uxMethodology-empathize p {
+    padding-right: 16px;
+}

@@ -12,8 +12,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styleCV.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaQueries.css">
     <link rel="stylesheet" href="queries.css">
+    <link rel="stylesheet" href="general.css">
+    <script src="script.js"></script>
+
 </head>
 
 <body>
@@ -22,14 +26,18 @@
         <!-- HEADER MAIN -->
         <!-- ----------- -->
         <div class="headerMain grid grid--2-cols">
-
+            <!-- ----------- -->
+            <!-- HEADER left -->
+            <!-- ----------- -->
             <div class="headerMainLeft">
                 <img class="logoDd" src="/imgCV/logoDd-draw-grey.svg" alt="" srcset="">
 
-                <p class="myName">diana dóris</p>
+                <a href="index.html" class="myName">diana dóris</a>
             </div>
-
-            <div class="headerMainRight grid grid--4-rows">
+            <!-- ------------ -->
+            <!-- HEADER right -->
+            <!-- ------------ -->
+            <div class="headerMainRight grid grid--5-rows">
 
                 <div class="contactsHeader">
                     <p>contacts</p>
@@ -54,18 +62,25 @@
                     </div>
                 </div>
 
-
                 <div class="linkCvPlaceholder">
-                    <a class="headerLinkCurriculumVitae" href="https://d-dv3.github.io/cv2025/">curriculum vitae</a>
+                    <a class="headerLinkCurriculumVitae" href="index.html">curriculum vitae</a>
+                </div>
+
+                <div class="portfolioMenu">
+                    <a class="headerLinkPortfolio" href="lecture.html">portfolio_ lecture</a>
+                    <img class="landingLogos" src="/imgCV/logoEditHorizontalPreto.svg" alt="" srcset="">
+                    <img class="landingLogos" src="/imgCV/logoFlagFundoLaranja.svg" alt="" srcset="" </div>
                 </div>
             </div>
-        </div>
-        <!-- --- -->
-        <!-- NAV -->
-        <!-- --- -->
+            <!-- --- -->
+            <!-- NAV -->
+            <!-- --- -->
     </header>
 
 
+    <!-- --------------- -->
+    <!-- CV-PRESENTATION -->
+    <!-- --------------- -->
 
     <section class="cvPresentationPlaceholder grid grid--2-cols1fr2fr grid--2-rows">
 
@@ -78,10 +93,10 @@
             <p>Hi, I'm Diana and I'm looking forward to working <br> with you as a <strong>FRONT-END
                     DEVELOPER</strong>!</p>
         </div>
-
+        <!-- 
         <div class="editFlagPortfolioLink">
             <div class="portfolioWord">
-                <a class="portfolioWordPlaceholder" href="http://">
+                <a class="portfolioWordPlaceholder" href="lecture.html">
                     <img class="drawLetter" src="/imgCV/p-drawLetter-orange.svg" alt="" srcset="">
                     <p class="drawLetterWord
                  title-1">ortfolio</p>
@@ -91,12 +106,12 @@
                 <img class="landingLogos" src="/imgCV/logoEditHorizontalPreto.svg" alt="" srcset="">
                 <img class="landingLogos" src="/imgCV/logoFlagFundoLaranja.svg" alt="" srcset="">
             </div>
-        </div>
+        </div>-->
     </section>
 
 
 
-    <main class="cvLeftRight grid grid--2-cols1fr2fr">
+    <main class="cvMain grid grid--2-cols1fr2fr">
         <!--                       -->
         <!-- CV SECTION LEFT       -->
         <!--                       -->
@@ -119,14 +134,15 @@
                 </div>
             </div>
 
-            <div>
-                <p class="cvSectionTitle paragraph-2">Currently working on my portfolio website and keeping up my
-                    side project as a
-                    jewelry
-                    designer and
-                    maker.
-                </p>
+            <div class="softSkills">
+                <p class="cvPersonalInfoTitle title-1">Soft Skills</p>
+                <p style="margin-bottom: 0.8rem;">Great resilience, responsability and empathy. Love team work, good
+                    comunication
+                    skills, always curious and ready to learn.</p>
+                <p>Passionate about making a difference in people's life and planet - believing
+                    technology can be awesome to achieve and work for the common good.</p>
             </div>
+
             <div class="personalInterests">
                 <p class="cvPersonalInfoTitle title-1">Personal Interests</p>
                 <p class="cvPersonalInfoTitle paragraph-2">Associate to: ZERO - Associação Sistema Terrestre Sustentável
@@ -140,22 +156,23 @@
                     - ethics philosopher;<br>Daniel Goleman - phychologist on Emotional Intelligence;<br>Drawing; Arts.
                 </p>
             </div>
-            <div>
-                <p class="cvPersonalInfoTitle title-1">Soft Skills</p>
-                <p class="paragraph-1">Great resilience, responsability and empathy. Love team work, good comunication
-                    skills, always curious and ready to learn.</p>
-                <p class="paragraph-1">Passionate about making a difference in people's life and planet - believing
-                    technology can be awesome to achieve and work for the common good.</p>
-            </div>
 
+            <div>
+                <p class="cvSectionTitle paragraph-2">Currently working on my portfolio website and keeping up my
+                    side project as a
+                    jewelry
+                    designer and
+                    maker.
+                </p>
+            </div>
         </section>
         <!--                       -->
         <!-- CV SECTION RIGHT      -->
         <!--                       -->
         <section class="cvSectionRight">
-            <div class="cvSectionTitleEducation title-1">
-                <p class="title-1">Education_ </p>
-                <p class="title-1">UX/ UI Design | Front-End Web Developer</p>
+            <div class="cvSectionTitleEducation">
+                <p>Education_</p>
+                <p>UX/ UI Design | Front-End Web Developer</p>
             </div>
 
             <!-- GRID date - info -->
@@ -180,33 +197,40 @@
 
             <div class="softwareSkillsLevel grid grid--3-cols--4-rows-sk">
                 <div class="infoSoftware-skill01">
-                    <p class="infoSoftware">JavaScript</p>
-                    <p class="skillLevel"><img src="/imgCV/30-1oo_js.svg" alt="" srcset=""></p>
+                    <p class="infoSoftwareJS">JavaScript</p>
+                    <p class="skillLevel"><img src="/imgCV/20-1oo_js-illustrator-darker.svg" alt="" srcset=""></p>
                 </div>
 
                 <div class="infoSoftware-skill02">
-                    <p class="infoSoftware">CSS3</p>
-                    <div class="skillLevel"><img src="/imgCV/80-1oo_html-css.svg" alt="" srcset=""></div>
+                    <p class="infoSoftwareCSS">CSS3</p>
+                    <div class="skillLevel"><img src="/imgCV/80-1oo_html-css-darker.svg" alt="" srcset=""></div>
                 </div>
 
                 <div class="infoSoftware-skill03">
-                    <p class="infoSoftware">HTML5</p>
-                    <p class="skillLevel"><img src="/imgCV/80-1oo_html-css.svg" alt="" srcset=""></p>
+                    <p class="infoSoftwareHTML">HTML5</p>
+                    <p class="skillLevel"><img src="/imgCV/80-1oo_html-css-darker.svg" alt="" srcset=""></p>
                 </div>
 
                 <div class="infoSoftware-skill04">
-                    <p class="infoSoftware">Figma</p>
-                    <p class="skillLevel"><img src="/imgCV/50-1oo_figma-rhino.svg" alt="" srcset=""></p>
+                    <p class="infoSoftwareFIG">Figma</p>
+                    <p class="skillLevel"><img src="/imgCV/50-1oo_figma-rhinoceros-darker.svg" alt="" srcset=""></p>
                 </div>
 
                 <div class="infoSoftware-skill05">
-                    <p class="infoSoftware">Illustrator</p>
-                    <p class="skillLevel"><img src="/imgCV/20-1oo_illustrator.svg" alt="" srcset=""></p>
+                    <p class="infoSoftwareILLUST">Illustrator</p>
+                    <p class="skillLevel"><img src="/imgCV/20-1oo_js-illustrator-darker.svg" alt="" srcset=""></p>
                 </div>
+
+                <div class="infoSoftware-skill06">
+                    <p class="infoSoftwareINDES">InDesign</p>
+                    <p class="skillLevel"><img src="/imgCV/50-1oo_figma-rhinoceros-darker.svg" alt="" srcset=""></p>
+                </div>
+
+
             </div>
 
             <div class="sectionLine">
-                <p class="paragraph-2">*also on flag course curricuum: sass, responsive web design, programming
+                <p class="paragraph-2">*also on flag course curriculum: sass, responsive web design, programming
                     fundamentals, git, react.</p>
             </div>
 
@@ -255,14 +279,15 @@
 
                 <p class="cvSectionTitleComputerSkills title-1">other computer skills</p>
                 <div class="grid grid--3-cols--1-row-sk">
-                    <div class="infoSoftware-skill06">
-                        <p class="infoSoftware">Autocad 2D/ 3D</p>
-                        <p class="skillLevel"><img src="/imgCV/90-1oo_autocad.svg" alt="" srcset=""></p>
-                    </div>
 
                     <div class="infoSoftware-skill07">
+                        <p class="infoSoftware">Autocad 2D/ 3D</p>
+                        <p class="skillLevel"><img src="/imgCV/90-1oo_autocad-darker.svg" alt="" srcset=""></p>
+                    </div>
+
+                    <div class="infoSoftware-skill08">
                         <p class="infoSoftware">Rhinoceros 2D/ 3D</p>
-                        <p class="skillLevel"><img src="/imgCV/50-1oo_figma-rhino.svg" alt="" srcset=""></p>
+                        <p class="skillLevel"><img src="/imgCV/50-1oo_figma-rhinoceros-darker.svg" alt="" srcset=""></p>
                     </div>
 
                 </div>
@@ -270,6 +295,9 @@
         </section>
     </main>
 
+    <!-- ------------ -->
+    <!-- CV BIOGRAPHY -->
+    <!-- ------------ -->
     <section class="biography">
         <p class="biographyTitle">Biography</p>
 
