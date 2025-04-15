@@ -1180,15 +1180,20 @@ footer {
 /* ********************************** */
 /* COMPETITORS ANALYSES - table-right */
 /* ********************************** */
-.competitorsAnalysesTableRight {
-    display: flex;
-}
+.competitorsAnalysesTableRight {}
 
 .competition {
-    width: 33%;
     display: flex;
     justify-content: space-around;
     margin-bottom: 12rem;
+}
+
+.competitorsAnalyses-columnLeft {
+    width: 33%;
+}
+
+.competitorsAnalyses-columnRight {
+    width: 33%;
 }
 
 .competitorsLogoPlaceholder {
