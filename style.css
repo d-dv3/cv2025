@@ -744,6 +744,7 @@ footer {
 }
 
 .arrowTxtBlue {
+
     font-size: 1.6rem;
     color: #292562;
 }
@@ -761,22 +762,23 @@ footer {
 
 .empathize-col-right {
     display: flex;
-    align-items: center;
+}
+
+.define-userImg {
+    display: flex;
+    justify-content: right;
 }
 
 .emojidrawing {
-    height: 3rem;
+    height: 20rem;
 }
 
-.emojiPlaceholderTop {
+.emojiPlaceholder {
     display: flex;
-    align-items: end;
+    align-items: center;
+    justify-self: right;
 }
 
-.emojiPlaceholderBottom {
-    display: flex;
-    justify-content: space-between
-}
 
 .circleEmpathize {
     height: 20rem;
@@ -791,13 +793,13 @@ footer {
 .define-userQuestions,
 .empathize-userQuestions {
     font-size: 1.2rem;
-    padding-left: 3.2rem;
+
 }
 
 .grid--8-rowsDefine,
 .grid--8-rowsEmpathize {
     height: 100%;
-    grid-template-rows: 2fr 1fr 1fr 2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+    grid-template-rows: 3fr 0.8fr 0.8fr 2fr 0.2fr 0.2fr 0.2fr 0.2fr;
 }
 
 .defineQMark,
@@ -816,13 +818,14 @@ footer {
 .defineProcess,
 .empathizeProcess {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: end;
     color: #292562;
     font-weight: 400;
 }
 
 .txtMark {
+
     color: #292562;
     font-size: 1.4rem;
     background-color: #fff;
