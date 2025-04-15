@@ -109,16 +109,6 @@ accents:
 
 /* HEADER */
 
-/* logo em negativo para hover/ active? */
-/*
-.logoDd:link,
-.logoDd:visited,
-
-/*
-.logoDd:hover,
-.logoDd:active,
-*/
-
 .myName:link,
 .myName:visited {
     transition: all 0.3s;
@@ -130,8 +120,6 @@ accents:
     color: white;
 }
 
-
-/* NavMain - NavSecond - Left */
 .navCsTitleLink:link,
 .navCsTitleLink:visited {
     transition: all 0.3s;
@@ -169,39 +157,6 @@ accents:
     background-color: #292562;
     color: white;
 }
-
-
-
-
-
-/*
-.csTitle-1:link,
-.csTitle-1:visited,
-.csTitle-2:link,
-.csTitle-2:visited,
-.csTitle-3:link,
-.csTitle-3:visited {
-    transition: all 0.3s;
-}
-
-.csTitle-1:hover,
-.csTitle-1:active {
-    background-color: #FCDC4A;
-    color: white;
-}
-
-.csTitle-2:hover,
-.csTitle-2:active {
-    background-color: #680794;
-    color: white;
-}
-
-.csTitle-3:hover,
-.csTitle-3:active {
-    background-color: #0e59fe;
-    color: white;
-}
-*/
 
 .cvLinkedin:link,
 .cvLinkedin:visited,
@@ -251,9 +206,7 @@ accents:
 
 /* rows */
 
-.grid--2-rows {
-    grid-template-rows: 1fr 1fr;
-}
+
 
 .grid--3-rows {
     grid-template-rows: repeat(3, 1fr);
@@ -261,4 +214,11 @@ accents:
 
 .grid--4-rows {
     grid-template-rows: repeat(4, 1fr);
+}
+
+
+
+.paragraph-1 {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
 }
