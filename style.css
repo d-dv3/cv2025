@@ -78,9 +78,8 @@ header {
 /* ***************** */
 /*
 .headerMainRight {}*/
-
-.grid--3-colsQA,
 .grid--3-colsSitePresentation,
+.grid--3-colsQA,
 .grid--3-cols {
     grid-template-columns: repeat(3, 1fr);
 }
@@ -597,7 +596,7 @@ footer {
 }
 
 .arrowBckYellow {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .briefingCol02-Row03 {
@@ -610,6 +609,10 @@ footer {
 .slideItem-02Template {
     padding-left: 0.4rem;
     background-color: rgba(201, 200, 216, 0.2);
+}
+
+.grid--3rows-briefingUx {
+    grid-template-rows: 3;
 }
 
 .grid--3rows-briefingSmallText {
@@ -666,7 +669,7 @@ footer {
     font-size: 0.8rem;
     line-height: 1.2;
     padding-right: 0.8rem;
-    padding-top: 0.8rem;
+
 }
 
 /* row-2 left */
@@ -857,7 +860,7 @@ footer {
 }
 
 .empathizeAllQ {
-
+    grid-row: 2;
     margin-left: 1.6rem;
 }
 
@@ -891,6 +894,7 @@ footer {
 }
 
 .empathizeProcess {
+    grid-row: 3;
     align-self: end;
     justify-self: right;
     color: #292562;
@@ -917,6 +921,7 @@ footer {
 
 .protoPersonasContentSelectionTitles {
     font-size: 1.6rem;
+    font-weight: 400;
     margin-bottom: 0.8rem;
 }
 
@@ -1009,6 +1014,9 @@ footer {
 /* ***************************** */
 /* UX RESEARCH - INTERVIEW GUIDE */
 /* ***************************** */
+.researchStrategy {
+    margin-bottom: 20rem;
+}
 
 .interviewTitles {
     font-size: 1.6rem;
@@ -1028,6 +1036,12 @@ footer {
 .grid--2-colsInterview {
     grid-template-columns: 1fr 1fr;
     gap: 2.4rem;
+}
+
+.interviewGuide {
+    /*
+    min-height: 20rem;*/
+    margin-bottom: 20rem;
 }
 
 .interviewGuideRight,
@@ -1074,12 +1088,34 @@ footer {
 /* INTERVIEW GUIDE - right */
 /* *********************** */
 
+
+.findings,
+.competitorsAnalysesSection {
+    margin-bottom: 20rem;
+}
+
+
+
+
+
 .interviewAnswers-col01,
 .interviewAnswers-col02,
 .interviewAnswers-col03 {
     font-size: 1.2rem;
     padding-right: 1.6rem;
+    padding-bottom: 1.6rem;
 }
+
+.interviewAnswers-col01 p,
+.interviewAnswers-col02 p,
+.interviewAnswers-col03 p {
+    margin-bottom: 0.8rem;
+}
+
+
+
+
+
 
 .interviewDrawing {
     height: 6rem;
@@ -1091,10 +1127,14 @@ footer {
 /* ********************************** */
 /* COMPETITORS ANALYSES - table-right */
 /* ********************************** */
+.competitorsAnalysesTitles {
+    margin-bottom: 3.6rem;
+}
+
 
 .competition {
     display: flex;
-    justify-content: space-around;
+
     margin-bottom: 12rem;
 }
 

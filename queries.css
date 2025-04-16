@@ -271,7 +271,7 @@
     /* LECTURE SITE-PRESENTATION */
     /* ************************* */
     .sitePresentation {
-        margin-bottom: 2.4rem;
+        margin-bottom: 4.8rem;
     }
 
     .sitePresentation-SlideshowContainer {
@@ -294,6 +294,7 @@
         grid-row: 2;
     }
 
+    .grid--3rows-briefingUx,
     .grid--3rows-briefingSmallText {
         grid-template-rows: 0.7fr 1.3fr;
     }
@@ -347,7 +348,7 @@
     /* LECTURE - 01-EMPATHIZE */
     /* ********************** */
     .uxMethodology {
-        margin-bottom: 1.6rem;
+        margin-bottom: 4.8rem;
     }
 
     .uxMethodology-empathize {
@@ -412,16 +413,31 @@
     .empathizeEmptyRow {
         display: block;
         grid-row: 1;
+        justify-self: center;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
     }
 
     .empathizeAllQ {
         grid-row: 2;
+        margin-left: 0;
+    }
+
+    .empathizeQ01,
+    .empathizeQ02,
+    .empathizeQ03 {
+        line-height: 1;
+        margin-bottom: 0.8rem;
     }
 
     .empathizeProcess {
         grid-row: 3;
+        justify-self: center;
     }
 
+    .arrowBlueEmpathize {
+        justify-self: center;
+    }
 
 
 
