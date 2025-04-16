@@ -142,8 +142,7 @@ accents:
     transition: all 0.3s;
 }
 
-.headerLinkCurriculumVitae:hover,
-.headerLinkCurriculumVitae:active,
+
 .contactHeaderLinkedin:hover,
 .contactHeaderLinkedin:active,
 .contactHeaderGithub:hover,
@@ -156,6 +155,11 @@ accents:
 .headerLinkPortfolio:active {
     background-color: #292562;
     color: white;
+}
+
+.headerLinkCurriculumVitae:hover,
+.headerLinkCurriculumVitae:active {
+    background-color: #FCDC4A;
 }
 
 .cvLinkedin:link,

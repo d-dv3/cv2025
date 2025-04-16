@@ -47,6 +47,9 @@ header {
     display: grid;
 }
 
+
+
+.grid--2-colsQA,
 .grid--2-cols {
     grid-template-columns: repeat(2, 1fr);
 }
@@ -73,7 +76,11 @@ header {
 /* ***************** */
 /* HEADER MAIN-right */
 /* ***************** */
+/*
+.headerMainRight {}*/
 
+.grid--3-colsQA,
+.grid--3-colsSitePresentation,
 .grid--3-cols {
     grid-template-columns: repeat(3, 1fr);
 }
@@ -165,7 +172,53 @@ header {
     color: #333;
 }
 
+/* ****************************** */
+/* HEADER MAIN right media querie */
+/* ****************************** */
+.headerMenuQuerie {
+    display: grid;
+    grid-template-rows: 3;
+}
 
+.btnDropdownContacts {
+    border: none;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 200;
+}
+
+/* LVHA */
+.btnDropdownContacts:link,
+.btnDropdownContacts:visited {
+    transition: all 0.3s;
+}
+
+.btnDropdownContacts:hover,
+.btnDropdownContacts:active {
+    background-color: #111;
+    color: #fff;
+}
+
+
+
+
+.allContactsHeaderQuerie {
+    display: grid;
+    grid-template-rows: repeat(4, 2rem);
+    font-size: 1.2rem;
+    align-items: end;
+}
+
+.jewelryDesignBrandQ,
+.contactHeaderLinkedinQ,
+.contactHeaderGithubQ {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #333;
+    cursor: pointer;
+}
 
 /* *************** */
 /* CV-PRESENTATION */
@@ -462,13 +515,12 @@ footer {
 /* ***************************************** */
 
 .sitePresentation {
-    height: 30rem;
+    min-height: 30rem;
     margin-bottom: 12rem;
     /*margin-bottom: 8.8rem;*/
 }
 
 .sitePresentation-SlideshowContainer {
-    max-width: 120rem;
     margin-bottom: 12rem;
 }
 
@@ -477,11 +529,7 @@ footer {
 /************ BANNER ?? ****************/
 
 /* COL-01 */
-.slideItem-03Template,
-.slideItem-02Template,
-.slideItem-01Template {
-    height: 30rem;
-}
+
 
 .grid--2cols--3rows-briefing {
     grid-template-columns: 2;
@@ -630,7 +678,6 @@ footer {
 
 .navCsSubtitle-1-Header {
     font-size: 1.6rem;
-
     font-weight: 300;
     color: #292562;
 }
@@ -647,8 +694,8 @@ footer {
 }
 
 .paragraph-2 {
-    font-size: 10px;
-    margin-bottom: 8px;
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
     line-height: 1.2;
 }
 
@@ -662,13 +709,18 @@ footer {
 }
 
 .uxMethodology-empathize {
-    height: 44rem;
+
+    min-height: 44rem;
     padding-left: 2.4rem;
     padding-top: 2.4rem;
     padding-right: 2.4rem;
     padding-bottom: 2.4rem;
     border-radius: 2.4rem;
     background-color: rgba(201, 200, 216, 0.2);
+}
+
+.grid--2-colsUxMethodology {
+    grid-template-columns: 1fr 1fr;
 }
 
 /* EMPATHIZE col-01 */
@@ -734,7 +786,6 @@ footer {
     margin-bottom: 1.6rem;
 }
 
-.txtMark,
 .arrowTxt {
     display: flex;
     justify-content: center;
@@ -743,10 +794,11 @@ footer {
     margin-bottom: 0.8rem;
 }
 
+.arrowBlueEmpathize,
 .arrowTxtBlue {
-
     font-size: 1.6rem;
     color: #292562;
+
 }
 
 .txtCenter {
@@ -762,6 +814,16 @@ footer {
 
 .empathize-col-right {
     display: flex;
+}
+
+.empathizeEmptyRowProblemStatement,
+.empathizeEmptyRow {
+    display: none;
+}
+
+.empathize-userImg-questions {
+    display: flex;
+    align-items: center;
 }
 
 .define-userImg {
@@ -790,33 +852,53 @@ footer {
     background-color: #fff;
 }
 
-.define-userQuestions,
-.empathize-userQuestions {
+.define-userQuestions {
     font-size: 1.2rem;
-
 }
 
-.grid--8-rowsDefine,
-.grid--8-rowsEmpathize {
-    height: 100%;
-    grid-template-rows: 3fr 0.8fr 0.8fr 2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+.empathizeAllQ {
+
+    margin-left: 1.6rem;
 }
 
-.defineQMark,
-.empathizeQMark {
+.empathizeQ01,
+.empathizeQ02,
+.empathizeQ03 {
+    background-color: #fff;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    margin-bottom: 1.6rem;
+}
+
+.qMark {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #292562;
+    background-color: #fff;
+    padding-left: 0.4rem;
+}
+
+.grid--3-rowsEmpathize {
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.defineQMark {
     align-items: end;
-}
-
-.grid--2-colsQMark {
-    grid-template-columns: 2fr 1fr;
 }
 
 .define-userImg-questions {
     height: 100%;
 }
 
-.defineProcess,
 .empathizeProcess {
+    align-self: end;
+    justify-self: right;
+    color: #292562;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.defineProcess {
     display: flex;
     justify-content: right;
     align-items: end;
@@ -824,12 +906,7 @@ footer {
     font-weight: 400;
 }
 
-.txtMark {
 
-    color: #292562;
-    font-size: 1.4rem;
-    background-color: #fff;
-}
 
 /* ******************************************* */
 /* CONTENT SELECTION - BUILDING PROTO PERSONAS */
@@ -899,7 +976,7 @@ footer {
 /* confirmar  */
 .drawingSize,
 .photoAbout img {
-    height: 100px;
+    height: 10rem;
 }
 
 /* confirmar  */
@@ -944,6 +1021,10 @@ footer {
     margin-bottom: 1.6rem;
 }
 
+.interviewSubTitles p {
+    margin-bottom: 1.6rem;
+}
+
 .grid--2-colsInterview {
     grid-template-columns: 1fr 1fr;
     gap: 2.4rem;
@@ -962,7 +1043,6 @@ footer {
 /* INTERVIEW GUIDE - left */
 /* ********************** */
 .Q-A-title,
-.interviewAnswers p,
 .Q-A {
     font-size: 1.2rem;
     margin-bottom: 0.8rem;
@@ -1031,7 +1111,7 @@ footer {
 }
 
 .logos {
-    scale: 60%;
+    height: 2rem;
     display: flex;
     justify-content: space-around;
 }
@@ -1069,6 +1149,7 @@ footer {
     padding: 0.8rem 0.8rem;
 }
 
+.hiddenMenuQ,
 .hidden {
     display: none;
 }
@@ -2037,8 +2118,7 @@ footer {
 .uxStepTest img,
 .uxStepPrototype img,
 .uxStepIdeate img,
-.uxStepDefine img,
-.uxMethodology-empathize img {
+.uxStepDefine img {
     padding-right: 4px;
 }
 

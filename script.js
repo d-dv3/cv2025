@@ -68,6 +68,17 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const dropdownBtn = document.querySelector('.btnDropdownContacts');
+    const dropdownContent = document.querySelector('.allContactsHeaderQuerie');
+
+    dropdownBtn.addEventListener('click', () => {
+        dropdownContent.classList.toggle('hidden');
+    });
+});
 
 
 
@@ -76,41 +87,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
-// BUTTON EXPERIENCE
-
-// Get the image element
-//const buttonImage = document.getElementById('buttonImage');
-
-// Define the original, hover, and active image sources
-//const originalImage = '/img/ux/uxEmpathizeBtnNoBackground.svg';
-//const hoverImage = '/img/ux/uxEmpathizeBtnBackground.svg';
-//const activeImage = '/img/ux/uxEmpathizeBtnBackground.svg';
-
-// Change image on hover
-// buttonImage.addEventListener('mouseenter', () => {
-//buttonImage.src = hoverImage;
-//});
-
-// Revert to original image when hover ends
-//buttonImage.addEventListener('mouseleave', () => {
-//buttonImage.src = originalImage;
-//});
-
-// Change image on active (mousedown or click)
-//buttonImage.addEventListener('mousedown', () => {
-//  buttonImage.src = activeImage;
-//});
-
-// Revert to the original image after the mouse is released
-//buttonImage.addEventListener('mouseup', () => {
-// buttonImage.src = hoverImage;
-//});
-
-// Optionally, also revert on mouse out if needed
-//buttonImage.addEventListener('mouseleave', () => {
-//  buttonImage.src = originalImage;
-//});
 
 
 

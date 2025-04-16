@@ -19,7 +19,6 @@
     <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
 
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaQueries.css">
     <link rel="stylesheet" href="queries.css">
     <link rel="stylesheet" href="general.css">
     <script src="script.js"></script>
@@ -39,6 +38,22 @@
                 <img class="logoDd" src="img/logos/logoDd-draw-grey.svg" alt="" srcset="">
 
                 <a href="index.html" class="myName">diana dóris</a>
+            </div>
+            <!-- ------------ -->
+            <!-- HEADER right MEDIA QUERIE-->
+            <!-- ------------ -->
+            <div class="headerMenuQuerie hiddenMenuQ">
+                <a class="headerLinkPortfolio" href="#">lecture</a>
+                <a class="headerLinkCurriculumVitae" href="#">cv</a>
+                <div class="headerContactsQuerie">
+                    <button class="btnDropdownContacts">contacts</button>
+                    <div class="allContactsHeaderQuerie hidden">
+                        <p class="contactMailQ">diana.doris@gmail.com</p>
+                        <a class="jewelryDesignBrandQ" href="#">dianadoris.com</a>
+                        <a class="contactHeaderLinkedinQ" href="#">linkedin</a>
+                        <a class="contactHeaderGithubQ" href="#">github</a>
+                    </div>
+                </div>
             </div>
             <!-- ------------ -->
             <!-- HEADER right -->
@@ -75,6 +90,7 @@
                 </div>
             </div>
         </div>
+
     </header>
     <!-- ----------------- -->
     <!-- SITE-PRESENTATION -->
@@ -86,7 +102,7 @@
         <!-- ------ -->
         <!-- BANNER -->
         <!-- ------------------- -->
-        <div class="sitePresentation-SlideshowContainer grid grid--3-cols">
+        <div class="sitePresentation-SlideshowContainer grid grid--3-colsSitePresentation">
             <!-- COL 01 -->
             <!-- ------ -->
             <div class="slideItem-01Template grid grid--2cols--3rows-briefing">
@@ -172,7 +188,7 @@
                     <p class="paragraph-2">lecture project proposal follows along all theorical matters<br>UI tools were
                         also
                         provided for future UI development<br>group
-                        project: Ção Sampaio, Diana Dóris and Sofia
+                        project: Ção Sampaio, Diana Dóris, Sofia
                         Flores | 200h course</p>
                 </div>
             </div>
@@ -186,7 +202,7 @@
         <!-- ---------------------------------- -->
         <section class="uxMethodology">
 
-            <div class="uxMethodology-empathize grid grid--2-cols">
+            <div class="uxMethodology-empathize grid grid--2-colsUxMethodology">
 
                 <!-- COL 01 -->
                 <div class="empathize-col-left">
@@ -219,7 +235,7 @@
 
                     </div>
 
-                    <div class="visionStatementText-answer">
+                    <div class="visionStatementText-answer querie">
                         <p>Problem Statement_ and the five "W's"</p>
                         <p>We'll built [product] an online educational platform for <span class="txtColor">[who]</span>
                             student's who's goal is <span class="txtColor">[what]</span>
@@ -235,66 +251,54 @@
 
                     </div>
                 </div>
-
+                <div class="empathizeEmptyRowProblemStatement">
+                    <p>Problem Statement_ and the five "W's"</p>
+                    <p>We'll built [product] an online educational platform for <span class="txtColor">[who]</span>
+                        student's who's goal is <span class="txtColor">[what]</span>
+                        to
+                        obtain
+                        knowledge in an artistic areas, <span class="txtColor">[where/ when]</span> in the moment
+                        they consider most convenient.
+                    </p>
+                    <p>We believe we will succeed because <span class="txtColor">[why]</span> :
+                    </p>
+                    <p>The courses in which student's invest will always be available so students can take the
+                        course at any time of the day; the platform will be diverse and organized.</p>
+                </div>
                 <!-- COL 02 -->
                 <div class="empathize-col-right">
 
-
-
-                    <div class="empathize-userImg-questions">
+                    <div class="empathize-userImg-questions querie">
                         <div class="circleEmpathize"><img class="drawingSize" src="img/ux/userOnLaptop-blue.svg" alt=""
                                 srcset="">
                         </div>
                     </div>
 
-                    <div class="empathize-userQuestions grid grid--8-rowsEmpathize">
-
-                        <div class="empathizeQMark grid grid--2-colsQMark">
-                            <div>
-                                <p style="background-color: #fff;">what user's needs are still not fullfilled</p>
-                            </div>
-                            <div><ion-icon class="txtMark" name="help-outline"></ion-icon>
-                            </div>
-                        </div>
-
-
-                        <div class="empathizeQMark grid grid--2-colsQMark">
-                            <div>
-                                <p style="background-color: #fff">what can bring more value to our users</p>
-                            </div>
-                            <div>
-                                <ion-icon class="txtMark" name="help-outline"></ion-icon>
-                            </div>
-                        </div>
-
-                        <div class="empathizeQMark grid grid--2-colsQMark">
-                            <div>
-                                <p style="background-color: #fff">what can be a differentiated
-                                    factor for our client as well</p>
-                            </div>
-                            <div><ion-icon class="txtMark" name="help-outline"></ion-icon></div>
+                    <div class="empathize-userQuestions grid grid--3-rowsEmpathize">
+                        <!-- ROW 01 EMPTY -->
+                        <div class="empathizeEmptyRow">
+                            <div class="circleEmpathize"><img class="drawingSize" src="img/ux/userOnLaptop-blue.svg"
+                                    alt="" srcset=""></div>
+                        </div </div>
+                        <div class="empathizeAllQ ">
+                            <p class="empathizeQ01">what user's needs are still not
+                                fullfilled<span class="qMark">?</span></p>
+                            <p class="empathizeQ02">what can bring more value to our users<span class="qMark">?</span>
+                            </p>
+                            <p class="empathizeQ03">what can be a differentiated
+                                factor for our client as well<span class="qMark">?</span>
+                            </p>
                         </div>
 
                         <div class="empathizeProcess">
-                            <p style="background-color: #FCDC4A;">personas | user research</p>
-                        </div>
-                        <div class="empathizeProcess">
-                            <ion-icon class="arrowTxtBlue" name="chevron-down-outline"></ion-icon>
-                        </div>
-                        <div class="empathizeProcess">
+                            <p style="background-color: #FCDC4A">personas | user research</p>
+                            <ion-icon class="arrowBlueEmpathize" name="chevron-down-outline"></ion-icon>
                             <p style="background-color: #FCDC4A">interviews | competition analyses</p>
+                            <ion-icon class="arrowBlueEmpathize" name="chevron-down-outline"></ion-icon>
+                            <p style="background-color: #FCDC4A">findings | opportunities</p>
                         </div>
 
-                        <div class="empathizeProcess">
-                            <ion-icon class="arrowTxtBlue" name="chevron-down-outline"></ion-icon>
-                        </div>
-
-                        <div class="empathizeProcess">
-                            <p style="background-color: #FCDC4A">findings | opportunities </p>
-                        </div>
                     </div>
-
-                </div>
         </section>
 
         <!-- ------------------------------------------- -->
@@ -453,14 +457,14 @@
                     <p>guidelines | questions | answers |analyses</p>
                 </div>
                 <div class="interviewSubTitles">
-                    <p style="margin-bottom: 1.6rem;">
+                    <p>
                         in order to deepen our investigation, we chose the interview method as research.
                     </p>
-                    <p style="margin-bottom: 1.6rem;">the main goal of our interviews is to understans how the process
+                    <p>the main goal of our interviews is to understans how the process
                         of choosing a course works -
                         what are the criteria used by our users. understans their experience in inline learning</p>
-                    <p style="margin-bottom: 1.6rem;">what kind of courses can lead to a better job</p>
-                    <p style="margin-bottom: 1.6rem;"><span class="txtTarget" style="background-color: #FCDC4A;">we try
+                    <p>what kind of courses can lead to a better job</p>
+                    <p><span class="txtTarget" style="background-color: #FCDC4A;">we try
                             to investigate what the
                             competitors have to offer and if they respond to our users needs -
                             users/ personas we have in mind</span>
@@ -476,7 +480,7 @@
                 <div class="interviewGuideLeft">
 
 
-                    <div class="grid grid--2-cols">
+                    <div class="grid grid--2-colsQA">
                         <!-- interview-guide-left - COL-LEFT -->
                         <div class="interviewGuideQuestions">
 
@@ -498,7 +502,7 @@
                                 <img class="interviewDrawingMic"
                                     src="img/ux/01_EMPATHIZE/interview-notes-mic-whiteFill.svg" alt="" srcset="">
                             </div>
-                            <div>
+                            <div class="QALettersContainer">
                                 <p class="QALetters">Q&A
                                 </p>
                             </div>
@@ -512,7 +516,7 @@
                 <!-- INTERVIEW FINDINGS - RIGHT -->
                 <div class="interviewGuideRight">
 
-                    <div class="interviewAnswers grid grid--3-cols">
+                    <div class="interviewAnswers grid grid--3-colsQA">
 
                         <div class="interviewAnswers-col01">
                             <img class="interviewDrawing"
@@ -520,7 +524,7 @@
 
                             <p>"increase knowledge to apply at work"</p>
 
-                            <p>"possibility of just taking some course modules to meet short term needs"</p>
+                            <p class="">"possibility of just taking some course modules to meet short term needs"</p>
                         </div>
 
                         <div class="interviewAnswers-col02">
@@ -896,85 +900,6 @@
                                     </div>
                                 </section>
                             </div>
-
-                        </div>
-                        <!-- RIGHT -->
-                        <!-- ----- -->
-                        <div class="competitorsAnalyses-columnRight">
-
-                            <div class="table">
-                                <div class="competitorsLogoPlaceholder">
-                                    <img class="logos" src="img/logos/logoUdemy120x34.svg" alt="" srcset="">
-                                    <img class="logos" src="img/logos/logoCoursera120x34.svg" alt="" srcset="">
-                                    <img class="logos" src="img/logos/logoDomestika120x34.svg" alt="" srcset="">
-                                </div>
-
-                                <button class="btnDropdown">strengths</button>
-                                <div class="analysesContent hidden">
-                                    <div class="grid grid--3-cols">
-                                        <p name="udemy" class="responseTxt">You will continue to have access to the
-                                            course
-                                            after you
-                                            complete it, as long as your
-                                            account
-                                            is in good standing and Udemy continues to hold a license for the
-                                            course.</p>
-                                        <p name="coursera" class="responseTxt middleText">Coursera lets you learn
-                                            from the
-                                            best universities
-                                            in the world, and its certificates are often more valuable because they
-                                            are
-                                            offered by the best
-                                            universities; Free courses.</p>
-                                        <p name="domestika" class="responseTxt">Various discounts; gift vouchers;
-                                            course
-                                            packs;
-
-                                            certificates with QR code for projects; personalized and unique
-                                            certificates;
-                                            intuitive and
-                                            easy-to-search website</p>
-                                    </div>
-                                </div>
-
-                                <button class="btnDropdown">weaknesses</button>
-                                <div class="analysesContent hidden">
-                                    <div class="grid grid--3-cols">
-                                        <p name="udemy" class="responseTxt">Certificates on Udemy are not legally
-                                            valid.</p>
-                                        <p name="coursera" class="responseTxt middleText">There is no Wishlist; You
-                                            have to
-                                            subscribe and
-                                            pay monthly; There are no subtitles or audio in Portuguese.</p>
-                                        <p name="domestika" class="responseTxt">There is no return policy, it is
-                                            difficult
-                                            to receive a
-                                            refund for the course.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <button class="btnDropdown">opportunities</button>
-                                <div class="analysesContent hidden">
-                                    <div class="grid grid--3-cols">
-                                        <p name="udemy" class="responseTxt">Official Certificates</p>
-                                        <p name="coursera" class="responseTxt middleText">Create favorite pages +
-                                            Make
-                                            payments through a
-                                            checkout when adding to the shopping cart. Offer discount vouchers.
-                                            Greater
-                                            usability for the
-                                            user.
-                                        </p>
-                                        <p name="domestika" class="responseTxt">Personalized Feedback with Good
-                                            Customer
-                                            Service</p>
-                                    </div>
-                                </div>
-
-
-                            </div>
-
                         </div>
                     </section>
 
