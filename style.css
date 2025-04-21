@@ -21,8 +21,8 @@ body {
     color: #111;
     overflow-x: hidden;
     max-width: 120rem;
-    padding-right: 8.4rem;
-    padding-left: 8.4rem;
+    padding-right: 8rem;
+    padding-left: 8rem;
     margin: auto;
     background-color: white;
 }
@@ -644,9 +644,14 @@ footer {
 }
 
 
-/* SLIDER 03 */
+.grid--3-colsSitePresentationQuerie {
+    display: none;
+}
+
+
 .slideItem-03Template {
     background-color: rgba(201, 200, 216, 0.2);
+
 }
 
 /* row-1 right */
@@ -708,6 +713,7 @@ footer {
 /* LECTURE DEVELOPMENT - 01-EMPATHIZE */
 /* ********************************** */
 .uxMethodology {
+    min-height: 44em;
     margin-bottom: 12rem;
 }
 
@@ -844,7 +850,6 @@ footer {
     justify-self: right;
 }
 
-
 .circleEmpathize {
     height: 20rem;
     width: 20rem;
@@ -923,6 +928,10 @@ footer {
     font-size: 1.6rem;
     font-weight: 400;
     margin-bottom: 0.8rem;
+}
+
+.targetAudience {
+    margin-bottom: 1.6rem;
 }
 
 .targetAudience p {
@@ -1131,23 +1140,34 @@ footer {
     margin-bottom: 3.6rem;
 }
 
+.grid--2-colsCompetition {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2.4rem;
+}
 
 .competition {
-    display: flex;
-
     margin-bottom: 12rem;
 }
 
+/*
 .competitorsAnalyses-columnRight,
-.competitorsAnalyses-columnLeft {
-    width: 33%;
-}
-
+.competitorsAnalyses-columnLeft {}
+*/
 .competitorsLogoPlaceholder {
     height: 4rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+.competitorsLogoPlaceholderTable {
+    height: 4rem;
+    align-items: center;
+
+}
+
+.logosTable {
+    height: 2rem;
 }
 
 .logos {
@@ -1212,13 +1232,15 @@ footer {
 }
 
 .iconStar {
-    color: #555;
+    color: #f4c804;
+
 }
 
 .comparisonsTitle {
     height: 2.4em;
     border-bottom: 0.5px dashed #999;
     align-items: center;
+    justify-content: center;
 }
 
 .grid--4-cols05fr1fr {
@@ -1351,6 +1373,15 @@ footer {
 .roundMargaridaPlaceholder {
     align-self: self-end;
     justify-self: center;
+}
+
+.aboutInsideCircle p {
+    margin-bottom: 0.4rem;
+}
+
+.personaNameCircle {
+    font-size: 1.2rem;
+    font-weight: 400;
 }
 
 .personaTxtCircle,
@@ -1555,6 +1586,31 @@ footer {
     background-color: rgba(201, 200, 216, 0.1);
     border-radius: 0 0 1.6rem 1.6rem;
     padding-bottom: 2.4rem;
+}
+
+.opportPostItNew p,
+.opportPostItSelected p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.opportPostItNew,
+.opportPostItSelected {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8rem;
+    height: 10rem;
+    width: 10rem;
+    box-shadow: 0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.25);
+
+}
+
+.opportPostItNew {
+    background-color: rgba(201, 200, 216, 0.5);
+}
+
+.opportPostItSelected {
+    background-color: rgba(191, 189, 208, 1);
 }
 
 .opportunitiesPostIt-col-1,
@@ -2181,4 +2237,37 @@ footer {
 .uxStepDefine {
     display: flex;
     align-items: center;
+}
+
+/* **************************** */
+/* comparisons table experiment */
+/* **************************** */
+
+.competitorsComparisonsTable {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 50%;
+}
+
+.grid--4-colsLogos {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid--4-cols {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+.logosSmall {
+    height: 1rem;
+
+}
+
+/* logos */
+.comparisonsTableHeader {
+
+    justify-self: center;
+}
+
+.comparisonsTitle p {
+    justify-self: center;
 }

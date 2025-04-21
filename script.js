@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // Get the button and the dropdown content
-
+/*
 document.addEventListener("DOMContentLoaded", function () {
     const btnDropdownComparisons = document.querySelector('.btnDropdownComparisons');
     const analysesContentComparisons = document.querySelector('.analysesContentComparisons');
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
-
+*/
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
 

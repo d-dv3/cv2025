@@ -1,4 +1,47 @@
-@media (max-width: 52rem) {
+/* max width 1040px - medium tablet */
+@media (max-width: 65rem) {
+    body {
+        padding-right: 7.2rem;
+        padding-left: 7.2rem;
+    }
+
+    /* cv page */
+    .grid--2-cols--2-rows-cv {
+
+        grid-template-rows: 3.6rem 4.8rem;
+
+    }
+
+    .drawingSize,
+    .photoAbout img {
+        height: 8rem;
+    }
+
+    .opportPostIt {
+        height: 10rem;
+    }
+}
+
+/* max width 992px - medium tablet */
+@media (max-width: 62rem) {
+    body {
+        padding-right: 6.4rem;
+        padding-left: 6.4rem;
+
+    }
+}
+
+
+
+/* max width 944px - medium tablet */
+@media (max-width: 59rem) {
+    body {
+        padding-right: 5.6rem;
+        padding-left: 5.6rem;
+
+    }
+
+    /*
     .headerMainLeft {
         display: grid;
         grid-template-rows: 2;
@@ -12,12 +55,14 @@
     .myName {
         grid-template-rows: 2;
     }
-
+*/
     /* HEADER right */
     /*
     .headerMainRight {
         margin-left: 20%;
     }*/
+
+    /*
     .headerMainRight {
         display: none;
     }
@@ -25,7 +70,7 @@
     .hiddenMenuQ {
         display: block;
     }
-
+*/
 
     /*
     .cvTitleAttach,
@@ -56,6 +101,10 @@
         grid-column: span 2;
         grid-row: 2;
         padding-top: 2.4rem;
+    }
+
+    .landingLogos {
+        margin-top: 0.8em;
     }
 
     .portfolioPresentation {
@@ -142,12 +191,6 @@
     }
 
     /***********************/
-
-
-
-    /*****************/
-    /*****************/
-    /*****************/
 
     .softwareSkillsLevel,
     .grid--3-cols--4-rows-sk {
@@ -266,6 +309,10 @@
         grid-column: span 2;
     }
 
+}
+
+/* max width 912px - tablet */
+@media (max-width: 57rem) {
 
     /* ************************* */
     /* LECTURE SITE-PRESENTATION */
@@ -279,10 +326,33 @@
     }
 
     .grid--3-colsSitePresentation {
-        grid-template-columns: 1;
-        grid-template-rows: 30rem 30rem 30rem;
-        row-gap: 1.6rem;
+        grid-template-columns: 1fr 2fr;
     }
+
+    .briefingTxt {
+
+        display: flex;
+        align-items: end;
+    }
+
+
+    .grid--3-colsSitePresentationQuerie {
+        display: block;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 1.6em;
+    }
+
+    .slideItem-03TemplateSmallQ {
+        display: none;
+    }
+
+
+    /*
+    .grid--3-colsSitePresentation {
+        grid-template-columns: 1;
+        grid-template-rows: 3;
+        row-gap: 1.6rem;
+    }*/
 
     .slideItem-01Template {
         grid-column: 1;
@@ -290,8 +360,14 @@
     }
 
     .slideItem-02Template {
-        grid-column: 1;
-        grid-row: 2;
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .slideEmptyGrey-briefingUx01 {
+        display: block;
+        grid-column: 3;
+        grid-row: 1;
     }
 
     .grid--3rows-briefingUx,
@@ -311,9 +387,10 @@
     }
 
     .slideItem-03Template {
-        grid-column: 1;
-        grid-row: 3;
+        grid-column: 2;
+
     }
+
 
     .hexagonsGroup img {
         height: 10rem;
@@ -336,13 +413,237 @@
         font-size: 1.4rem;
     }
 
-    .navCsSubtitle-2-Header {
+    /* ********************** */
+    /* LECTURE - 01-EMPATHIZE */
+    /* ********************** */
+    .uxMethodology {
+        margin-bottom: 4.8rem;
+    }
+
+    .uxMethodology-empathize {
+        padding: 0;
+        background-color: #fff;
+    }
+
+    .grid--2-colsUxMethodology {
+        grid-template-columns: 1;
+        grid-template-rows: 44rem 44rem 44rem;
+        row-gap: 1.6rem;
+    }
+
+    .empathize-col-left {
+        grid-column: 1;
+        grid-row: 1;
+        background-color: rgba(201, 200, 216, 0.2);
+        padding-left: 0.8rem
+    }
+
+    .visionStatementText-answer {
+        grid-column: 1;
+        grid-row: 2;
+
+    }
+
+    .empathizeProcess,
+    .empathizeAllQ,
+    .empathizeEmptyRowProblemStatement {
+        padding-left: 0.8rem;
+        padding-top: 0.8rem;
+    }
+
+
+    .empathize-col-right {
+        grid-column: 1;
+        grid-row: 3;
+        background-color: rgba(201, 200, 216, 0.2)
+    }
+
+    .hexagon-title {
+        margin-bottom: 1.6rem;
+    }
+
+    .visionStatementText-answer p,
+    .visionStatementText-question p {
+        margin-bottom: 0.8rem;
+    }
+
+    /* EMPATHIZE col-02 */
+    /* **************** */
+
+    .querie {
+        display: none;
+    }
+
+    .empathizeEmptyRowProblemStatement {
+        display: block;
+        grid-row: 2;
+        background-color: rgba(201, 200, 216, 0.2);
+        font-size: 1.2rem;
+        line-height: 1.2;
+    }
+
+    /*
+    .empathize-userImg-questions {
+        grid-column: 1;
+        justify-content: center;
+    }
+*/
+    .empathizeEmptyRow {
+        display: block;
+        grid-row: 1;
+        justify-self: center;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+    }
+
+    .empathizeAllQ {
+        grid-row: 2;
+        margin-left: 0;
+    }
+
+    .empathizeQ01,
+    .empathizeQ02,
+    .empathizeQ03 {
+        line-height: 1;
+        margin-bottom: 0.8rem;
+    }
+
+    .empathizeProcess {
+        grid-row: 3;
+        justify-self: center;
+    }
+
+    .arrowBlueEmpathize {
+        justify-self: center;
+    }
+
+
+
+    /* CONTENT SELECTION - BUILDING PROTO PERSONAS */
+
+    .protoPersonasContentSelection {
+        margin-bottom: 4.8rem;
+    }
+
+
+    .contentProtoPersonas {
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: 30rem 30rem;
+        row-gap: 8rem;
+
+    }
+
+    .contentProtoPersonas-left {
+        grid-column: 1;
+        grid-row: 1;
+        min-width: 30rem;
+    }
+
+    .contentProtoPersonas-right {
+        grid-column: 1;
+        grid-row: 2;
+        min-width: 30rem;
+    }
+
+    /* *************** */
+    /* INTERVIEW GUIDE */
+    /* *************** */
+    .interviewTitles {
+        font-size: 1.4rem;
+        line-height: 1.2;
+    }
+
+    .interviewSubTitles {
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .interviewSubTitles p {
+        margin-bottom: 0.8rem;
+    }
+
+    .grid--2-colsInterview {
+        grid-template-columns: 1;
+        grid-template-rows: 2;
+    }
+
+    .interviewGuideRight,
+    .interviewGuideLeft {
+        /* padding-left: 0.8rem;*/
+        padding-top: 0.8rem;
+        background-color: rgba(201, 200, 216, 0.2);
+        border-radius: 2.4rem;
+        margin-bottom: 1.6rem;
+    }
+
+    .interviewGuideLeft {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .interviewGuideRight {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .grid--2-colsQA {
+        grid-template-columns: 1;
+        grid-template-rows: 2;
+    }
+
+    .QALettersContainer {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .interviewGuideQuestions {
+        grid-column: 1;
+        grid-row: 2;
+
+    }
+
+    /*
+    .Q-A {
+         justify-self: center;
+    }*/
+
+    .grid--3-colsQA {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2;
+    }
+
+    .gridInterviewQuerie {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .interviewAnswers-col01 p,
+    .interviewAnswers-col02 p,
+    .interviewAnswers-col03 p {
+        font-size: 1rem;
+        padding-bottom: 0.8rem;
+    }
+
+    /* *************** */
+    /* COMPETITORS ANALYSES */
+    /* *************** */
+
+    .competition {
+        display: flex;
+        justify-content: left;
+        margin-bottom: 2.4rem;
+    }
+
+    .competitorsAnalyses-columnLeft {
+        width: 100%;
+    }
+
+        {
         font-size: 1.1rem;
         line-height: 1.2;
 
     }
-
-
 
     /* ********************** */
     /* LECTURE - 01-EMPATHIZE */
@@ -365,14 +666,22 @@
     .empathize-col-left {
         grid-column: 1;
         grid-row: 1;
-        background-color: rgba(201, 200, 216, 0.2)
+        background-color: rgba(201, 200, 216, 0.2);
+        padding-left: 0.8rem
     }
 
     .visionStatementText-answer {
         grid-column: 1;
         grid-row: 2;
+
     }
 
+    .empathizeProcess,
+    .empathizeAllQ,
+    .empathizeEmptyRowProblemStatement {
+        padding-left: 0.8rem;
+        padding-top: 0.8rem;
+    }
 
 
     .empathize-col-right {
@@ -392,6 +701,7 @@
 
     /* EMPATHIZE col-02 */
     /* **************** */
+
     .querie {
         display: none;
     }
@@ -443,17 +753,19 @@
 
 
 
-    */
+
     /* CONTENT SELECTION - BUILDING PROTO PERSONAS */
 
-
+    .protoPersonasContentSelection {
+        margin-bottom: 4.8rem;
+    }
 
 
     .contentProtoPersonas {
         display: grid;
         grid-template-columns: 1;
         grid-template-rows: 30rem 30rem;
-        row-gap: 2.4rem;
+        row-gap: 8rem;
 
     }
 
@@ -493,7 +805,7 @@
 
     .interviewGuideRight,
     .interviewGuideLeft {
-        padding-left: 0.8rem;
+        /* padding-left: 0.8rem;*/
         padding-top: 0.8rem;
         background-color: rgba(201, 200, 216, 0.2);
         border-radius: 2.4rem;
@@ -523,10 +835,22 @@
     .interviewGuideQuestions {
         grid-column: 1;
         grid-row: 2;
+
     }
+
+    /*
+    .Q-A {
+         justify-self: center;
+    }*/
 
     .grid--3-colsQA {
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2;
+    }
+
+    .gridInterviewQuerie {
+        grid-column: 2;
+        grid-row: 2;
     }
 
     .interviewAnswers-col01 p,
@@ -549,11 +873,17 @@
     .competitorsAnalyses-columnLeft {
         width: 100%;
     }
+}
 
 
+/* max width 768px - medium tablet */
+@media (max-width: 48rem) {
+    .headerMainLeft {
+        display: grid;
+        grid-template-rows: 2;
+    }
 
-
-
-
-
+    .myName {
+        margin-top: 0.8rem;
+    }
 }
