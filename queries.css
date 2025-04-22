@@ -7,9 +7,7 @@
 
     /* cv page */
     .grid--2-cols--2-rows-cv {
-
         grid-template-rows: 3.6rem 4.8rem;
-
     }
 
     .drawingSize,
@@ -31,8 +29,6 @@
     }
 }
 
-
-
 /* max width 944px - medium tablet */
 @media (max-width: 59rem) {
     body {
@@ -41,55 +37,7 @@
 
     }
 
-    /*
-    .headerMainLeft {
-        display: grid;
-        grid-template-rows: 2;
-    }
-
-    .logoDd {
-        grid-template-rows: 1;
-        margin-bottom: 1.6rem;
-    }
-
-    .myName {
-        grid-template-rows: 2;
-    }
-*/
-    /* HEADER right */
-    /*
-    .headerMainRight {
-        margin-left: 20%;
-    }*/
-
-    /*
-    .headerMainRight {
-        display: none;
-    }
-
-    .hiddenMenuQ {
-        display: block;
-    }
-*/
-
-    /*
-    .cvTitleAttach,
-    .contactsHeader {
-        display: none;
-    }
-
-    .contactLinksTop {
-        border-top: none;
-    }
-
-    .linkCvPlaceholder {
-        display: flex;
-    }
-
-    .headerLinkCurriculumVitae {
-        align-self: flex-end;
-    }
-*/
+    /* PREVIOUS MENU QUERIE*/
 
     /* CV PRESENTATION */
     .mePhoto {
@@ -97,14 +45,19 @@
     }
 
     .cvHelloText {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         grid-column: span 2;
         grid-row: 2;
         padding-top: 2.4rem;
     }
 
-    .landingLogos {
+    .landingLogosF,
+    .landingLogosE {
         margin-top: 0.8em;
+    }
+
+    .landingLogosE {
+        padding-left: 0;
     }
 
     .portfolioPresentation {
@@ -314,14 +267,31 @@
 /* max width 912px - tablet */
 @media (max-width: 57rem) {
 
+    /* ***************************** */
+    /* INDEX PAGE - CURRICULUM VITAE */
+    /* ***************************** */
+
+    .grid--2-colsHeaderMain {
+        grid-template-columns: 1fr 2fr;
+    }
+
     /* ************************* */
     /* LECTURE SITE-PRESENTATION */
     /* ************************* */
+    .querie {
+        display: none;
+    }
+
+    .grid {
+        display: grid;
+    }
+
     .sitePresentation {
         margin-bottom: 4.8rem;
     }
 
-    .sitePresentation-SlideshowContainer {
+    .sitePresentationContainer {
+        min-height: 30rem;
         margin-bottom: 2.4rem;
     }
 
@@ -329,226 +299,166 @@
         grid-template-columns: 1fr 2fr;
     }
 
-    .briefingTxt {
-
-        display: flex;
-        align-items: end;
-    }
-
-
-    .grid--3-colsSitePresentationQuerie {
-        display: block;
-        grid-template-columns: repeat(3, 1fr);
-        margin-top: 1.6em;
-    }
-
-    .slideItem-03TemplateSmallQ {
-        display: none;
-    }
-
-
-    /*
-    .grid--3-colsSitePresentation {
-        grid-template-columns: 1;
-        grid-template-rows: 3;
-        row-gap: 1.6rem;
-    }*/
-
-    .slideItem-01Template {
+    .templatePresentation01 {
+        min-height: 30rem;
         grid-column: 1;
         grid-row: 1;
     }
 
-    .slideItem-02Template {
+    .templatePresentation02 {
         grid-column: 2;
         grid-row: 1;
-    }
-
-    .slideEmptyGrey-briefingUx01 {
-        display: block;
-        grid-column: 3;
-        grid-row: 1;
-    }
-
-    .grid--3rows-briefingUx,
-    .grid--3rows-briefingSmallText {
-        grid-template-rows: 0.7fr 1.3fr;
-    }
-
-    .lectureTitlePlaceholder {
-        grid-row: 1;
-        align-items: end;
+        padding-right: 1.6rem;
     }
 
     .briefingTxt {
+        grid-row: 3;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0.8rem;
+    }
+
+    /* ************************ */
+    /* new row for media querie */
+    .templatePresentation03NewRow {
+        min-height: 30rem;
+        background-color: rgba(201, 200, 216, 0.2);
+    }
+
+    .grid--2-colsNewPresentationRow {
+        grid-template-columns: 2fr 1fr;
+        max-height: 30rem;
+    }
+
+    .uxTitle-subtitleNewRow01 {
+        grid-column: 1;
+        min-height: 30rem;
+        padding-left: 1.6rem;
+    }
+
+    .grid--3-rowsNewRow {
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .uxTitlePlaceholderNewRow {
         grid-row: 2;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .slideItem-03Template {
-        grid-column: 2;
-
-    }
-
-
-    .hexagonsGroup img {
-        height: 10rem;
-    }
-
-    .hexagonsGroup {
         display: flex;
-        justify-content: center;
+        align-items: end;
     }
 
-    .briefingHexagonsSubtitles {
-        padding-top: 0.4rem;
+    .uxSubtitlesNewRow {
+        grid-row: 3;
     }
 
-    .caseStudySubTitleHeader {
-        align-items: center;
+    .uxTitle-subtitleNewRow03 {
+        grid-column: 2;
+        min-height: 30rem;
     }
 
-    .navCsSubtitle-1-Header {
-        font-size: 1.4rem;
+    /*
+    .hexagonsGroupNewRow {}*/
+
+    .hexagonsGroupNewRow img {
+        padding-top: 1.6rem;
+        height: 12rem;
     }
+
+    .hexagonsGroupSubtitlesNewRow {
+        grid-row: 2;
+        font-family: 1rem;
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        font-size: 0.8rem;
+        line-height: 1.2;
+        padding-right: 1.6rem;
+        font-family: 1rem;
+    }
+
+
 
     /* ********************** */
     /* LECTURE - 01-EMPATHIZE */
     /* ********************** */
     .uxMethodology {
-        margin-bottom: 4.8rem;
+        margin-bottom: 7.2rem;
     }
 
-    .uxMethodology-empathize {
-        padding: 0;
-        background-color: #fff;
-    }
 
-    .grid--2-colsUxMethodology {
-        grid-template-columns: 1;
-        grid-template-rows: 44rem 44rem 44rem;
-        row-gap: 1.6rem;
-    }
 
+    /* col-01 left */
+    /* **************** */
     .empathize-col-left {
+        height: 44rem;
         grid-column: 1;
-        grid-row: 1;
-        background-color: rgba(201, 200, 216, 0.2);
-        padding-left: 0.8rem
-    }
+        padding-left: 1.6rem;
+        padding-top: 1.6rem;
 
-    .visionStatementText-answer {
-        grid-column: 1;
-        grid-row: 2;
-
-    }
-
-    .empathizeProcess,
-    .empathizeAllQ,
-    .empathizeEmptyRowProblemStatement {
-        padding-left: 0.8rem;
-        padding-top: 0.8rem;
-    }
-
-
-    .empathize-col-right {
-        grid-column: 1;
-        grid-row: 3;
-        background-color: rgba(201, 200, 216, 0.2)
     }
 
     .hexagon-title {
         margin-bottom: 1.6rem;
     }
 
-    .visionStatementText-answer p,
-    .visionStatementText-question p {
+    .empathize-questions02 p,
+    .empathize-questions01 p {
         margin-bottom: 0.8rem;
+
     }
 
-    /* EMPATHIZE col-02 */
+
+
+    /* col-02 right */
     /* **************** */
-
-    .querie {
-        display: none;
+    .empathize-col-right {
+        height: 44rem;
+        padding-right: 1.6rem;
+        padding-bottom: 1.6rem;
     }
 
-    .empathizeEmptyRowProblemStatement {
-        display: block;
-        grid-row: 2;
-        background-color: rgba(201, 200, 216, 0.2);
-        font-size: 1.2rem;
-        line-height: 1.2;
-    }
-
-    /*
-    .empathize-userImg-questions {
-        grid-column: 1;
+    /* row-01 */
+    .empathizeUserRow {
+        grid-row: 1;
         justify-content: center;
     }
-*/
-    .empathizeEmptyRow {
-        display: block;
-        grid-row: 1;
-        justify-self: center;
-        padding-top: 0.8rem;
-        padding-bottom: 0.8rem;
-    }
 
-    .empathizeAllQ {
-        grid-row: 2;
-        margin-left: 0;
-    }
+    /* row-02 */
+    /* row-03 */
 
-    .empathizeQ01,
-    .empathizeQ02,
-    .empathizeQ03 {
-        line-height: 1;
-        margin-bottom: 0.8rem;
-    }
-
-    .empathizeProcess {
-        grid-row: 3;
-        justify-self: center;
-    }
-
-    .arrowBlueEmpathize {
-        justify-self: center;
-    }
 
 
 
     /* CONTENT SELECTION - BUILDING PROTO PERSONAS */
-
     .protoPersonasContentSelection {
-        margin-bottom: 4.8rem;
+        margin-bottom: 7.2rem;
     }
+
+    .protoPersonasContentSelectionTitles {
+        font-size: 1.4rem;
+    }
+
+    .txtTarget {
+        font-weight: 300;
+    }
+
 
 
     .contentProtoPersonas {
-        display: grid;
-        grid-template-columns: 1;
-        grid-template-rows: 30rem 30rem;
-        row-gap: 8rem;
 
+        justify-content: space-between;
     }
 
-    .contentProtoPersonas-left {
-        grid-column: 1;
-        grid-row: 1;
-        min-width: 30rem;
-    }
 
-    .contentProtoPersonas-right {
-        grid-column: 1;
-        grid-row: 2;
-        min-width: 30rem;
-    }
-
-    /* *************** */
     /* INTERVIEW GUIDE */
     /* *************** */
+    .researchStrategy {
+        margin-bottom: 2.4rem;
+    }
+
+    .researchStrategyTitles {
+        margin-bottom: 4rem;
+    }
+
     .interviewTitles {
         font-size: 1.4rem;
         line-height: 1.2;
@@ -563,321 +473,193 @@
         margin-bottom: 0.8rem;
     }
 
+    /**/
+    .interviewGuide {
+        margin-bottom: 2.4rem;
+    }
+
     .grid--2-colsInterview {
-        grid-template-columns: 1;
-        grid-template-rows: 2;
+        grid-template-columns: 1fr 3fr;
+        gap: 1.6rem;
+    }
+
+    /* col-01 left*/
+    .interviewGuideLeft {
+        grid-column: 1;
     }
 
     .interviewGuideRight,
     .interviewGuideLeft {
-        /* padding-left: 0.8rem;*/
         padding-top: 0.8rem;
-        background-color: rgba(201, 200, 216, 0.2);
-        border-radius: 2.4rem;
         margin-bottom: 1.6rem;
     }
 
-    .interviewGuideLeft {
-        grid-column: 1;
-        grid-row: 1;
-    }
-
-    .interviewGuideRight {
-        grid-column: 1;
-        grid-row: 2;
-    }
-
+    /**/
     .grid--2-colsQA {
-        grid-template-columns: 1;
-        grid-template-rows: 2;
-    }
 
-    .QALettersContainer {
-        grid-column: 1;
-        grid-row: 1;
+        display: flex;
+        align-items: center;
     }
 
     .interviewGuideQuestions {
-        grid-column: 1;
-        grid-row: 2;
-
+        margin-top: 3.2rem;
     }
 
-    /*
-    .Q-A {
-         justify-self: center;
-    }*/
+    /* col-02 right*/
+
+    .interviewGuideRight {
+        grid-column: 2;
+    }
 
     .grid--3-colsQA {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 2;
     }
 
-    .gridInterviewQuerie {
-        grid-column: 2;
-        grid-row: 2;
+    .interviewAnswers-col02 {
+        align-self: end;
     }
 
-    .interviewAnswers-col01 p,
-    .interviewAnswers-col02 p,
-    .interviewAnswers-col03 p {
-        font-size: 1rem;
-        padding-bottom: 0.8rem;
-    }
+
 
     /* *************** */
     /* COMPETITORS ANALYSES */
     /* *************** */
-
-    .competition {
-        display: flex;
-        justify-content: left;
+    .competitorsAnalysesSection {
         margin-bottom: 2.4rem;
     }
 
+    .competition {
+        margin-bottom: 2.4rem;
+    }
+
+    .competition {
+        margin-bottom: 2.4rem;
+    }
+
+    /**/
+    .grid--2-colsCompetition {
+        grid-template-columns: 0.5fr 1fr 0.5fr;
+        grid-template-rows: 2;
+        column-gap: 0;
+        row-gap: 2.4rem;
+    }
+
     .competitorsAnalyses-columnLeft {
-        width: 100%;
-    }
-
-        {
-        font-size: 1.1rem;
-        line-height: 1.2;
-
-    }
-
-    /* ********************** */
-    /* LECTURE - 01-EMPATHIZE */
-    /* ********************** */
-    .uxMethodology {
-        margin-bottom: 4.8rem;
-    }
-
-    .uxMethodology-empathize {
-        padding: 0;
-        background-color: #fff;
-    }
-
-    .grid--2-colsUxMethodology {
-        grid-template-columns: 1;
-        grid-template-rows: 44rem 44rem 44rem;
-        row-gap: 1.6rem;
-    }
-
-    .empathize-col-left {
-        grid-column: 1;
+        grid-column: 2;
         grid-row: 1;
-        background-color: rgba(201, 200, 216, 0.2);
-        padding-left: 0.8rem
-    }
-
-    .visionStatementText-answer {
-        grid-column: 1;
-        grid-row: 2;
-
-    }
-
-    .empathizeProcess,
-    .empathizeAllQ,
-    .empathizeEmptyRowProblemStatement {
-        padding-left: 0.8rem;
-        padding-top: 0.8rem;
-    }
-
-
-    .empathize-col-right {
-        grid-column: 1;
-        grid-row: 3;
-        background-color: rgba(201, 200, 216, 0.2)
-    }
-
-    .hexagon-title {
-        margin-bottom: 1.6rem;
-    }
-
-    .visionStatementText-answer p,
-    .visionStatementText-question p {
-        margin-bottom: 0.8rem;
-    }
-
-    /* EMPATHIZE col-02 */
-    /* **************** */
-
-    .querie {
-        display: none;
-    }
-
-    .empathizeEmptyRowProblemStatement {
-        display: block;
-        grid-row: 2;
-        background-color: rgba(201, 200, 216, 0.2);
-        font-size: 1.2rem;
-        line-height: 1.2;
-    }
-
-    /*
-    .empathize-userImg-questions {
-        grid-column: 1;
+        display: flex;
         justify-content: center;
     }
-*/
-    .empathizeEmptyRow {
-        display: block;
-        grid-row: 1;
-        justify-self: center;
-        padding-top: 0.8rem;
-        padding-bottom: 0.8rem;
-    }
 
-    .empathizeAllQ {
-        grid-row: 2;
-        margin-left: 0;
-    }
-
-    .empathizeQ01,
-    .empathizeQ02,
-    .empathizeQ03 {
-        line-height: 1;
-        margin-bottom: 0.8rem;
-    }
-
-    .empathizeProcess {
-        grid-row: 3;
-        justify-self: center;
-    }
-
-    .arrowBlueEmpathize {
-        justify-self: center;
-    }
-
-
-
-
-
-
-    /* CONTENT SELECTION - BUILDING PROTO PERSONAS */
-
-    .protoPersonasContentSelection {
-        margin-bottom: 4.8rem;
-    }
-
-
-    .contentProtoPersonas {
-        display: grid;
-        grid-template-columns: 1;
-        grid-template-rows: 30rem 30rem;
-        row-gap: 8rem;
-
-    }
-
-    .contentProtoPersonas-left {
-        grid-column: 1;
-        grid-row: 1;
-        min-width: 30rem;
-    }
-
-    .contentProtoPersonas-right {
-        grid-column: 1;
-        grid-row: 2;
-        min-width: 30rem;
-    }
-
-    /* *************** */
-    /* INTERVIEW GUIDE */
-    /* *************** */
-    .interviewTitles {
-        font-size: 1.4rem;
-        line-height: 1.2;
-    }
-
-    .interviewSubTitles {
-        font-size: 1.2rem;
-        margin-bottom: 0.8rem;
-    }
-
-    .interviewSubTitles p {
-        margin-bottom: 0.8rem;
-    }
-
-    .grid--2-colsInterview {
-        grid-template-columns: 1;
-        grid-template-rows: 2;
-    }
-
-    .interviewGuideRight,
-    .interviewGuideLeft {
-        /* padding-left: 0.8rem;*/
-        padding-top: 0.8rem;
-        background-color: rgba(201, 200, 216, 0.2);
-        border-radius: 2.4rem;
-        margin-bottom: 1.6rem;
-    }
-
-    .interviewGuideLeft {
-        grid-column: 1;
-        grid-row: 1;
-    }
-
-    .interviewGuideRight {
-        grid-column: 1;
-        grid-row: 2;
-    }
-
-    .grid--2-colsQA {
-        grid-template-columns: 1;
-        grid-template-rows: 2;
-    }
-
-    .QALettersContainer {
-        grid-column: 1;
-        grid-row: 1;
-    }
-
-    .interviewGuideQuestions {
-        grid-column: 1;
-        grid-row: 2;
-
-    }
-
-    /*
-    .Q-A {
-         justify-self: center;
-    }*/
-
-    .grid--3-colsQA {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 2;
-    }
-
-    .gridInterviewQuerie {
+    .competitorsAnalyses-columnRight {
         grid-column: 2;
         grid-row: 2;
-    }
-
-    .interviewAnswers-col01 p,
-    .interviewAnswers-col02 p,
-    .interviewAnswers-col03 p {
-        font-size: 1rem;
-        padding-bottom: 0.8rem;
-    }
-
-    /* *************** */
-    /* COMPETITORS ANALYSES */
-    /* *************** */
-
-    .competition {
         display: flex;
-        justify-content: left;
+        justify-content: center;
+    }
+
+    .grid--3-colsCompetitorDropdown {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* ***************** */
+    /* LECTURE 02-DEFINE */
+    /* ***************** */
+
+    /* ******************************* */
+    /* REFINED PERSONAS - USER JOURNEY */
+    /* ******************************* */
+
+    .grid--3-cols {
+        grid-template-columns: 0;
+    }
+
+    .refinedPersonasAll {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .personasRefinedOnlyMaria {
+        display: flex;
+        justify-content: center;
+        margin-top: 1.6rem;
+    }
+
+    .finalMargarida {
+        display: block;
+        justify-self: center;
+        width: 40rem;
+        background-color: rgba(201, 200, 216, 0.2);
         margin-bottom: 2.4rem;
     }
 
-    .competitorsAnalyses-columnLeft {
+    .finalMargarida-grid--2-rows {
+        display: grid;
+        grid-template-rows: 2;
+    }
+
+    .personaMargaridaFinal-row-01 {
+        grid-row: 1;
+        justify-self: center;
+        padding-top: 1.6rem;
+        padding-bottom: 1.6rem;
+    }
+
+    .personaMargaridaFinal-row-02 {
+        grid-row: 2;
+        padding-left: 1.6rem;
+        padding-right: 1.6rem;
+    }
+
+
+
+    .personaMargaridaLeftObstaculesFinal,
+    .personaMargaridaLeftNeedsFinal,
+    .personaMargaridaLeftHabitsFinal {
+        padding-bottom: 0.8rem;
+        font-size: 1.2rem;
+        justify-self: center;
+    }
+
+
+    /**/
+    /* scenario-expectations */
+
+
+    .userJourneyExpectations-txt,
+    .userJourneyScenario-txt {
         width: 100%;
     }
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
 /* max width 768px - medium tablet */
 @media (max-width: 48rem) {
+
+    .grid--2-colsHeaderMain {
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 2;
+    }
+
+    .headerMainRight {
+        grid-row: 2;
+        margin-top: 1.6rem;
+    }
+
+    /*
     .headerMainLeft {
         display: grid;
         grid-template-rows: 2;
@@ -885,5 +667,5 @@
 
     .myName {
         margin-top: 0.8rem;
-    }
+    }*/
 }

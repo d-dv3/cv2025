@@ -47,7 +47,9 @@ header {
     display: grid;
 }
 
-
+.grid--2-colsHeaderMain {
+    grid-template-columns: repeat(2, 1fr);
+}
 
 .grid--2-colsQA,
 .grid--2-cols {
@@ -78,7 +80,7 @@ header {
 /* ***************** */
 /*
 .headerMainRight {}*/
-.grid--3-colsSitePresentation,
+.grid--3-colsHeaderMainRight,
 .grid--3-colsQA,
 .grid--3-cols {
     grid-template-columns: repeat(3, 1fr);
@@ -179,6 +181,10 @@ header {
     grid-template-rows: 3;
 }
 
+.hiddenMenuQ {
+    display: none;
+}
+
 .btnDropdownContacts {
     border: none;
     background-color: #fff;
@@ -218,6 +224,10 @@ header {
     color: #333;
     cursor: pointer;
 }
+
+/* ****************************** */
+/* HEADER MAIN right media querie - end */
+/* ****************************** */
 
 /* *************** */
 /* CV-PRESENTATION */
@@ -332,7 +342,8 @@ header {
     display: flex;
 }
 
-.landingLogos {
+.landingLogosE,
+.landingLogosF {
     height: 1.6rem;
     padding-left: 1.6rem;
 }
@@ -512,24 +523,28 @@ footer {
 /* ***************************************** */
 /* LECTURE-BRIEFING-PRESENTATION-METHODOLOGY */
 /* ***************************************** */
-
 .sitePresentation {
     min-height: 30rem;
     margin-bottom: 12rem;
     /*margin-bottom: 8.8rem;*/
 }
 
-.sitePresentation-SlideshowContainer {
+.sitePresentationContainer {
     margin-bottom: 12rem;
 }
 
+.grid--3-colsSitePresentation {
+    grid-template-columns: repeat(3, 1fr);
+}
 
+.templatePresentation01,
+.templatePresentation02,
+.templatePresentation03 {
+    height: 30rem;
+}
 
-/************ BANNER ?? ****************/
-
+/****************************/
 /* COL-01 */
-
-
 .grid--2cols--3rows-briefing {
     grid-template-columns: 2;
     grid-template-rows: 1fr 1fr 1fr;
@@ -606,13 +621,9 @@ footer {
 }
 
 /* COL 02 */
-.slideItem-02Template {
+.templatePresentation02 {
     padding-left: 0.4rem;
     background-color: rgba(201, 200, 216, 0.2);
-}
-
-.grid--3rows-briefingUx {
-    grid-template-rows: 3;
 }
 
 .grid--3rows-briefingSmallText {
@@ -643,55 +654,57 @@ footer {
     font-weight: 400;
 }
 
-
-.grid--3-colsSitePresentationQuerie {
-    display: none;
-}
-
-
-.slideItem-03Template {
+/* ****** */
+/* COL 03 */
+.templatePresentation03 {
     background-color: rgba(201, 200, 216, 0.2);
-
 }
 
-/* row-1 right */
-
-.hexagonsGroup {
-    margin-top: 0.8rem
+.grid--3rows-briefingUx {
+    grid-template-rows: 10rem 10rem 10rem;
 }
 
-.hexagonsGroup img {
+/* row-1 */
+.hexagonsGroupQuerie {
+    margin-top: 0.8rem;
+    grid-row: 1;
+}
+
+.hexagonsGroupQuerie img {
     height: 12rem;
 }
 
-/* row-2 right */
+/* row-2 */
+.uxTitle-subtitleQuerie {
+    grid-row: 2;
+}
 
-.briefingHexagonsSubtitles {
+.hexagonsGroupSubtitlesQuerie {
     grid-row: 1;
     font-family: 1rem;
     display: flex;
+    align-items: end;
     justify-content: end;
     font-size: 0.8rem;
     line-height: 1.2;
     padding-right: 0.8rem;
-
+    font-family: 1rem;
 }
 
-/* row-2 left */
-.caseStudySubTitleHeader {
+.uxTitlePlaceholder {
+    grid-row: 2;
     display: flex;
     align-items: end;
-    grid-row: 3;
 }
 
-.navCsSubtitle-1-Header {
+.uxDesignTitle {
     font-size: 1.6rem;
     font-weight: 300;
     color: #292562;
 }
 
-/* row-3 left */
-.caseStudySubTitleText {
+/* row-3 */
+.caseStudySubTitleHeader {
     grid-row: 3;
 }
 
@@ -701,39 +714,55 @@ footer {
     margin-bottom: 0.4rem;
 }
 
-.paragraph-2 {
+.caseStudySubTitleText {
     font-size: 1rem;
     margin-bottom: 0.8rem;
     line-height: 1.2;
 }
 
+/* ********************************** */
+/* turn off when media queries */
+.templatePresentation03NewRow {
+    display: none;
+}
 
 
 /* ********************************** */
 /* LECTURE DEVELOPMENT - 01-EMPATHIZE */
 /* ********************************** */
 .uxMethodology {
-    min-height: 44em;
     margin-bottom: 12rem;
 }
 
 .uxMethodology-empathize {
-
-    min-height: 44rem;
-    padding-left: 2.4rem;
-    padding-top: 2.4rem;
-    padding-right: 2.4rem;
-    padding-bottom: 2.4rem;
-    border-radius: 2.4rem;
-    background-color: rgba(201, 200, 216, 0.2);
+    height: 44rem;
 }
 
 .grid--2-colsUxMethodology {
+    width: 100%;
     grid-template-columns: 1fr 1fr;
 }
 
-/* EMPATHIZE col-01 */
-/* **************** */
+/*  col-01 left */
+/* ************ */
+.empathize-col-right {
+    border-top-right-radius: 2.4rem;
+    border-bottom-right-radius: 2.4rem;
+    padding-top: 2.4rem;
+    padding-right: 2.4rem;
+    padding-bottom: 2.4rem;
+    background-color: rgba(201, 200, 216, 0.2);
+}
+
+
+.empathize-col-left {
+    border-top-left-radius: 2.4rem;
+    border-bottom-left-radius: 2.4rem;
+    padding-left: 2.4rem;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+    background-color: rgba(201, 200, 216, 0.2);
+}
 
 
 .hexagon-title {
@@ -743,7 +772,6 @@ footer {
     margin-bottom: 2.4rem;
 }
 
-.defineTitle,
 .empathizeTitle {
     font-size: 1.4rem;
     font-weight: 400;
@@ -752,8 +780,9 @@ footer {
     background-color: #fff;
 }
 
-.visionStatementText-answer,
-.visionStatementTextquestion {
+
+.empathize-questions02,
+.empathize-questions01 {
     font-size: 1.2rem;
     line-height: 1.2;
     padding-right: 2.4rem;
@@ -766,8 +795,9 @@ footer {
     background-color: #FCDC4A;
 }
 
-.visionStatementText-answer p,
-.visionStatementText-question p {
+
+.empathize-questions02 p,
+.empathize-questions01 p {
     margin-bottom: 1.6rem;
 }
 
@@ -818,41 +848,23 @@ footer {
     margin-bottom: 1.6rem;
 }
 
-/* EMPATHIZE col-02 */
-/* **************** */
+/* col-02 right */
+/* ************ */
 
-.empathize-col-right {
+.grid--3-rowsEmpathize {
+    height: 100%;
+    grid-template-rows: 3;
+}
+
+/* row-01 */
+.empathizeUserRow {
     display: flex;
-}
-
-.empathizeEmptyRowProblemStatement,
-.empathizeEmptyRow {
-    display: none;
-}
-
-.empathize-userImg-questions {
-    display: flex;
-    align-items: center;
-}
-
-.define-userImg {
-    display: flex;
-    justify-content: right;
-}
-
-.emojidrawing {
-    height: 20rem;
-}
-
-.emojiPlaceholder {
-    display: flex;
-    align-items: center;
-    justify-self: right;
+    justify-content: center;
 }
 
 .circleEmpathize {
-    height: 20rem;
-    width: 20rem;
+    height: 16rem;
+    width: 16rem;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -860,13 +872,9 @@ footer {
     background-color: #fff;
 }
 
-.define-userQuestions {
-    font-size: 1.2rem;
-}
-
+/* row-02 */
 .empathizeAllQ {
-    grid-row: 2;
-    margin-left: 1.6rem;
+    margin-top: 1.6rem;
 }
 
 .empathizeQ01,
@@ -876,6 +884,7 @@ footer {
     font-size: 1.2rem;
     line-height: 1.2;
     margin-bottom: 1.6rem;
+    justify-self: center;
 }
 
 .qMark {
@@ -886,20 +895,8 @@ footer {
     padding-left: 0.4rem;
 }
 
-.grid--3-rowsEmpathize {
-    grid-template-rows: 1fr 1fr 1fr;
-}
-
-.defineQMark {
-    align-items: end;
-}
-
-.define-userImg-questions {
-    height: 100%;
-}
-
+/* row-03 */
 .empathizeProcess {
-    grid-row: 3;
     align-self: end;
     justify-self: right;
     color: #292562;
@@ -907,15 +904,18 @@ footer {
     font-weight: 400;
 }
 
-.defineProcess {
-    display: flex;
-    justify-content: right;
-    align-items: end;
-    color: #292562;
-    font-weight: 400;
+.empathizeKeyWords {
+    background-color: #FCDC4A;
 }
 
+.empathizeKeyWordsArrow {
+    display: flex;
+    justify-content: center;
+}
 
+.arrowBlueEmpathize {
+    justify-self: center;
+}
 
 /* ******************************************* */
 /* CONTENT SELECTION - BUILDING PROTO PERSONAS */
@@ -927,7 +927,7 @@ footer {
 .protoPersonasContentSelectionTitles {
     font-size: 1.6rem;
     font-weight: 400;
-    margin-bottom: 0.8rem;
+    margin-bottom: 1.6em;
 }
 
 .targetAudience {
@@ -945,12 +945,12 @@ footer {
     background-color: #FCDC4A;
 }
 
-.arrowPersonasBck {
-    display: flex;
-    justify-content: space-around;
+.personasResearchSubtitle {
+    margin-bottom: 4rem;
 }
 
 .contentProtoPersonas {
+
     display: flex;
     justify-content: space-around;
 }
@@ -959,6 +959,11 @@ footer {
 .contentProtoPersonas-left {
     width: 33%;
     justify-content: center;
+}
+
+.arrowPersonasBck {
+    display: flex;
+    justify-content: space-around;
 }
 
 .contentProtoPersonas-title {
@@ -990,7 +995,7 @@ footer {
 /* confirmar  */
 .drawingSize,
 .photoAbout img {
-    height: 10rem;
+    height: 8rem;
 }
 
 /* confirmar  */
@@ -1096,16 +1101,14 @@ footer {
 /* *********************** */
 /* INTERVIEW GUIDE - right */
 /* *********************** */
-
-
-.findings,
-.competitorsAnalysesSection {
-    margin-bottom: 20rem;
+.findings {
+    margin-bottom: 7.2rem;
 }
 
 
-
-
+.competitorsAnalysesSection {
+    margin-bottom: 20rem;
+}
 
 .interviewAnswers-col01,
 .interviewAnswers-col02,
@@ -1121,16 +1124,10 @@ footer {
     margin-bottom: 0.8rem;
 }
 
-
-
-
-
-
 .interviewDrawing {
     height: 6rem;
     padding-bottom: 0.8rem;
 }
-
 
 
 /* ********************************** */
@@ -1308,15 +1305,24 @@ footer {
 .personasRefinedMaria,
 .personasRefinedMargarida {
     height: 30rem;
-    width: 33%;
+    width: 40rem;
     border-radius: 1.6rem;
     padding-top: 0.8rem;
     background-color: rgba(201, 200, 216, 0.2);
 }
 
+.personasRefinedOnlyMaria {
+    display: none;
+}
+
 /* **************************** */
 /* FINAL PERSONA - USER JOURNEY */
 /* **************************** */
+.finalMargarida {
+    display: none;
+}
+
+
 .personaMargaridaUserJourney {
     display: flex;
     justify-content: center;
@@ -1399,13 +1405,6 @@ footer {
     display: flex;
     justify-content: center;
 }
-
-
-
-
-
-
-
 
 .userJourneyScenario-txt {
     padding-right: 0.8rem;
@@ -1598,6 +1597,8 @@ footer {
 .opportPostItSelected {
     display: flex;
     align-items: center;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
     margin-bottom: 0.8rem;
     height: 10rem;
     width: 10rem;
@@ -1611,6 +1612,38 @@ footer {
 
 .opportPostItSelected {
     background-color: rgba(191, 189, 208, 1);
+}
+
+.opportunitiesPostIt-col-2 {
+    grid-column: 2;
+}
+
+.opportunitiesPostIt-col-3 {
+    grid-column: 3;
+}
+
+.opportunitiesPostIt-col-4 {
+    grid-column: 4;
+}
+
+.opportunitiesPostIt-col-5 {
+    grid-column: 5;
+}
+
+.opportunitiesPostIt-col-6 {
+    grid-column: 6;
+}
+
+.opportunitiesPostIt-col-7 {
+    grid-column: 7;
+}
+
+.opportunitiesPostIt-col-8 {
+    grid-column: 8;
+}
+
+.opportunitiesPostIt-col-9 {
+    grid-column: 9;
 }
 
 .opportunitiesPostIt-col-1,
@@ -2150,29 +2183,8 @@ footer {
 /* *************************************** */
 /* *************************************** */
 
-#buttonImageContainer .buttonImage {
-    background-image: url("/img/ux/uxEmpathizeBtnNoBackground.svg");
-    background-size: cover;
-    transition: background-image 0.3s ease;
-}
 
-#buttonImageContainer:hover .buttonImage {
-    background-image: url("/img/ux/uxEmpathizeBtnBackground.svg")
-}
 
-#buttonImageContainer:active .buttonImage {
-    background-image: url("/img/ux/uxEmpathizeBtnBackground.svg")
-}
-
-/*
-#buttonImage:link #buttonImage:hover #buttonImage:visited #buttonImage:active*/
-.uxMethodScheme,
-.uxDefine,
-.uxIdeate,
-.uxPrototype,
-.uxTest {
-    border: 1px solid green;
-}
 
 .uxMethodSchemeRight {
     scale: 50%;
@@ -2264,7 +2276,6 @@ footer {
 
 /* logos */
 .comparisonsTableHeader {
-
     justify-self: center;
 }
 
