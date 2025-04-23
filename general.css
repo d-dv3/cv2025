@@ -92,17 +92,6 @@ accents:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* *********************************** */
 /* LVHA - link; visited; hover; active */
 /* *********************************** */
@@ -131,6 +120,8 @@ accents:
     color: white;
 }
 
+.linkMakingOf:link,
+.linkMakingOf:visited,
 .headerLinkPortfolio:link,
 .headerLinkPortfolio:visited,
 .headerLinkCurriculumVitae:link,
@@ -151,6 +142,8 @@ accents:
     color: white;
 }
 
+.linkMakingOf:hover,
+.linkMakingOf:active,
 .headerLinkPortfolio:hover,
 .headerLinkPortfolio:active {
     background-color: #292562;

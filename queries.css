@@ -748,14 +748,8 @@
 
 }
 
-/* max width 544px - medium tablet */
-@media (max-width: 34rem) {
-
-    body {
-        padding-right: 2.4rem;
-        padding-left: 2.4rem;
-    }
-
+/* max width 704px -  tablet */
+@media (max-width: 44rem) {
     .empathizeTitle {
         font-size: 1.2rem;
     }
@@ -782,6 +776,22 @@
     .interviewSubTitles p {
         font-size: 1.2rem;
     }
+}
+
+
+
+
+
+
+/* max width 544px - mobile */
+@media (max-width: 34rem) {
+
+    body {
+        padding-right: 2.4rem;
+        padding-left: 2.4rem;
+    }
+
+
 
 
 
