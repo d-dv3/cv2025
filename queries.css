@@ -51,6 +51,14 @@
         padding-top: 2.4rem;
     }
 
+    .querie {
+        display: none;
+    }
+
+    .cvTitleAttachforLaptopQ {
+        display: block;
+    }
+
     .landingLogosF,
     .landingLogosE {
         margin-top: 0.8em;
@@ -750,6 +758,12 @@
 
 /* max width 704px -  tablet */
 @media (max-width: 44rem) {
+
+    body {
+        padding-right: 3.2rem;
+        padding-left: 3.2rem;
+    }
+
     .empathizeTitle {
         font-size: 1.2rem;
     }
@@ -800,14 +814,11 @@
 
     .title-1 {
         font-size: 1.4rem;
-
     }
 
     .title-2 {
         font-size: 1.2rem;
     }
-
-
 
     .grid--3-rowsNewRow {
         grid-template-rows: 0.8fr 1fr 1.2fr;
@@ -821,4 +832,32 @@
 
 
 
+}
+
+/* max width 464px - mobile */
+@media (max-width: 29rem) {
+
+    body {
+        padding-right: 1.6rem;
+        padding-left: 1.6rem;
+    }
+
+    .headerLinkCurriculumVitae,
+    .headerLinkPortfolio {
+        font-size: 1.2rem;
+    }
+
+    .headerMainContacts,
+    .headerMainCv,
+    .headerMainPortfolio {
+        font-size: 1rem;
+    }
+}
+
+/* max width 416px - mobile */
+@media (max-width: 26rem) {
+    body {
+        padding-right: 0.8rem;
+        padding-left: 0.8rem;
+    }
 }
