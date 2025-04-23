@@ -385,7 +385,6 @@
     }
 
 
-
     /* col-01 left */
     /* **************** */
     .empathize-col-left {
@@ -400,13 +399,16 @@
         margin-bottom: 1.6rem;
     }
 
+    .empathize-questions02,
+    .empathize-questions01 {
+        padding-right: 0.4rem;
+    }
+
     .empathize-questions02 p,
     .empathize-questions01 p {
         margin-bottom: 0.8rem;
 
     }
-
-
 
     /* col-02 right */
     /* **************** */
@@ -426,8 +428,6 @@
     /* row-03 */
 
 
-
-
     /* CONTENT SELECTION - BUILDING PROTO PERSONAS */
     .protoPersonasContentSelection {
         margin-bottom: 7.2rem;
@@ -441,13 +441,20 @@
         font-weight: 300;
     }
 
-
-
     .contentProtoPersonas {
 
         justify-content: space-between;
     }
 
+    .photoAbout {
+        margin-left: 0.8rem;
+        margin-right: 0.8rem;
+    }
+
+    .personasTxt {
+        padding-right: 0.8rem;
+        padding-left: 0.8rem;
+    }
 
     /* INTERVIEW GUIDE */
     /* *************** */
@@ -485,7 +492,9 @@
 
     /* col-01 left*/
     .interviewGuideLeft {
-        grid-column: 1;
+        padding-left: 0.8rem;
+        padding-top: 1.6rem;
+        padding-bottom: 0.8rem;
     }
 
     .interviewGuideRight,
@@ -494,15 +503,12 @@
         margin-bottom: 1.6rem;
     }
 
-    /**/
+    /* col repeat(2, 1fr)*/
     .grid--2-colsQA {
 
         display: flex;
+        justify-content: center;
         align-items: center;
-    }
-
-    .interviewGuideQuestions {
-        margin-top: 3.2rem;
     }
 
     /* col-02 right*/
@@ -519,7 +525,6 @@
     .interviewAnswers-col02 {
         align-self: end;
     }
-
 
 
     /* *************** */
@@ -613,8 +618,6 @@
         padding-right: 1.6rem;
     }
 
-
-
     .personaMargaridaLeftObstaculesFinal,
     .personaMargaridaLeftNeedsFinal,
     .personaMargaridaLeftHabitsFinal {
@@ -623,31 +626,24 @@
         justify-self: center;
     }
 
-
     /**/
     /* scenario-expectations */
-
 
     .userJourneyExpectations-txt,
     .userJourneyScenario-txt {
         width: 100%;
     }
 
-
-
-
-
-
-
-
-
-
-
 }
 
 
 /* max width 768px - medium tablet */
 @media (max-width: 48rem) {
+
+    body {
+        padding-right: 4.8rem;
+        padding-left: 4.8rem;
+    }
 
     .grid--2-colsHeaderMain {
         grid-template-columns: 3fr 1fr;
@@ -659,13 +655,160 @@
         margin-top: 1.6rem;
     }
 
-    /*
-    .headerMainLeft {
-        display: grid;
-        grid-template-rows: 2;
+    .headerLinkCurriculumVitae,
+    .headerLinkPortfolio {
+        font-size: 1.4rem;
     }
 
-    .myName {
+    .uxTitle-subtitleNewRow01 {
+        padding-left: 0.8rem;
+    }
+
+
+    .empathize-col-left {
+        padding-left: 0.8rem;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+    }
+
+    .empathize-col-right {
+        padding-right: 0.8rem;
+        padding-bottom: 0.8rem;
+        padding-top: 0.8rem;
+    }
+
+    .empathizeUserRow {
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        align-items: end;
+    }
+
+    .empathizeAllQ {
         margin-top: 0.8rem;
-    }*/
+    }
+
+    .empathizeQ01,
+    .empathizeQ02,
+    .empathizeQ03 {
+        font-size: 1rem;
+        line-height: 1;
+        margin-bottom: 0.8rem;
+    }
+
+    .Q-A {
+        font-size: 1rem;
+    }
+
+    .interviewAnswers-col01,
+    .interviewAnswers-col02,
+    .interviewAnswers-col03 {
+        font-size: 1rem;
+        padding-right: 0.8rem;
+        padding-bottom: 0.8rem;
+    }
+
+
+
+}
+
+/* max width 720px - medium tablet */
+@media (max-width: 45rem) {
+
+    body {
+        padding-right: 4rem;
+        padding-left: 4rem;
+    }
+
+    /*
+    .uxMethodology {
+        display: flex;
+
+        justify-content: center;
+    }
+*/
+    /*
+    .grid--2-colsUxMethodology {
+        grid-template-columns: 1;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 1.6rem;
+
+    }
+
+    .empathize-col-left {
+        grid-column: 1;
+        grid-row: 1;
+
+    }
+
+    .empathize-col-right {
+        grid-column: 1;
+        grid-row: 2;
+    }
+*/
+
+}
+
+/* max width 544px - medium tablet */
+@media (max-width: 34rem) {
+
+    body {
+        padding-right: 2.4rem;
+        padding-left: 2.4rem;
+    }
+
+    .empathizeTitle {
+        font-size: 1.2rem;
+    }
+
+    .empathize-questions02,
+    .empathize-questions01 {
+        font-size: 1rem;
+        line-height: 1;
+        padding-right: 0.8rem;
+    }
+
+    .txt {
+        font-size: 1.2rem;
+    }
+
+    .txtCenter {
+        font-size: 1.2rem;
+    }
+
+    .targetAudience p {
+        font-size: 1.2rem;
+    }
+
+    .interviewSubTitles p {
+        font-size: 1.2rem;
+    }
+
+
+
+
+
+
+    .title-1 {
+        font-size: 1.4rem;
+
+    }
+
+    .title-2 {
+        font-size: 1.2rem;
+    }
+
+
+
+    .grid--3-rowsNewRow {
+        grid-template-rows: 0.8fr 1fr 1.2fr;
+    }
+
+
+
+
+
+
+
+
+
 }

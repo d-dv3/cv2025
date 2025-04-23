@@ -611,6 +611,7 @@ footer {
 }
 
 .arrowBckYellow {
+    line-height: 1;
     font-size: 1.2rem;
 }
 
@@ -905,6 +906,7 @@ footer {
 }
 
 .empathizeKeyWords {
+    display: inline-block;
     background-color: #FCDC4A;
 }
 
@@ -957,7 +959,8 @@ footer {
 
 .contentProtoPersonas-right,
 .contentProtoPersonas-left {
-    width: 33%;
+    max-width: 33%;
+    min-width: 10.6rem;
     justify-content: center;
 }
 
@@ -980,7 +983,7 @@ footer {
 
 .personasResearchAntonio,
 .personasResearchLaura {
-    height: 30rem;
+    min-height: 30rem;
     background-color: rgba(201, 200, 216, 0.2);
     border-radius: 16px;
     margin-top: 0.8rem;
