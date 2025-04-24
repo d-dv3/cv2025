@@ -790,13 +790,17 @@
     .interviewSubTitles p {
         font-size: 1.2rem;
     }
+
+    .iconStar {
+        font-size: 0.8rem;
+    }
 }
 
 
 
 
 
-
+/* 607 cv em 2 linhas */
 /* max width 544px - mobile */
 @media (max-width: 34rem) {
 
@@ -860,4 +864,16 @@
         padding-right: 0.8rem;
         padding-left: 0.8rem;
     }
+
+    .headerMobilePortfolio,
+    .headerMobileInformation,
+    .headerMobileContacts {
+        display: none;
+    }
+
+
+
+
+
+
 }
