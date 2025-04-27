@@ -390,23 +390,12 @@
     /* ********************** */
     .uxMethodology {
         margin-bottom: 7.2rem;
+        padding: 1.6rem;
     }
 
 
     /* col-01 left */
     /* **************** */
-    .empathize-col-left {
-        height: 44rem;
-        grid-column: 1;
-        padding-left: 1.6rem;
-        padding-top: 1.6rem;
-
-    }
-
-    .hexagon-title {
-        margin-bottom: 1.6rem;
-    }
-
     .empathize-questions02,
     .empathize-questions01 {
         padding-right: 0.4rem;
@@ -420,18 +409,7 @@
 
     /* col-02 right */
     /* **************** */
-    .empathize-col-right {
-        height: 44rem;
-        padding-right: 1.6rem;
-        padding-bottom: 1.6rem;
-    }
-
     /* row-01 */
-    .empathizeUserRow {
-        grid-row: 1;
-        justify-content: center;
-    }
-
     /* row-02 */
     /* row-03 */
 
@@ -672,18 +650,11 @@
         padding-left: 0.8rem;
     }
 
-
-    .empathize-col-left {
-        padding-left: 0.8rem;
-        padding-top: 0.8rem;
-        padding-bottom: 0.8rem;
+    .uxMethodology {
+        padding: 0.8rem;
     }
 
-    .empathize-col-right {
-        padding-right: 0.8rem;
-        padding-bottom: 0.8rem;
-        padding-top: 0.8rem;
-    }
+
 
     .empathizeUserRow {
         padding-top: 0.8rem;

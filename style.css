@@ -689,7 +689,7 @@ footer {
     display: none;
 }
 
-
+/* DRY - EMPATHIZE 26ABR */
 /* ********************************** */
 /* LECTURE DEVELOPMENT - 01-EMPATHIZE */
 /* ********************************** */
@@ -713,30 +713,10 @@ footer {
 
 /*  col-01 left */
 /* ************ */
+.empathize-col-left,
 .empathize-col-right {
     height: 100%;
-    /*
-    border-top-right-radius: 2.4rem;
-    border-bottom-right-radius: 2.4rem;
-    padding-top: 2.4rem;
-    padding-right: 2.4rem;
-    padding-bottom: 2.4rem;
-*/
 }
-
-
-.empathize-col-left {
-    height: 100%;
-    /*
-    border-top-left-radius: 2.4rem;
-    border-bottom-left-radius: 2.4rem;
-    padding-left: 2.4rem;
-    padding-top: 2.4rem;
-    padding-bottom: 2.4rem;
-    background-color: rgba(201, 200, 216, 0.2);
-    */
-}
-
 
 .hexagon-title {
     display: flex;
