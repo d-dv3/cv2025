@@ -698,7 +698,7 @@ footer {
     width: 100%;
     padding: 2.4rem;
     border-radius: 2.4rem;
-    background-color: rgba(201, 200, 216, 0.2);
+    background-color: rgba(201, 200, 216, 0.1);
     margin-bottom: 12rem;
 }
 
@@ -839,7 +839,7 @@ footer {
     font-size: 1.2rem;
     font-weight: 300;
     line-height: 1.2;
-
+    color: #292562;
     justify-self: left;
     margin-bottom: 1.6rem;
     /*
@@ -911,16 +911,65 @@ footer {
 }
 
 .contentProtoPersonas {
-
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-.contentProtoPersonas-right,
-.contentProtoPersonas-left {
-    max-width: 33%;
-    min-width: 10.6rem;
-    justify-content: center;
+.gridPersonasCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 1.6rem;
+    row-gap: 1.6rem;
+}
+
+.contentProtoPersonas-antonio {
+    width: 32.8rem;
+}
+
+.personaAbout {
+    display: flex;
+    border-radius: 1.6rem;
+    background-color: rgba(201, 200, 216, 0.5);
+
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    padding-left: 1.6rem;
+    margin-bottom: 0.8rem;
+}
+
+.personasName {
+    align-self: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.personasNameData {
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.personasCardModule,
+.personasCardModuleDrawing {
+    width: 15.6rem;
+    height: 10.4rem;
+    border-radius: 1.6rem;
+    padding: 0.8rem;
+}
+
+.personasCardModuleDrawing {
+    box-shadow: 4px 4px 5px rgba(201, 200, 216, 0.5);
+    background-color: rgba(201, 200, 216, 0.1);
+}
+
+.personasCardModule {
+    box-shadow: 4px 4px 5px rgba(201, 200, 216, 0.1);
+    border: 0.5px solid rgba(201, 200, 216, 0.1);
+}
+
+.contentProtoPersonas-laura {
+    width: 32.8rem;
 }
 
 .arrowPersonasBck {
@@ -938,53 +987,46 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 0.8rem;
 }
 
-.personasResearchAntonio,
-.personasResearchLaura {
+.personasResearchAbout,
+.personasResearchAbout {
     min-height: 30rem;
-    background-color: rgba(201, 200, 216, 0.2);
-    border-radius: 16px;
-    margin-top: 0.8rem;
+    border-radius: 1.6rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    background-color: rgba(201, 200, 216, 0.1);
 }
 
 .photoAbout {
-    margin-left: 2.4rem;
     margin-bottom: 0.8rem;
-    padding-top: 0.8rem;
 }
 
-/* confirmar  */
 .drawingSize,
-.photoAbout img {
-    height: 8rem;
-}
-
-/* confirmar  */
+.drawingTelmo,
+.drawingMargarida,
 .drawingMaria,
 .drawingAntonio,
 .drawingLaura {
-    height: 80px;
+    height: 8rem;
 }
 
 .about {
     align-self: center;
 }
 
-.personaName,
-.habits,
-.needs,
-.obstacles {
+.personasDataTitle {
     font-size: 1.2rem;
     font-weight: 400;
-    margin-top: 2px;
-    margin-bottom: 2px;
+    margin-bottom: 0.4rem;
 }
 
-.personasTxt {
-    padding-right: 2.4rem;
-    padding-bottom: 0.8rem;
-    padding-left: 1.6rem;
+.personasDataTxt {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
 }
 
 /* ***************************** */
@@ -1024,7 +1066,7 @@ footer {
 .interviewGuideLeft {
     padding-left: 2.4rem;
     padding-top: 2.4rem;
-    background-color: rgba(201, 200, 216, 0.2);
+    background-color: rgba(201, 200, 216, 0.1);
     border-radius: 2.4rem;
     margin-bottom: 2.4rem;
 }
@@ -1228,7 +1270,7 @@ footer {
     padding-right: 2.4rem;
     padding-bottom: 2.4rem;
     border-radius: 2.4rem;
-    background-color: rgba(201, 200, 216, 0.2);
+    background-color: rgba(201, 200, 216, 0.1);
 }
 
 
@@ -1269,7 +1311,7 @@ footer {
     width: 40rem;
     border-radius: 1.6rem;
     padding-top: 0.8rem;
-    background-color: rgba(201, 200, 216, 0.2);
+    background-color: rgba(201, 200, 216, 0.1);
 }
 
 .personasRefinedOnlyMaria {
@@ -1293,7 +1335,7 @@ footer {
 .finalPersonaInformation {
     height: 24.8rem;
     width: 66%;
-    background-color: rgba(201, 200, 216, 0.2);
+    background-color: rgba(201, 200, 216, 0.1);
     border-radius: 4.8rem;
     padding: 2.4rem;
 

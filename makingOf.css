@@ -52,12 +52,10 @@ body {
 .draw-instructions,
 .drawing-instructions {
     width: 100%;
-    display: flex;
+    padding-left: 2.4rem;
 }
 
-.draw-instructions {
-    display: flex;
-}
+.draw-instructions {}
 
 .uxMethodology {
     height: 44rem;
