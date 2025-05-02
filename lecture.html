@@ -26,6 +26,8 @@
 </head>
 
 <body>
+
+
     <header>
         <!-- ----------- -->
         <!-- HEADER MAIN -->
@@ -48,7 +50,7 @@
 
                 <!-- COL-01 -->
                 <div class="headerMainPortfolio">
-                    <p class="headerMobilePortfolio">portfolio</p>
+                    <p class="headerMobilePortfolio">ux portfolio</p>
                     <div class="linkPortfolioPlaceholder">
                         <a class="headerLinkPortfolio" href="lecture.html">lecture</a>
                     </div>
@@ -151,7 +153,9 @@
 
                     <!-- row 01 -->
                     <div class="hexagonsGroupQuerie">
-                        <img src="img/ux/hexagons-group-yellow-fill-white-fill.svg" alt="" srcset="">
+
+                        <img class="hexagonGroup-drawing" src="img/ux/hexagons-group-yellow-fill-white-fill.svg" alt=""
+                            srcset="">
                     </div>
                     <!-- row 02 -->
                     <div class="uxTitle-subtitleQuerie grid grid--2-rows">
@@ -173,15 +177,6 @@
                                 HTML CSS and JS
                                 learned at flag</p>
                         </div>
-                        <div>
-                            <p class="caseStudySubTitleText">lecture project proposal follows along all theorical
-                                matters<br>UI
-                                tools were
-                                also
-                                provided for future UI development<br>group
-                                project: Ção Sampaio, Diana Dóris, Sofia
-                                Flores | 200h course</p>
-                        </div>
 
                     </div>
                 </div>
@@ -193,6 +188,12 @@
 
 
 
+        </div>
+        <div class="groupProject">
+            <p class="caseStudySubTitleTextLine">lecture project proposal follows along all theorical matters UI
+                tools
+                were also provided for future UI development group project: Ção Sampaio, Diana Dóris, Sofia Flores |
+                200h course</p>
         </div>
         <!-- new row for media querie-->
         <div class="templatePresentation03NewRow grid grid--2-colsNewPresentationRow">
@@ -212,6 +213,7 @@
                             HTML CSS and JS
                             learned at flag</p>
                     </div>
+                    <!-- 
                     <div>
                         <p class="caseStudySubTitleText">lecture project proposal follows along all theorical
                             matters <br> UI
@@ -221,7 +223,7 @@
                             project: Ção Sampaio, Diana Dóris, Sofia
                             Flores | 200h course</p>
                     </div>
-
+-->
                 </div>
             </div>
 
@@ -229,7 +231,8 @@
             <div class="uxTitle-subtitleNewRow03">
 
                 <div class="hexagonsGroupNewRow">
-                    <img src="img/ux/hexagons-group-yellow-fill-white-fill.svg" alt="" srcset="">
+                    <img class="hexagonGroup-drawing" src="img/ux/hexagons-group-yellow-fill-white-fill.svg" alt=""
+                        srcset="">
                 </div>
 
                 <div class="hexagonsGroupSubtitlesNewRow">
@@ -244,7 +247,64 @@
 
     </section>
 
-    <main>
+
+    <div class="playingHexagons">
+        <div class="sliderContainer">
+            <div class="slider">
+
+                <div></div>
+
+                <div class="slide-01-empathize">
+                    <!-- col-01 -->
+                    <div><img src="img/ux/01_EMPATHIZE/hexagonGroup-less-1-height-6.svg" alt="" srcset=""></div>
+                    <!-- col-02 -->
+                    <div class="slideModule"><img style="height: 2rem;"
+                            src="img/ux/01_EMPATHIZE/hexagon-small-alone.svg" alt="" srcset="">
+                        <p style="font-size: 0.8rem;">empathize</p>
+                    </div>
+                </div>
+
+                <div class="slide-02-define">
+                    <!-- col-01 -->
+                    <div><a href="#define">define<img src="img/ux/01_EMPATHIZE/hexagonGroup-less-2.svg" alt=""
+                                srcset=""></a>
+                    </div>
+                    <!-- col-02 -->
+                    <div class="slideModule"><img style="height: 2rem;"
+                            src="img/ux/01_EMPATHIZE/hexagon-small-alone.svg" alt="" srcset="">
+                        <p style="font-size: 0.8rem;">define</p>
+                    </div>
+                </div>
+
+                <div class="slide-03-ideate">
+                    <!-- col-01 -->
+                    <div><img src="img/ux/01_EMPATHIZE/hexagonGroup-less-3.svg" alt="" srcset=""></div>
+                    <!-- col-02 -->
+                    <div class="slideModule">
+                        <img style="height: 2rem;" src="img/ux/01_EMPATHIZE/hexagon-small-alone.svg" alt="" srcset="">
+                        <p style="font-size: 0.8rem;">ideate</p>
+                    </div>
+                </div>
+
+                <div class="slide-04-prototype">
+                    <!-- col-01 -->
+                    <div><img src="img/ux/01_EMPATHIZE/hexagonGroup-less-4.svg" alt="" srcset=""></div>
+                    <!-- col-02 -->
+                    <div></div>
+                </div>
+
+                <div></div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <section>
 
         <!-- ---------------------------------- -->
         <!-- LECTURE DEVELOPMENT - 01-EMPATHIZE -->
@@ -261,7 +321,7 @@
                         <p class="empathizeTitle">empathize</p>
                     </div>
 
-                    <div class="empathize-questions01">
+                    <div class="empathize-questions01" style="margin-bottom: 1.6rem;">
                         <p>An online educational platform is an existing product already,<br>we need to investigate
                             what
                             could
@@ -269,34 +329,39 @@
                         </p>
 
                         <p>If we can find and respond to this needs, we can add value to the user's life an to our
-                            client.
+                            client. This is why we start by:
                         </p>
-
-                        <p style="margin-bottom: 0.8rem;">This is why we start by_<span class="txt">defining the
-                                problem</span></p>
-
-                        <div class="arrowTxt">
-                            <ion-icon name="arrow-down-outline"></ion-icon>
-                        </div>
-
-                        <div class="txtCenter">
-                            <p>User Research<br>What is our problem statement?</p>
-                        </div>
 
                     </div>
 
+
+                    <div class="empathize-questions-center">
+
+                        <div class="txtCenter" style="margin-bottom: 1.6rem;">
+                            <p class="txt">defining the problem</p>
+                        </div>
+                        <div class="arrowTxt">
+                            <ion-icon name="arrow-down-outline"></ion-icon>
+                        </div>
+                        <div class="txtCenter">
+                            <p>User Research<br>What is our problem statement?</p>
+                        </div>
+                    </div>
+
                     <div class="empathize-questions02">
-                        <p>Problem Statement_ and the five "W's"</p>
-                        <p>We'll built [product] an online educational platform for <span class="txtColor">[who]</span>
+
+                        <p style="margin-bottom: 1.6rem;">We'll built [product] an online educational platform for
+                            <span class="txtColor">[who]</span>
                             student's who's goal is <span class="txtColor">[what]</span>
                             to
                             obtain
-                            knowledge in an artistic areas, <span class="txtColor">[where/ when]</span> in the moment
+                            knowledge in an artistic areas, <span class="txtColor">[where/ when]</span> in the
+                            moment
                             they consider most convenient.
                         </p>
-                        <p>We believe we will succeed because <span class="txtColor">[why]</span> :
-                        </p>
-                        <p style="margin-bottom: 0;">The courses in which student's invest will always be available so
+                        <p>We believe we will succeed because <span class="txtColor">[why]</span> : The courses in
+                            which
+                            student's invest will always be available so
                             students can take the
                             course at any time of the day; the platform will be diverse and organized.</p>
                     </div>
@@ -307,31 +372,45 @@
                 <!-- COL 02 right-->
                 <div class="empathize-col-right">
 
-                    <div class="empathize-userQuestions grid grid--3-rowsEmpathize">
+                    <div class="empathize-userQuestions grid grid--2-rowsEmpathize">
                         <!-- row 01 -->
                         <div class="empathizeUserRow">
-                            <div class="circleEmpathize"><img class="drawingSize" src="img/ux/userOnLaptop-blue.svg"
-                                    alt="" srcset=""></div>
+
+                            <div class="circleEmpathize">
+                                <img class="drawingSize" src="img/ux/userOnLaptop-blue.svg" alt="" srcset="">
+                            </div>
+
+                            <div class="empathizeAllQ">
+                                <p class="empathizeQ01">what user's needs are still not
+                                    fullfilled<span class="qMark">?</span></p>
+                                <p class="empathizeQ02">what can bring more value to our users<span
+                                        class="qMark">?</span>
+                                </p>
+                                <p class="empathizeQ03">what can be a differentiated
+                                    factor<br> for our client as well<span class="qMark">?</span>
+                                </p>
+                            </div>
+
                         </div>
+
+
                         <!-- row 02 -->
-                        <div class="empathizeAllQ">
-                            <p class="empathizeQ01">what user's needs are still not
-                                fullfilled<span class="qMark">?</span></p>
-                            <p class="empathizeQ02">what can bring more value to our users<span class="qMark">?</span>
-                            </p>
-                            <p class="empathizeQ03">what can be a differentiated
-                                factor for our client as well<span class="qMark">?</span>
-                            </p>
-                        </div>
-                        <!-- row 03 -->
-                        <div class="empathizeProcess">
-                            <p class="empathizeKeyWords">personas | user research</p>
-                            <p class="empathizeKeyWordsArrow"><ion-icon class="arrowBlueEmpathize"
-                                    name="chevron-down-outline"></ion-icon></p>
-                            <p class="empathizeKeyWords">interviews | competition analyses</p>
-                            <p class="empathizeKeyWordsArrow"><ion-icon class="arrowBlueEmpathize"
-                                    name="chevron-down-outline"></ion-icon></p>
-                            <p class="empathizeKeyWords">findings | opportunities</p>
+                        <div class="empathizeProcess grid grid--2-cols">
+
+                            <div class="arrowCol">
+                                <ion-icon name="chevron-forward-outline"></ion-icon>
+                            </div>
+
+                            <div>
+                                <p class="empathizeKeyWords">personas | user research</p>
+                                <p class="empathizeKeyWordsArrow"><ion-icon class="arrowBlueEmpathize"
+                                        name="chevron-down-outline"></ion-icon></p>
+                                <p class="empathizeKeyWords">interviews | competition analyses</p>
+                                <p class="empathizeKeyWordsArrow"><ion-icon class="arrowBlueEmpathize"
+                                        name="chevron-down-outline"></ion-icon></p>
+                                <p class="empathizeKeyWords">findings | opportunities</p>
+                            </div>
+
                         </div>
 
                     </div>
@@ -403,7 +482,7 @@
 
                     <div class="personaAbout">
                         <p class="personasName">Laura_ </p>
-                        <p class="personasNameData">35 years old | Graphic Designer | Amarante, Portugal</p>
+                        <p class="personasNameData">35 years old | Graphic Designer | Amarante</p>
                     </div>
 
                     <div class="gridPersonasCard">
@@ -417,7 +496,8 @@
                                 <p class="personasDataTitle">habits</p>
                             </div>
                             <div class="card-txt-data">
-                                <p class="personasDataTxt">uses WhatsApp frequently<br>likes to travel<br>uses public
+                                <p class="personasDataTxt">uses WhatsApp frequently<br>likes to travel<br>uses
+                                    public
                                     transportation; shops online<br>follows her favorite artists on Instagram</p>
                             </div>
                         </div>
@@ -427,7 +507,8 @@
                                 <p class="personasDataTitle">needs</p>
                             </div>
                             <div class="card-txt-data">
-                                <p class="personasDataTxt">wants to change her field of work to visual arts<br>have a
+                                <p class="personasDataTxt">wants to change her field of work to visual arts<br>have
+                                    a
                                     better-paid job<br>
                                     would like to find a community of people with the same interests and
                                     goals</p>
@@ -472,7 +553,7 @@
                         <p class="personasName">António_ </p>
                         <p class="personasNameData">42 years
                             old | Biologist |
-                            Braga, Portugal</p>
+                            Braga</p>
                     </div>
                     <!-- card persona module -->
                     <div class="gridPersonasCard">
@@ -511,7 +592,8 @@
                             </div>
                             <div class="card-txt-data">
                                 <p class="personasDataTxt">
-                                    near home the education offer is very conventional<br>very elaborate recipies and
+                                    near home the education offer is very conventional<br>very elaborate recipies
+                                    and
                                     ingredients
                                     not following its natural season </p>
                             </div>
@@ -552,95 +634,97 @@
             </div>
 
 
-            <section class="interviewGuide grid grid--2-colsInterview">
+            <section class="interviewGuide">
 
-                <!-- ---------------------- -->
-                <!-- INTERVIEW GUIDE - LEFT -->
-                <div class="interviewGuideLeft">
+                <div class="interviewGuide-grid--2-cols">
 
+                    <div class="interview-Q-grid">
+                        <!-- --------- -->
+                        <!-- questions -->
+                        <!-- col-01 --><!-- row-01 -->
+                        <div class="interview-Q-grid-01-row">
 
-                    <div class="grid grid--2-colsQA ">
-                        <!-- interview-guide-left - COL-LEFT -->
-                        <div class="interviewGuideQuestions">
-
-                            <p class="Q-A">What is your experience with
-                                online
-                                teaching platforms?</p>
-                            <p class="Q-A">How do you decide which course to take?</p>
-                            <p class="Q-A">Tell me about your experience on the last course you took?</p>
-                            <p class="Q-A">What was the objective?
-
-                            <p class="Q-A">In terms of navigating the platform, did you feel
-                                comfortable using
-                                it?</p>
-                        </div>
-                        <!-- interview-guide-left -->
-                        <div class="interviewImgsContainer querie">
-
-                            <div class="interviewDrawingContainer querie">
-                                <img class="interviewDrawingMic querie"
-                                    src="img/ux/01_EMPATHIZE/interview-notes-mic-whiteFill.svg" alt="" srcset="">
+                            <div class="interview-Q-A Q01">
+                                <p class="interview-Questions">In terms of navigating the platform, did you feel
+                                    comfortable
+                                    using it?</p>
                             </div>
-                            <div class="QALettersContainer querie">
-                                <p class="QALetters querie">Q&A
+                            <div class="interviewAllDrawings"><img src="img/ux/01_EMPATHIZE/interview-All-drawings.svg"
+                                    alt="" srcset=""></div>
+
+                        </div>
+
+                        <!-- col-01 --><!-- row-02 -->
+                        <div class="interview-Q-grid-02-row">
+                            <div class="interview-A-A Q02">
+                                <p class="interview-Questions">How do you decide which course to take?</p>
+
+                                <p class="interview-Questions">Tell me about your experience on the last course you
+                                    took.
                                 </p>
                             </div>
 
+                            <div class="interview-A-A Q03">
+                                <p class="interview-Questions">What is your experience with online teaching platforms?
+                                </p>
+
+                                <p class="interview-Questions">What was the objective? (of taking that course)</p>
+
+                            </div>
+
                         </div>
+
 
                     </div>
-                </div>
 
 
-                <!-- -------------------------- -->
-                <!-- INTERVIEW FINDINGS - RIGHT -->
-                <div class="interviewGuideRight">
 
-                    <div class="interviewAnswers grid grid--3-colsQA">
 
-                        <div class="interviewAnswers-col01">
-                            <img class="interviewDrawing"
-                                src="img/ux/01_EMPATHIZE/balloonsIcon-blueStroke-whiteFill.svg" alt="" srcset="">
-
-                            <p>"increase knowledge to apply at work"</p>
-
-                            <p>"possibility of just taking some course modules to meet short term needs"</p>
-                            <p>"intuitive platform"</p>
+                    <div class="interview-A-grid">
+                        <!-- ------- -->
+                        <!-- answers -->
+                        <!-- col-02 -->
+                        <div class="interview-A-A">
+                            <p class="interview-Answers">"increase knowledge to apply at work"</p>
+                            <p class="interview-Answers">"possibility of just taking some course modules to meet
+                                short
+                                term
+                                needs"</p>
                         </div>
 
-                        <div class="interviewAnswers-col02">
-                            <p>"good content/ pratical exercises ratio"</p>
-
-
-
-                            <p>"was very usefull as it covered all the important points for
-                                a gradual introduction"
-                            </p>
-
-                            <p>"from the user's perspective, is pointless to take a break in class content - the
-                                video
-                                format itself allows students to do it"</p>
+                        <div class="interview-A-A">
+                            <p class="interview-Answers">"good content/ pratical exercises ratio"</p>
+                            <p class="interview-Answers">"was very usefull as it covered all the important points
+                                for a
+                                gradual introduction"</p>
                         </div>
 
-                        <div class="interviewAnswers-col03">
-                            <p class="gridInterviewQuerie01">"the platform had a Q&A section and in case of doubt, it
+                        <div class="interview-Q-A">
+                            <p class="interview-Answers">"from the user's perspective, is pointless to take a break
+                                in
+                                class
+                                content - the video format itself allows students to do it"</p>
+                        </div>
+
+                        <div class="interview-Q-A">
+                            <p class="interview-Answers">"the platform had a Q&A section and in case of doubt, it
                                 was possible to reach the
-                                teacher"
-                            </p>
-
-                            <p class="gridInterviewQuerie02">"on bad wheather days the wi-fi network is slow and weakens
-                                the live video quality"
-                            </p>
-                            <div class="gridInterviewQuerie">
-                                <p>"I had trouble finding topics of greatest interest
-                                    because
-                                    there were so many videos"
-                                </p>
-                            </div>
-
+                                teacher"</p>
                         </div>
 
+                        <div class="interview-Q-A">
+                            <p class="interview-Answers">"on bad wheather days the wi-fi network is slow and weakens
+                                the live video quality"</p>
+                        </div>
+
+                        <div class="interview-A-A">
+                            <p class="interview-Answers">"intuitive platform"</p>
+                            <p class="interview-Answers">"I had trouble finding topics of greatest interest
+                                because
+                                there were so many videos"</p>
+                        </div>
                     </div>
+
                 </div>
             </section>
 
@@ -660,7 +744,8 @@
                     <p> after grouping al the informaition we got from the interviewa we take the nxt step -
                         invesigating the competition</p>
                     <p>direct competitors</p>
-                    <p>besides investingating how thw work, what they have to offer - having our personas in mind we try
+                    <p>besides investingating how thw work, what they have to offer - having our personas in mind we
+                        try
                         to understand if the competition is able to respond to our users needs</p>
                     <p>we gather the strenghs and weeknessess - and try to get from there - opportunities we might
                         explore</p>
@@ -772,7 +857,8 @@
                                         deadlines to start or
                                         complete the course. All Udemy courses are pre-recorded and can be
                                         accessed at
-                                        any time. Users have lifetime access to the course, articles, quizzes, practice
+                                        any time. Users have lifetime access to the course, articles, quizzes,
+                                        practice
                                         questions, and other
                                         materials
                                         associated with
@@ -1002,7 +1088,7 @@
 
 
 
-            <div style="display: flex; justify-content: center;">
+            <div id="construction" style="display: flex; justify-content: center;">
 
                 <img style="height: 100px;" src="img/uc-trianguloLaranja.svg" alt="" srcset="">
             </div>
@@ -1018,276 +1104,336 @@
             <!-- ----------------------------------------- -->
             <!-- COMPETITORS ANALYSES & INTERVIEW FINDINGS -->
             <!-- ----------------------------------------- -->
-            <!-- 
-            <section class="uxMethodologyPhaseDefine">
 
-                <div class="uxMethodology-define grid grid--2-colsUxMethodology">
 
-                    
-                    <div class="">
+
+            <section class="uxMethodology">
+
+                <div class="uxMethodology-empathize grid grid--2-colsUxMethodology" id="define">
+
+                    <!-- COL 01 left -->
+                    <div class="empathize-col-left">
 
                         <div class="hexagon-title">
                             <img src="img/ux/PolygonFCDC4A-100.svg" alt="" srcset="">
-                            <p class="defineTitle">define</p>
+                            <p class="empathizeTitle">define</p>
                         </div>
 
-                        <div class="visionStatementText-question">
+                        <div class="empathize-questions01" style="margin-bottom: 1.6rem;">
                             <p>In order to refine our investigation we gathered the analyzed data from the interviews
-                                and the competitors analyses and confront it with our proto persona's needs</p>
+                                and the competitors analyses and confront it with our proto persona's needs.
+                            </p>
 
-                            <p>With this new analyses we intend to refine our personas: qualitative personas</p>
+                            <p>With this new analyses we intend to refine our personas:
+                            </p>
 
-                            <p>create a persona based on the data that was
-                                analyzed
-                                and
-                                within the same target audience
-                                of the proto persona</p>
-                            <p>This is why we start by_<span class="txt">refining the Persona</span></p>
+                        </div>
 
+
+                        <div class="empathize-questions-center">
+
+                            <div class="txtCenter" style="margin-bottom: 1.6rem;">
+                                <p class="txt">qualitative personas</p>
+                            </div>
                             <div class="arrowTxt">
                                 <ion-icon name="arrow-down-outline"></ion-icon>
                             </div>
-
                             <div class="txtCenter">
                                 <p>User Map<br>What is our journey goal?</p>
                             </div>
-
                         </div>
 
-                        <div class="visionStatementText-answer">
-                            <p>Defining the journey's steps</p>
-                            <p>search for a course<span class="txtColor"> | </span>
+                        <div class="empathize-questions02">
+
+                            <p style="margin-bottom: 1.6rem;">Defining the journey's steps:</p>
+                            <p style="margin-bottom: 1.6rem;">search for a course<span class="txtColor"> | </span>
                                 buy the course <span class="txtColor"> | </span>
                                 complete the course <span class="txtColor"> | </span> organize the resume<span
                                     class="txtColor"> | </span>looking for a job
                             </p>
-
                             <p><span class="txtColor">what is the user experience?</span>
                             </p>
                             <p>actions | pains and needs | emotions | touchpoints and means</p>
-
                         </div>
-                    
-                    
                     </div>
-                    
-                    <div class="define-col-right">
 
-                        <div class="define-userImg-questions querie">
-                            
-                            <div class="emojiPlaceholder">
-                                <img class="emojidrawing" src="img/ux/02_DEFINE/6-emojis-circle-white.svg" alt=""
-                                    srcset="">
-                            </div>
-                        </div>
 
-                        <div class="define-userQuestions grid grid--3-rowsEmpathize">
-                            ROW 01 EMPTY 
-                            <div class="defineEmptyRow">
-                                
-                                <div class="emojiPlaceholder">
+                    <!-- COL 02 right-->
+                    <div class="empathize-col-right">
+
+                        <div class="empathize-userQuestions grid grid--2-rowsEmpathize">
+                            <!-- row 01 -->
+                            <div class="empathizeUserRow">
+
+                                <div class="circleEmpathize">
                                     <img class="emojidrawing" src="img/ux/02_DEFINE/6-emojis-circle-white.svg" alt=""
                                         srcset="">
                                 </div>
+
+                                <div class="empathizeAllQ">
+                                    <p class="empathizeQ01">what is the scenario<span class="qMark">?</span>></p>
+                                    <p class="empathizeQ02">what are my expectations<span class="qMark">?</span>
+                                    </p>
+                                    <p class="empathizeQ03">should I take an online
+                                        course<span class="qMark">?</span>
+                                    </p>
+                                </div>
+
                             </div>
 
-                            <div class="defineAllQ ">
-                                <p class="defineQ01">>what is the scenario<span class="qMark">?</span></p>
-                                <p class="defineQ02">what are my expectations<span class="qMark">?</span>
-                                </p>
-                                <p class="defineQ03">should I take an online
-                                    course<span class="qMark">?</span>
-                                </p>
+
+                            <!-- row 02 -->
+                            <div class="empathizeProcess grid grid--2-cols">
+
+                                <div class="arrowCol">
+                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </div>
+
+                                <div>
+                                    <p class="empathizeKeyWords">qualitative persona</p>
+                                    <p class="empathizeKeyWordsArrow"><ion-icon class="arrowBlueEmpathize"
+                                            name="chevron-down-outline"></ion-icon></p>
+                                    <p class="empathizeKeyWords">journey goal | change job</p>
+                                    <p class="empathizeKeyWordsArrow"><ion-icon class="arrowBlueEmpathize"
+                                            name="chevron-down-outline"></ion-icon></p>
+                                    <p class="empathizeKeyWords">opportunities | insights</p>
+                                </div>
+
                             </div>
 
-                            <div class="defineProcess">
-                                <p style="background-color: #FCDC4A;">qualitative persona</p>
-
-                                <p style="display: flex;justify-content: center;"><ion-icon class="arrowBlueEmpathize"
-                                        name="chevron-down-outline"></ion-icon></p>
-
-                                <p style="background-color: #FCDC4A">journey goal | change job</p>
-
-                                <p style="display: flex;justify-content: center;"><ion-icon class="arrowBlueEmpathize"
-                                        name="chevron-down-outline"></ion-icon></p>
-
-                                <p style="background-color: #FCDC4A">opportunities | insights</p>
-                            </div>
                         </div>
-
                     </div>
 
                 </div>
-
             </section>
-        -->
+
+
             <!-- ------------------------------- -->
             <!-- REFINED PERSONAS - USER JOURNEY -->
             <!-- ------------------------------- -->
             <!--
 
-            <section class="refinedPersonas">
-                <div class="personasResearchTitle">
-                    <p class="title-1">Refined - Personas</p>
-                </div>
+<section class="protoPersonasContentSelection">
 
-                <div class="refinedPersonasSubtitle">
-                    <p class="paragraph-1">
-                    </p>
-                </div>
+            <!--  <div class="protoPersonasContentSelectionTitles">
+            <p>IDEATE</p>
+                <p>after this research we are ready to refine the personas -qualitative personas</p>
+                <p>have more discussion and comparisons between them and get to the FINAL PERSONA</p>
 
-                <div class="refinedPersonasAll grid grid--3-cols">
+                <P>THIS final persona - will take us to the user journey</P>
 
-                    <div class="personasRefinedMargarida">
+                <p>Content Selection</p>
 
-                        <div class="photoAbout grid grid--2-cols">
-                            <img class="drawingMargarida" src="img/ux/01_EMPATHIZE/margarida-blue-292562-1oo.svg" alt="" srcset="">
+                <p class="paragraph-1">- and as our investigation continues - competition analyses
+                    - interviews - we'll keep up dating our personas to a final one </p>
+                    - interviews - we'll keep up dating our personas to a final one </p>
+            </div>-->
 
-                            <div class="about">
-                                <p class="personasDataTitle">Margarida,</p>
-                                <p class="personasDataTxt">36 years old<br>
-                                    student at university<br>
-                                    Estremoz</p>
-                            </div>
+            <div class="protoPersonasContentSelectionTitles">
+                <p>Refined Personas</p>
+            </div>
+
+            <!-- cards - personas -->
+            <div class="">
+                <!-- card persona module -->
+
+                <div class="refinedPersonasGrid-2-cols" style="margin-bottom: 8.8rem;">
+
+                    <div class="contentProtoPersonas-laura">
+
+
+
+                        <div class="personaAbout">
+                            <p class="personasName">Margarida_ </p>
+                            <p class="personasNameData">36 years old | University Student | Estremoz</p>
                         </div>
 
-                        <div class="personasTxt">
-                            <p class="personasDataTitle">habits</p>
-                            <p class="personasDataTxt">listens to music on Spotify while studying; watchs Netflix after
-                                studying; prefers to study through the iPad
-                            </p>
-
-                            <p class="personasDataTitle">needs</p>
-                            <p class="personasDataTxt">took courses to consolidate her knowledge; likes to anticipate what
-                                will
-                                learn at university; is looking for the most complete course
-                                even if only takes some modules to meet short-term needs;
-                            </p>
-
-                            <p class="personasDataTitle">obstacles</p>
-                            <p class="paragraph-2">has trouble searching for the most appropriate course;
-                                finds many courses with repetititve confusing information; hopes to find a course with
-                                more organized content
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="personasRefinedTelmo">
-                        <div class="photoAbout grid grid--2-cols">
-                            <img class="drawingTelmo" src="img/ux/01_EMPATHIZE/telmo-blue-292562.svg" alt="" srcset="">
-                            <div class="about">
-                                <p class="personasDataTitle">Telmo,</p>
-                                <p class="paragraph-2">30 years old, <br>hotel manager <br>
-                                    Braga</p>
+                        <div class="gridPersonasCard">
+                            <div class="personasCardModuleDrawing">
+                                <img class="drawingMargarida" src="img/ux/01_EMPATHIZE/margarida-blue-292562-1oo.svg"
+                                    alt="" srcset="">
                             </div>
 
-                        </div>
-
-                        <div class="personasTxt">
-                            <p class="personasDataTitle">habits</p>
-                            <p class="paragraph-2">
-                                travels on free weekends; enjoys taking pictures; would like to know more about Art
-                                History;
-                            </p>
-
-                            <p class="personasDataTitle">needs</p>
-                            <p class="paragraph-2">wants to increase his knowledge in photography - both professional
-                                camera and smartphone's; wants to learn more about Art History to apply
-                                at work and improve his resume
-                            </p>
-
-                            <p class="personasDataTitle">obstacles</p>
-                            <p class="personasDataTxt">has little schedulle flexibility; has some trouble using home wi-fi;
-                                doesn't have a camera; is having a hard time finding the ideal course; would like to
-                                have more anwers to foreigners questions
-                                about the history of his country
-                            </p>
-                        </div>
-                    </div>
-
-
-
-
-                    <div class="personasRefinedMaria querie">
-                        <div class="photoAbout grid grid--2-cols">
-                            <img class="drawingMaria" src="img/ux/02_DEFINE/maria-blue.svg" alt="" srcset="">
-                            <div class=" about">
-                                <p class="personasDataTitle">Maria</p>
-                                <p>35 years old,<br>business management<br>
-                                    Viseu</p>
+                            <div class="personasCardModule">
+                                <div class="card-title">
+                                    <p class="personasDataTitle">habits</p>
+                                </div>
+                                <div class="card-txt-data">
+                                    <p class="personasDataTxt">listens to music on Spotify while studying<br>watchs
+                                        Netflix<br>prefers to study through the iPad</p>
+                                </div>
                             </div>
 
-                        </div>
-
-                        <div class="personasTxt">
-                            <p class="personasDataTitle">habits</p>
-                            <p class="personasDataTxt">takes short trips looking for cultural diversity (exhibitions or
-                                workshops); uses the internet a lot
-                                to
-                                learn more about art
-                            </p>
-
-                            <p class="personasDataTitle">needs</p>
-                            <p class="personasDataTxt">wants to change professional field within the arts; hopes to find
-                                appropriaded
-                                training to the job market; wants to specialize and expand knowledge
-                            </p>
-
-                            <p class="personasDataTitle">obstacles</p>
-                            <p class="personasDataTxt">reconcile study time with work; has some financial limitations; lives
-                                in a small environment - has no access to specialized in-person education; would love to
-                                find a community with the same professional/personal interests
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="personasRefinedOnlyMaria">
-
-                    <div class="personasRefinedMaria">
-                        <div class="photoAbout grid grid--2-cols">
-                            <img class="drawingMaria" src="img/ux/02_DEFINE/maria-blue.svg" alt="" srcset="">
-                            <div class=" about">
-                                <p class="personasDataTitle">Maria</p>
-                                <p>35 years old,<br>business management<br>
-                                    Viseu</p>
+                            <div class="personasCardModule">
+                                <div class="card-title">
+                                    <p class="personasDataTitle">needs</p>
+                                </div>
+                                <div class="card-txt-data">
+                                    <p class="personasDataTxt">took courses to consolidate her knowledge<br>likes to
+                                        anticipate what
+                                        will
+                                        learn at university<br>is looking for courses to meet short-term needs</p>
+                                </div>
                             </div>
 
-                        </div>
+                            <div class="personasCardModule">
+                                <div class="card-title">
+                                    <p class="personasDataTitle">obstacles</p>
+                                </div>
+                                <div class="card-txt-data">
+                                    <p class="personasDataTxt">
+                                        finds many courses with repetititve and confusing information<br> hopes to find
+                                        a
+                                        course
+                                        with
+                                        more organized content</p>
+                                </div>
+                            </div>
 
-                        <div class="personasTxt">
-                            <p class="personasDataTitle">habits</p>
-                            <p class="personasDataTxt">takes short trips looking for cultural diversity (exhibitions or
-                                workshops); uses the internet a lot
-                                to
-                                learn more about art
-                            </p>
-
-                            <p class="personasDataTitle">needs</p>
-                            <p class="personasDataTxt">wants to change professional field within the arts; hopes to find
-                                appropriaded
-                                training to the job market; wants to specialize and expand knowledge
-                            </p>
-
-                            <p class="personasDataTitle">obstacles</p>
-                            <p class="personasDataTxt">reconcile study time with work; has some financial limitations; lives
-                                in a small environment - has no access to specialized in-person education; would love to
-                                find a community with the same professional/personal interests
-                            </p>
                         </div>
                     </div>
 
 
 
+                    <div class="contentProtoPersonas-antonio">
+
+                        <!-- card persona module -->
+                        <!-- card persona presentation -->
+                        <div class="personaAbout">
+                            <p class="personasName">Telmo_ </p>
+                            <p class="personasNameData">30 years
+                                old | Hotel Manager |
+                                Braga</p>
+                        </div>
+                        <!-- card persona module -->
+                        <div class="gridPersonasCard">
+                            <div class="personasCardModuleDrawing">
+
+                                <img class="drawingTelmo" src="img/ux/01_EMPATHIZE/telmo-blue-292562.svg" alt=""
+                                    srcset="">
+                            </div>
+
+                            <div class="personasCardModule">
+                                <div class="card-title">
+                                    <p class="personasDataTitle">habits</p>
+                                </div>
+                                <div class="card-txt-data">
+                                    <p class="personasDataTxt">travels on free weekends<br> enjoys taking pictures<br>
+                                        would
+                                        like to know more about Art
+                                        History</p>
+                                </div>
+                            </div>
+
+                            <div class="personasCardModule">
+                                <div class="card-title">
+                                    <p class="personasDataTitle">needs</p>
+                                </div>
+                                <div class="card-txt-data">
+                                    <p class="personasDataTxt">wants to increase his knowledge in photography - both
+                                        professional
+                                        camera and smartphone's<br> wants to learn more about Art History to apply
+                                        at work and improve his resume</p>
+                                </div>
+                            </div>
+
+                            <div class="personasCardModule">
+                                <div class="card-title">
+                                    <p class="personasDataTitle">obstacles</p>
+                                </div>
+                                <div class="card-txt-data">
+                                    <p class="personasDataTxt">no time flexibility<br>has trouble
+                                        using
+                                        home wi-fi<br>
+                                        doesn't have a camera<br>
+                                        would
+                                        like to
+                                        have more anwers to foreigners questions
+                                        about the history of his country</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="refinedPersonasGrid-2-cols">
+
+
+                    <div class="contentProtoPersonas-antonio">
+
+                        <!-- card persona module -->
+                        <!-- card persona presentation -->
+                        <div class="personaAbout">
+                            <p class="personasName">Maria_ </p>
+                            <p class="personasNameData">35 years
+                                old | Business Management |
+                                Viseu</p>
+                        </div>
+                        <!-- card persona module -->
+                        <div class="gridPersonasCard">
+                            <div class="personasCardModuleDrawing">
+
+                                <img class="drawingMaria" src="img/ux/02_DEFINE/maria-blue.svg" alt="" srcset="">
+                            </div>
+
+                            <!-- card persona module -->
+                            <div class="personasCardModule">
+                                <div class="card-title">
+                                    <p class="personasDataTitle">habits</p>
+                                </div>
+                                <div class="card-txt-data">
+                                    <p class="personasDataTxt">takes short trips looking for cultural diversity
+                                        (exhibitions
+                                        or
+                                        workshops)<br> uses the internet a lot
+                                        to
+                                        learn more about art</p>
+                                </div>
+                            </div>
+
+                            <div class="personasCardModule">
+                                <div class="card-title">
+                                    <p class="personasDataTitle">needs</p>
+                                </div>
+                                <div class="card-txt-data">
+                                    <p class="personasDataTxt">wants to change professional field within the
+                                        arts<br>hopes
+                                        to find
+                                        appropriaded
+                                        training to the job market<br>wants to specialize and expand knowledge</p>
+                                </div>
+                            </div>
+
+                            <div class="personasCardModule">
+                                <div class="card-title">
+                                    <p class="personasDataTitle">obstacles</p>
+                                </div>
+                                <div class="card-txt-data">
+                                    <p class="personasDataTxt">reconcile study with work<br>financial
+                                        limitations<br>has no access to specialized in-person
+                                        education<br>would
+                                        love to
+                                        find a community with the same interests</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
 
-            </section>
- -->
-            <!-- ---------------------------- -->
-            <!-- FINAL PERSONA - USER JOURNEY -->
-            <!-- ---------------------------- -->
-            <!-- 
+
+
+            </div>
+        </section>
+
+
+        <!-- ------------- -->
+        <!-- final persona -->
+        <!-- ------------- -->
+
+        <section class="finalPersona">
 
             <div class="arrowPersonasBck">
                 <div class="arrowTxtIndividual roundBackgroundIndividual">
@@ -1295,136 +1441,7 @@
                 </div>
             </div>
 
-            <section class="personaMargaridaUserJourney querie">
-
-                <div class="finalPersonaInformation grid grid--2-colsMargarida">
-
-                    <div class="personaMargaridaLeft">
-
-                        <div class="circleMargarida grid grid--2rowsCircle">
-                            <div class="roundMargaridaPlaceholder"><img src="img/ux/margarida.svg" alt="" srcset="">
-                            </div>
-
-                            <div class="aboutInsideCircle">
-                                <p class="personasDataTitleCircle">Margarida</p>
-                                <p class="personaTxtCircle">31 years old,</p>
-                                <p class="personaTxtCircle">hotel manager,</p>
-                                <p class="personaTxtCircle">turismo,
-                                    Viseu</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="personaMargaridaRight">
-
-                        <div class="personaMargaridaLeftHabits">
-                            <p class="habitsMargarida">habits</p>
-                            <p class="personasDataTxt">learns on the internet about the artistic areas she is
-                                interested in;
-                                spends a lot of time on social media; listens to music on Spotify while
-                                studyes;
-                                likes to watch Netflix after studying; takes short trips to nearby cities looking for
-                                cultural diversity.
-                            </p>
-                        </div>
-                        <div class="personaMargaridaLeftNeeds">
-                            <p class="needsMargarida">needs</p>
-                            <p class="personasDataTxt">wants to increase her knowledge on photography; interested in
-                                Photoshop and Lightroom; wants to learn about Art History; expects to use all this
-                                nowledge tour guiding.
-                            </p>
-                        </div>
-                        <div class="personaMargaridaLeftObstacules">
-                            <p class="obstaclesMargarida">obstacles</p>
-                            <p class="personasDataTxt">has bad Wi-Fi network at her home;
-                                lives
-                                in a small
-                                environment with little access to specialized education; misses being part of a
-                                communities with the same
-                                professional and personal interests.
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
--->
-
-
-            <!-- experimental margarida-->
-            <!-- 
-            <div class="finalMargarida">
-                <div class="margaridaPlaceholder grid finalMargarida-grid--2-rows">
-
-                   
-                    <div class="personaMargaridaFinal-row-01">
-                        <div class="circleMargarida grid grid--2rowsCircle">
-                            <div class="roundMargaridaPlaceholder"><img src="img/ux/margarida.svg" alt="" srcset="">
-                            </div>
-
-                            <div class="aboutInsideCircle">
-                                <p class="personasDataTitleCircle">Margarida</p>
-                                <p class="personaTxtCircle">31 years old,</p>
-                                <p class="personaTxtCircle">hotel manager,</p>
-                                <p class="personaTxtCircle">turismo,
-                                    Viseu</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    
-                    <div class="personaMargaridaFinal-row-02">
-                        <div class="informationMargarida--03-cols">
-                            
-                            <div class="personaMargaridaLeftHabitsFinal">
-                                <p class="habitsMargarida">habits</p>
-                                <p class="personasDataTxt">learns on the internet about the artistic areas she is
-                                    interested in;
-                                    spends a lot of time on social media; listens to music on Spotify while
-                                    studyes;
-                                    likes to watch Netflix after studying; takes short trips to nearby cities looking
-                                    for
-                                    cultural diversity.
-                                </p>
-                            </div>
-                           
-                            <div class="personaMargaridaLeftNeedsFinal">
-                                <p class="needsMargarida">needs</p>
-                                <p class="personasDataTxt">wants to increase her knowledge on photography; interested in
-                                    Photoshop and Lightroom; wants to learn about Art History; expects to use all this
-                                    nowledge tour guiding.
-                                </p>
-                            </div>
-                            
-                            <div class="personaMargaridaLeftObstaculesFinal">
-                                <p class="obstaclesMargarida">obstacles</p>
-                                <p class="personasDataTxt">has bad Wi-Fi network at her home;
-                                    lives
-                                    in a small
-                                    environment with little access to specialized education; misses being part of a
-                                    communities with the same
-                                    professional and personal interests.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-
-
-
-            </div>
-
-            </div>
-
-
-
-
-        -->
-
-            <!-- 
-            <section class="scenarioExpectations">
+            <div class="scenarioExpectations">
 
                 <div class="scenarioExpectationsToJourney grid grid--2-cols">
                     <div class="userJourneyScenario-txt">
@@ -1441,12 +1458,86 @@
                     </div>
                 </div>
 
-            </section>
--->
-            <!-- ------------------------ -->
-            <!-- JOURNEY GOAL: CHANGE JOB -->
-            <!-- ------------------------ -->
-            <!-- 
+            </div>
+
+            <!-- card persona module -->
+            <!-- card persona module -->
+            <!-- card persona module -->
+
+            <div class="contentFinalPersona" style="margin-bottom: 8rem;margin-top: 8rem">
+
+
+                <!-- card persona presentation -->
+                <div class="personaAbout">
+                    <p class="personasName">Margarida_ </p>
+                    <p class="personasNameData">31 years
+                        old | Hotel Manager |
+                        Viseu</p>
+                </div>
+
+                <!-- card persona module -->
+                <div class="gridPersonasCard">
+
+                    <div class="personasCardModuleDrawing">
+
+                        <img class="drawingMargarida" src="img/ux/01_EMPATHIZE/margarida-blue-292562-1oo.svg" alt=""
+                            srcset="">
+                    </div>
+
+                    <!-- card persona module -->
+                    <div class="personasCardModule">
+                        <div class="card-title">
+                            <p class="personasDataTitle">habits</p>
+                        </div>
+                        <div class="card-txt-data">
+                            <p class="personasDataTxt">learns on the internet about the artistic areas she is
+                                interested in<br>
+                                spends a lot of time on social media<br>listens to music on Spotify<br>watchs
+                                Netflix<br>takes
+                                short
+                                trips to nearby cities looking for
+                                cultural diversity</p>
+                        </div>
+                    </div>
+
+                    <div class="personasCardModule">
+                        <div class="card-title">
+                            <p class="personasDataTitle">needs</p>
+                        </div>
+                        <div class="card-txt-data">
+                            <p class="personasDataTxt">increase her knowledge on photography<br>interested in
+                                Photoshop and Lightroom<br>learn about Art History<br>expects to use all this
+                                knowledge tour guiding</p>
+                        </div>
+                    </div>
+
+                    <div class="personasCardModule">
+                        <div class="card-title">
+                            <p class="personasDataTitle">obstacles</p>
+                        </div>
+                        <div class="card-txt-data">
+                            <p class="personasDataTxt">has bad Wi-Fi network at her home<br>lives in a small
+                                environment with little access to specialized education<br>misses being part of a
+                                communities with the same interests</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <!-- ---------------------------- -->
+        <!-- FINAL PERSONA - USER JOURNEY -->
+        <!-- ---------------------------- -->
+
+
+        <!-- ------------------------ -->
+        <!-- JOURNEY GOAL: CHANGE JOB -->
+        <!-- ------------------------ -->
+        <!-- 
 
             <div class="userJourneyPresentation">
                 <p class="title-1">User Journey</p>
@@ -1456,7 +1547,7 @@
                 <p class="title-1">Journey Goal: change job</p>
             </div>
 -->
-            <!--
+        <!--
             <div class="userJourneyProcessDefinition paragraph-1">
                 <p>1 define the objective - think about what objective you are going to define for this
                     journey
@@ -1478,10 +1569,10 @@
             </div>
             </section>-->
 
-            <!-- ------------------------------ -->
-            <!-- MARGARIDA USER JOURNEY TO GOAL -->
-            <!-- ------------------------------ -->
-            <!-- 
+        <!-- ------------------------------ -->
+        <!-- MARGARIDA USER JOURNEY TO GOAL -->
+        <!-- ------------------------------ -->
+        <!-- 
             <section class="margaridaUserJourneyToGoal">
 
                 <button class="userJourneyStepsButton" onclick="toggleDropdown()">
@@ -1763,10 +1854,10 @@
 -->
 
 
-            <!-- ---------------------------- -->
-            <!-- ANALYSES MAP - OPPORTUNITIES -->
-            <!-- ---------------------------- -->
-            <!-- 
+        <!-- ---------------------------- -->
+        <!-- ANALYSES MAP - OPPORTUNITIES -->
+        <!-- ---------------------------- -->
+        <!-- 
             <section class="opportunitiesSelection">
 
                 <button class="opportunitiesFromJourneyMapBtn" onclick="toggleDropdown()">
@@ -1781,8 +1872,8 @@
 
                 <div id="allOpportunitiesPostIt" class="allOpportunitiesPostIt grid grid--9-cols">
                     -->
-            <!-- col 01 EMPTY-->
-            <!-- 
+        <!-- col 01 EMPTY-->
+        <!-- 
                     <div></div>
 
                     <div class="opportunitiesPostIt-col-2">
@@ -1796,7 +1887,7 @@
                             <p>there are no incentives to buy more courses once the purchased one is completed</p>
                         </div>
                         -->
-            <!--
+        <!--
 
                     </div>
 
@@ -1903,20 +1994,20 @@
             </section>
         -->
 
-            <!-- ------------------------------ -->
-            <!-- IDEATE_ REDEFINE THE CHALLENGE -->
+        <!-- ------------------------------ -->
+        <!-- IDEATE_ REDEFINE THE CHALLENGE -->
 
-            <!-- <section class="uxSheme-phaseIdeate">
+        <!-- <section class="uxSheme-phaseIdeate">
                 <div class="uxStepDefine">
                     <img src="img/ux/PolygonFCDC4A-100.svg" alt="" srcset="">
                     <p style="font-weight: 400; color:#555;">ideate</p>
             </section>-->
 
-            <!-- -------------------------------- -->
-            <!-- IDEATE_ REDEFINE THE CHALLENGE 1 -->
-            <!-- -------------------------------- -->
+        <!-- -------------------------------- -->
+        <!-- IDEATE_ REDEFINE THE CHALLENGE 1 -->
+        <!-- -------------------------------- -->
 
-            <!--  <section class="redefineChallenge">
+        <!--  <section class="redefineChallenge">
                 <p class="title-2">STRUCTURING THE CHALLENGE</p>
                 <div>
                     <p class="paragraph-1">01 structure the problem statement: </p>
@@ -1998,9 +2089,9 @@
                 <img src="img/postItBlock-singles.svg" alt="" srcset="">
 
                 <!-- -------------------------------- -->
-            <!-- IDEATE_ REDEFINE THE CHALLENGE 2 -->
-            <!-- -------------------------------- -->
-            <!-- 
+        <!-- IDEATE_ REDEFINE THE CHALLENGE 2 -->
+        <!-- -------------------------------- -->
+        <!-- 
                 <div style="margin-bottom: 2.4rem;">
                     <p class=" title-1">01 Benchmark</p>
                     <p class="paragraph-1">visit your competitors' platforms and see how they present their services and
@@ -2218,17 +2309,17 @@
                     <p class="title-1">impact/ effort matrix</p>
                 </div>
                 <!-- --------------------------------------- -->
-            <!-- MATRIX --- MATRIX --- MATRIX --- MATRIX -->
-            <!-- --------------------------------------- -->
-            <!--
+        <!-- MATRIX --- MATRIX --- MATRIX --- MATRIX -->
+        <!-- --------------------------------------- -->
+        <!--
                 <section class="matrixPlaceholder">-->
 
 
-            <!-- MATRIX --- GRID - 09 - COLS - 09 - ROWS -
+        <!-- MATRIX --- GRID - 09 - COLS - 09 - ROWS -
                     <div class="impactEffortMatrixScheme grid grid--9-cols grid--9-rows">-->
 
-            <!-- ----------------------------- -->
-            <!-- MATRIX --- GRID - ALL-BUTTONS 
+        <!-- ----------------------------- -->
+        <!-- MATRIX --- GRID - ALL-BUTTONS 
                         <div class="matrixBtnArrowUp">
                             <div>
                                 <button class="highImpactBtn">high impact</button>
@@ -2256,12 +2347,12 @@
                                 <button class="highEffortBtn">high effort</button>
                             </div>
                         </div>-->
-            <!-- ----------------------------- --->
+        <!-- ----------------------------- --->
 
 
 
-            <!-- ----------------------------- --->
-            <!-- MATRIX - LOW EFFORT - HIGH IMPACT - top-left 
+        <!-- ----------------------------- --->
+        <!-- MATRIX - LOW EFFORT - HIGH IMPACT - top-left 
                         <div class="lowEffort-highImpact grid grid--3-cols grid--3-row">
 
                             <p class="topLeft-01 proposal">create an online community</p>
@@ -2290,7 +2381,7 @@
                                 domain
                                 artwork for their projects</p>
                         </div>--->
-            <!-- MATRIX - HIGH IMPACT - HIGH EFFORT - top-right 
+        <!-- MATRIX - HIGH IMPACT - HIGH EFFORT - top-right 
                         <div class="highImpact-highEffort grid grid--3-cols grid--3-rows">
                             <p class="topRight-01 proposal">
                                 parter with sucessfull professionals to have live inspirational talks</p>
@@ -2319,7 +2410,7 @@
                                 points</p>
 
                         </div>--->
-            <!-- MATRIX - LOW EFFORT - LOW IMPACT - bottom-left 
+        <!-- MATRIX - LOW EFFORT - LOW IMPACT - bottom-left 
                         <div class="lowImpact-lowEffort grid grid--3-cols grid--3-rows">
                             <p class="bottomLeft-01 proposal">create a cultural week</p>
                             <p class="bottomLeft-02 proposal">create a community on the website for joint
@@ -2338,7 +2429,7 @@
                                 advantage of examples of the subject matter given</p>
                         </div>
 --->
-            <!-- MATRIX - LOW IMPACT - HIGH EFFORT - bottom-right 
+        <!-- MATRIX - LOW IMPACT - HIGH EFFORT - bottom-right 
                         <div class="lowImpact-highEffort grid grid--3-cols grid--3-rows">
                             <div class="bottomRight-01">
                                 <p class="proposal">have trainees to make schedulled guided tours
@@ -2413,9 +2504,9 @@
         <p></p>
     </div>
 --->
-            <!-- 
+        <!-- 
     <div class="hexagon"></div>-->
-            <!-- 
+        <!-- 
             <section class="uxMethodologyPhaseDefine">
                 <div class="uxMethodology-define grid grid--2-cols">
                     
@@ -2431,7 +2522,7 @@
                     </div>
                     <div class="define-col-right">
                     -->
-            <!-- 
+        <!-- 
                 <div class="empathize-userImg-questions">
                     <div class="circleEmpathize"><img class="drawingSize" src="img/ux/userOnLaptop-blue.svg"
                             alt="" srcset="">
@@ -2503,8 +2594,8 @@
                             alt="" srcset="">
                     </div>
                 </div> -->
-            <div class="empathize-userQuestions grid grid--8-rowsEmpathize">
-                <!-- 
+        <div class="empathize-userQuestions grid grid--8-rowsEmpathize">
+            <!-- 
                             <div class="empathizeQMark grid grid--2-colsQMark">
                                 <div>
                                     <p style="background-color: #fff;"></p>
@@ -2615,7 +2706,7 @@
                 </div>
             </section>
         -->
-                <!-- 
+            <!-- 
     <section class="uxSheme-phaseTest">
         <div class="uxStepTest">
             <img src="img/ux/PolygonFCDC4A-100.svg" alt="" srcset="">
@@ -2786,17 +2877,21 @@
 
 
 -->
-                <!-- 
+            <!-- 
             <div>
                 <a href="landing.html">landing</a>
             </div>-->
-                <footer>
-                    <div class="footerContent">
-                        <p class="footerMyName">diana dóris</p>
-                        <p class="registeredMark">&reg</p>
-                        <p class="currentYear">2025</p>
-                    </div>
-                </footer>
+            <footer>
+                <div class="footerContent">
+                    <p class="footerMyName">diana dóris</p>
+                    <p class="registeredMark">&reg</p>
+                    <p class="currentYear">2025</p>
+                </div>
+            </footer>
+
+
+
+
 </body>
 
 </html>
