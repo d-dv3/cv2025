@@ -702,7 +702,7 @@ footer {
     border-radius: 1.6rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-right: 0.8rem;
+    margin-right: 1.6rem;
     padding: 0.4rem;
     background-color: rgba(201, 200, 216, 0.1);
 }
@@ -716,7 +716,7 @@ footer {
     border-radius: 1.6rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-right: 0.8rem;
+    margin-right: 1.6rem;
     padding: 0.4rem;
     background-color: rgba(201, 200, 216, 0.05);
 }
@@ -757,7 +757,7 @@ button:active {
     margin-bottom: 24rem;
 }
 
-.uxMethodology-empathize {
+.uxMethodology-allPhases {
     height: 39.2rem;
 }
 
@@ -921,6 +921,7 @@ button:active {
     margin-bottom: 12em;
 }
 
+.refinedPersonasContentSelectionTitles,
 .protoPersonasContentSelectionTitles {
     font-size: 1.6rem;
     font-weight: 400;
@@ -953,6 +954,9 @@ button:active {
     grid-template-columns: 1fr 1fr;
 }
 
+.contentRefinedPersonas-maria,
+.contentRefinedPersonas-telmo,
+.contentRefinedPersonas-margarida,
 .contentFinalPersona,
 .contentProtoPersonas-laura,
 .contentProtoPersonas-antonio {
@@ -1041,6 +1045,7 @@ button:active {
     background-color: rgba(201, 200, 216, 0.1);
 }
 
+.drawingSize,
 .emojidrawing,
 .persona-card-drawing {
     height: 8rem;
@@ -1086,89 +1091,6 @@ button:active {
 
 
 
-
-
-
-
-
-/* ******************************************* */
-/* CONTENT SELECTION - BUILDING PROTO PERSONAS */
-/* ******************************************* */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* card-persona module */
-/* ******************* */
-/* ******************* */
-
-
-
-
-.contentProtoPersonas-title {
-    border: 1px solid #292562;
-    border-radius: 16px;
-    font-size: 1rem;
-    font-weight: 400;
-    color: #292562;
-    padding: 0.8rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 0.8rem;
-}
-
-.personasResearchAbout,
-.personasResearchAbout {
-    min-height: 30rem;
-    border-radius: 1.6rem;
-    padding-left: 2.4rem;
-    padding-right: 2.4rem;
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
-    background-color: rgba(201, 200, 216, 0.1);
-}
-
-.photoAbout {
-    margin-bottom: 0.8rem;
-}
-
-.drawingSize,
-.drawingTelmo,
-.drawingMargarida,
-.drawingMaria,
-.drawingAntonio,
-.drawingLaura {
-    height: 8rem;
-}
-
-.about {
-    align-self: center;
-}
-
-
-
 /* ***************************** */
 /* UX RESEARCH - INTERVIEW GUIDE */
 /* ***************************** */
@@ -1178,91 +1100,6 @@ button:active {
 
 .researchStrategyTitles {
     margin-bottom: 4.8rem;
-}
-
-/*
-.interviewGuide {}*/
-
-.interviewGuide-grid--2-cols {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.interview-A-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    column-gap: 1.6rem;
-    row-gap: 1.6rem;
-}
-
-.interview-Q-grid {
-    display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: 2fr 1fr;
-    row-gap: 1.6rem;
-}
-
-.interview-Q-grid-03-row,
-.interview-Q-grid-02-row,
-.interview-Q-grid-01-row {
-    display: flex;
-
-}
-
-.Q01,
-.interviewAllDrawings {
-    grid-row: 1;
-}
-
-.Q01 {
-    align-self: self-end;
-}
-
-.interviewAllDrawings {
-    margin-left: 1.6rem;
-
-}
-
-.Q02,
-.Q03 {
-    grid-row: 2;
-}
-
-.Q02 {
-    margin-right: 1.6rem;
-}
-
-
-
-.interview-A-grid {
-    justify-self: left;
-}
-
-.interview-A-A,
-.interview-Q-A {
-    width: 15.4rem;
-    height: 10.4rem;
-    border-radius: 1.6rem;
-    padding-left: 1.6rem;
-    padding-right: 1.6rem;
-    background-color: rgba(41, 37, 98, 0.05);
-    box-shadow: 4px 4px 5px rgba(201, 200, 216, 0.5);
-}
-
-.interview-Q-A {
-    display: flex;
-}
-
-.interview-A-A {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-}
-
-.interview-Answers,
-.interview-Questions {
-    font-family: 1.2rem;
-    align-self: center;
 }
 
 .interviewTitles {
@@ -1280,67 +1117,117 @@ button:active {
     margin-bottom: 1.6rem;
 }
 
-.grid--2-colsInterview {
-    grid-template-columns: 1fr 1fr;
-    gap: 2.4rem;
-}
-
 .interviewGuide {
-    /*
-    min-height: 20rem;*/
     margin-bottom: 20rem;
 }
 
 
+.interviewGuide-grid--2-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
-/* ********************** */
-/* INTERVIEW GUIDE - left */
-/* ********************** */
-.Q-A-title,
-.Q-A {
-    font-size: 1.2rem;
-    margin-bottom: 0.8rem;
+.interview-Q-grid {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 2fr 1fr;
+    row-gap: 1.6rem;
+}
+
+.interview-Q-grid-03-row,
+.interview-Q-grid-02-row,
+.interview-Q-grid-01-row {
+    display: flex;
+}
+
+.interview-A-A {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.interview-A-A,
+.interview-Q-A {
+    width: 15.4rem;
+    height: 10.4rem;
+    border-radius: 1.6rem;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    background-color: rgba(41, 37, 98, 0.05);
+    box-shadow: 4px 4px 5px rgba(201, 200, 216, 0.5);
+}
+
+.interview-Q-A {
+    display: flex;
+}
+
+.interview-Answers,
+.interview-Questions {
+    font-family: 1.2rem;
+    align-self: center;
+}
+
+.Q01,
+.interviewAllDrawings {
+    grid-row: 1;
+}
+
+.Q01 {
+    align-self: self-end;
+}
+
+.Q02,
+.Q03 {
+    grid-row: 2;
+}
+
+.Q02 {
+    margin-right: 1.6rem;
+}
+
+/*  ****** */
+/* answers */
+/* col-02 */
+.interview-A-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 1.6rem;
+    row-gap: 1.6rem;
+}
+
+.interview-A-grid {
+    justify-self: left;
+}
+
+.interviewAllDrawings {
+    margin-left: 1.6rem;
 }
 
 
-
-/* *********************** */
-/* INTERVIEW GUIDE - right */
-/* *********************** */
+/* ******** */
+/* FINDINGS */
+/* ******** */
 .findings {
     margin-bottom: 7.2rem;
 }
 
 
+
+
+
+/* ***************************** */
+/* COMPETITORS ANALYSES TABLE */
+/* ***************************** */
 .competitorsAnalysesSection {
     margin-bottom: 20rem;
 }
 
-.interviewAnswers-col01,
-.interviewAnswers-col02,
-.interviewAnswers-col03 {
-    font-size: 1.2rem;
-    padding-right: 1.6rem;
-    padding-bottom: 1.6rem;
-}
-
-.interviewAnswers-col01 p,
-.interviewAnswers-col02 p,
-.interviewAnswers-col03 p {
-    margin-bottom: 0.8rem;
-}
-
-.interviewDrawing {
-    height: 8rem;
-    padding-bottom: 0.8rem;
-}
-
-
-/* ********************************** */
-/* COMPETITORS ANALYSES - table-right */
-/* ********************************** */
 .competitorsAnalysesTitles {
     margin-bottom: 3.6rem;
+}
+
+.competition {
+    margin-bottom: 12rem;
 }
 
 .grid--2-colsCompetition {
@@ -1348,29 +1235,25 @@ button:active {
     column-gap: 2.4rem;
 }
 
-.competition {
-    margin-bottom: 12rem;
-}
+/**/
+/**/
 
-/*
-.competitorsAnalyses-columnRight,
-.competitorsAnalyses-columnLeft {}
-*/
+
+
+/* *********** */
+/* table-left */
+/* *********** */
+
+
+/* competitorsAnalyses-columnLeft */
+
+/* table */
+
 .competitorsLogoPlaceholder {
     height: 4rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
-}
-
-.competitorsLogoPlaceholderTable {
-    height: 4rem;
-    align-items: center;
-
-}
-
-.logosTable {
-    height: 2rem;
 }
 
 .logos {
@@ -1406,6 +1289,30 @@ button:active {
     border-radius: 16px;
     color: white;
 }
+
+
+
+
+
+
+
+
+
+
+
+.competitorsLogoPlaceholderTable {
+    height: 4rem;
+    align-items: center;
+}
+
+.logosTable {
+    height: 2rem;
+}
+
+
+
+
+
 
 .analisesContent {
     display: flex;
@@ -1461,78 +1368,25 @@ button:active {
 /* LECTURE DEVELOPMENT - 02-DEFINE */
 /* ******************************* */
 
-.uxMethodologyPhaseDefine {
-    margin-bottom: 12rem;
-}
+/* uxMethodology-allPhases */
 
-.uxMethodology-define {
-    height: 44rem;
-    padding-left: 2.4rem;
-    padding-top: 2.4rem;
-    padding-right: 2.4rem;
-    padding-bottom: 2.4rem;
-    border-radius: 2.4rem;
-    background-color: rgba(201, 200, 216, 0.1);
-}
-
-
-
-
-
-
-/* ******************************** */
 
 /* ******************************* */
 /* REFINED PERSONAS - USER JOURNEY */
 /* ******************************* */
 
-.refinedPersonas {
-    color: #555;
-    margin-bottom: 2.4rem;
-}
-
-.personasResearchTitle {
-    margin-bottom: 8px;
-}
-
-.refinedPersonasSubtitle {
-    margin-bottom: 8px;
-}
-
-.refinedPersonasGrid {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 0.8rem;
-}
-
-.refinedPersonasAll {
-    font-size: 12px;
-    margin-top: 16px;
-    display: flex;
-    gap: 1.6rem;
-}
-
-.personasRefinedTelmo,
-.personasRefinedMaria,
-.personasRefinedMargarida {
-    height: 30rem;
-    width: 40rem;
-    border-radius: 1.6rem;
-    padding-top: 0.8rem;
-    background-color: rgba(201, 200, 216, 0.1);
-}
-
 .personasRefinedOnlyMaria {
     display: none;
+}
+
+.finalMargarida {
+    display: block;
 }
 
 /* **************************** */
 /* FINAL PERSONA - USER JOURNEY */
 /* **************************** */
-.finalMargarida {
-    display: block;
-}
+
 
 
 
@@ -1549,33 +1403,6 @@ button:active {
     border-radius: 4.8rem;
     padding: 2.4rem;
 
-}
-
-.grid--2-colsMargarida {
-    grid-template-columns: 1fr 2fr;
-}
-
-.personaMargaridaRight {
-    align-self: center;
-    padding-left: 2.4rem;
-}
-
-.personaMargaridaLeftHabits,
-.personaMargaridaLeftNeeds,
-.personaMargaridaLeftObstacules {
-    padding-bottom: 0.8rem;
-    font-size: 1.2rem;
-}
-
-.habitsMargarida,
-.needsMargarida,
-.obstaclesMargarida {
-    color: #222;
-    font-weight: 400;
-}
-
-.personaMargaridaLeft {
-    align-self: center;
 }
 
 .roundBackgroundIndividual {
@@ -2463,7 +2290,7 @@ button:active {
 .uxStepPrototype p,
 .uxStepIdeate p,
 .uxStepDefine p,
-.uxMethodology-empathize p {
+.uxMethodology-allPhases p {
     padding-right: 16px;
 }
 
