@@ -80,6 +80,47 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const slider = document.querySelector('.slider');
+    const slides = document.querySelectorAll('.grid--5-rowsSlider');
+    const prevBtn = document.querySelector('.chevron-left');
+    const nextBtn = document.querySelector('.chevron-right');
+
+    let currentIndex = 0;
+    const slideWidth = slides[0].offsetWidth;
+
+    function updateSlider() {
+        const offset = currentIndex * slideWidth;
+        slider.style.transform = `translateX(-${offset}px)`;
+    }
+
+    function getVisibleSlidesCount() {
+        const placeholder = document.querySelector('.placeholder');
+        return Math.floor(placeholder.offsetWidth / slideWidth);
+    }
+
+    nextBtn.addEventListener('click', () => {
+        const visibleSlides = getVisibleSlidesCount();
+        if (currentIndex < slides.length - visibleSlides) {
+            currentIndex++;
+            updateSlider();
+        }
+    });
+
+    prevBtn.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateSlider();
+        }
+    });
+
+    window.addEventListener('resize', updateSlider); // Recalculate on resize
+});
+
+
 
 
 

@@ -411,6 +411,55 @@ header {
     column-gap: 0.8rem;
 }
 
+.impact-effort-matrix {
+    height: 32rem;
+    margin-bottom: 8.8rem;
+}
+
+.mini-grid {
+    height: 9.6rem;
+    width: 9.6rem;
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+}
+
+.mini-grid-inside-d,
+.mini-grid-inside-c,
+.mini-grid-inside-b,
+.mini-grid-inside-a {
+    display: grid;
+    grid-template-columns: 3.2rem 3.2rem 3.2rem;
+    grid-template-rows: 3.2rem 3.2rem 3.2rem;
+    column-gap: 0.4rem;
+    row-gap: 0.4rem;
+}
+
+.mini-grid-inside-a {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.mini-grid-inside-b {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.mini-grid-inside-c {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.mini-grid-inside-d {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+
+
+
+
+
 
 .grid--3-cols--1-row-sk {
     grid-template-columns:
@@ -1613,6 +1662,154 @@ button:active {
     justify-self: center;
 }
 
+/* *************************************** */
+/* USER JOURNEY MAP 2_  GOAL: JOB - SLIDER */
+/* *************************************** */
+
+.user-journey-goal-job {
+    display: flex;
+    margin-bottom: 8.8rem;
+}
+
+.user-journey-title {
+    grid-column: 1;
+    height: 48rem;
+    width: 4rem;
+    background-color: #292562;
+    border-radius: 1.6rem;
+
+}
+
+.user-journey-letters {
+    font-size: 2.8rem;
+    font-weight: 500;
+    color: #fff;
+    justify-self: center;
+}
+
+.journey-phases {
+    height: 48rem;
+    width: 10.4rem;
+    margin-right: 0.8rem;
+    margin-left: 0.8rem;
+}
+
+.steps-header-title {
+    height: 3.2rem;
+    width: 8.8rem;
+    border-radius: 1.6rem;
+    background-color: #292562;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+}
+
+.phases-panel {
+    height: 10.4rem;
+    width: 8.8rem;
+    border-radius: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #292562;
+    border: 1px solid #292562;
+    text-align: center;
+    margin-bottom: 0.8rem;
+}
+
+
+.placeholder {
+
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+
+}
+
+.grid--5-rowsSlider {
+    flex: 0 0 20rem;
+    /* fixed slide width */
+    width: 20rem;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-rows: 3.2rem repeat(4, 10.4rem);
+    row-gap: 0.8rem;
+
+}
+
+.steps-header {
+    height: 3.2rem;
+    width: 20rem;
+    border-radius: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: #292562;
+    color: #fff;
+    margin-bottom: 0.8rem;
+}
+
+.panel-txt {
+    padding-bottom: 0.8rem;
+}
+
+.phases-panel-slider {
+    height: 10.4rem;
+    width: 20rem;
+    border-radius: 1.6rem;
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: 300;
+    background-color: rgba(201, 200, 216, 0.1);
+    margin-right: 0.8rem;
+}
+
+
+
+.sliderBtn {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    pointer-events: none;
+}
+
+.chevron-left,
+.chevron-right {
+    background: none;
+    border: none;
+    pointer-events: all;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* **************************** */
 /* ANALYSES MAP - OPPORTUNITIES */
 /* **************************** */
@@ -1763,7 +1960,7 @@ button:active {
 
 
 .grid--9-rows {
-    grid-template-rows: repeat(9, 1fr);
+    grid-template-rows: 9;
 }
 
 
@@ -1786,7 +1983,7 @@ button:active {
 /* HOW MIGHT WE - PROPOSITIONS MATRIX  */
 /* *********************************** */
 .matrixPlaceholder {
-    margin-top: 2.4rem;
+    margin-top: 1.6rem;
     margin-bottom: 8.8rem;
 }
 
@@ -1798,8 +1995,13 @@ button:active {
     display: flex;
 }
 
-.matrixBtnArrowDown,
 .matrixBtnArrowUp {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+
+.matrixBtnArrowDown {
     justify-content: center;
 }
 
@@ -1817,16 +2019,12 @@ button:active {
     align-self: center;
 }
 
-.lowImpactBtn,
-.highEffortBtn,
-.lowEffortBtn,
-.highImpactBtn {
-    padding: 0.6rem;
-    border: none;
-    border-radius: 15px;
-    font-size: 1.2rem;
-    background-color: #292562;
-    color: white;
+.lowImpact,
+.highEffort,
+.lowEffort,
+.highImpact {
+    font-size: 1rem;
+    color: #292562;
 }
 
 .highEffortBtnPlaceholder {
@@ -1870,37 +2068,38 @@ button:active {
 
 /* MATRIX --- BTN - UP - DOWN - LEFT - RIGHT */
 .matrixBtnArrowUp {
-    grid-column: 5;
+    grid-column: 3;
     grid-row: 1;
     display: inline;
     justify-items: center;
 }
 
 .matrixBtnArrowDown {
-    grid-column: 5;
-    grid-row: 9;
+    grid-column: 3;
+    grid-row: 5;
     display: inline;
     justify-items: center;
 }
 
 .matrixBtnArrowLeft {
     grid-column: 1;
-    grid-row: 5;
+    grid-row: 3;
 }
 
 .matrixBtnArrowRight {
-    grid-column: 9;
-    grid-row: 5;
+    grid-column: 5;
+    grid-row: 3;
 }
 
 
 /* MATRIX --- LOW EFFORT - HIGH IMPACT - top-left */
 .lowEffort-highImpact {
-    grid-column: 2 / 5;
-    grid-row: 2 / 5;
-    border-bottom: 1px solid #292562;
-    border-right: 1px solid #292562;
-    background-color: rgba(201, 200, 216, 0.5);
+    height: 9.6rem;
+    width: 9.6rem;
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: right;
+
 }
 
 .topLeft-01 {
@@ -1940,11 +2139,10 @@ button:active {
 
 /* MATRIX --- HIGH IMPACT - HIGH EFFORT - top-right */
 .highImpact-highEffort {
-    grid-column: 6 / 9;
-    grid-row: 2 / 5;
-    border-bottom: 1px solid #292562;
-    border-left: 1px solid #292562;
-    background-color: rgba(201, 200, 216, 0.1);
+    height: 9.6rem;
+    width: 9.6rem;
+    grid-column: 4;
+    grid-row: 2;
 }
 
 .topRight-01 {
@@ -1979,11 +2177,11 @@ button:active {
 
 /* MATRIX --- LOW IMPACT - LOW EFFORT - bottom-left */
 .lowImpact-lowEffort {
-    grid-column: 2 / 5;
-    grid-row: 6 / 9;
-    border-top: 1px solid #292562;
-    border-right: 1px solid #292562;
-    background-color: rgba(201, 200, 216, 0.1);
+    height: 9.6rem;
+    width: 9.6rem;
+    grid-column: 2;
+    grid-row: 4;
+    justify-self: right;
 }
 
 .bottomLeft-01 {
@@ -2013,11 +2211,10 @@ button:active {
 
 /* MATRIX --- LOW IMPACT - HIGH EFFORT - bottom-right */
 .lowImpact-highEffort {
-    grid-column: 6 / 9;
-    grid-row: 6 / 9;
-    border-top: 1px solid #292562;
-    border-left: 1px solid #292562;
-    background-color: rgba(201, 200, 216, 0.1);
+    height: 9.6rem;
+    width: 9.6rem;
+    grid-column: 4;
+    grid-row: 4;
 }
 
 .bottomRight-01 {
@@ -2026,15 +2223,73 @@ button:active {
 }
 
 /***  ***/
-.proposal {
-    font-size: 1rem;
-    padding-left: 0.8rem;
-    padding-right: 0.8rem;
-    padding-bottom: 0.8rem;
-    padding-top: 0.8rem;
+.mini-square {
+    height: 2.4rem;
+    width: 2.4rem;
+    margin: 0.4rem;
+    border: 1px solid #292562;
+    border-radius: 0.8rem;
+
 }
 
+.mini-square-small {
+    height: 1.6rem;
+    width: 1.6rem;
+    margin: 0.4rem;
+    border: 1px solid #292562;
+    border-radius: 0.4rem;
+    background-color: rgba(201, 200, 216, 1);
+    align-self: center;
+}
 
+.proposal-square {
+    background-color: rgba(201, 200, 216, 1);
+}
+
+.matrix-proposal-txt {
+    grid-column: 2;
+}
+
+.proposal-txt {
+    font-size: 1rem;
+    align-self: center;
+}
+
+.matrix-grid {
+    width: 33%;
+    display: grid;
+    grid-template-columns: 5;
+    grid-template-rows: 0.2fr 0.5fr 0.2fr 0.5fr 0.2fr;
+}
+
+.matrix-chosen-grid {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 7;
+    column-gap: 0.8rem;
+    row-gap: 0.8rem;
+}
+
+.impact-effort-matrix {
+    height: 32rem;
+    margin-bottom: 8.8rem;
+}
+
+.impactEffortMatrix {
+    display: grid;
+    grid-template-columns: 2;
+}
+
+.lowEffort-highImpact-chosen {
+    width: 50%;
+    grid-column: 2;
+
+}
+
+.chosen-proposal {
+    display: flex;
+    align-items: center;
+}
 
 /* ************************************** */
 /* HOW MIGHT WE - SKETCHING / STORYBOARD  */
