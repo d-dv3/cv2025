@@ -731,35 +731,20 @@ footer {
 /*
 .playingHexagons {}
 */
-.sliderContainer {
+.hexagonsContainer {
     height: 8rem;
     margin-bottom: 12rem;
 }
 
-.slider {
+.hexagonsAllPhases {
     display: flex;
 }
 
-.slide-allPhases,
-
-
-
-.slide-05-test {
-    height: 8rem;
-    width: 32.4rem;
-
-    border-radius: 1.6rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-right: 1.6rem;
-    padding: 0.4rem;
-    background-color: rgba(201, 200, 216, 0.1);
-}
-
-.slide-04-prototype,
-.slide-02-define,
-.slide-03-ideate,
-.slide-01-empathize {
+.phase-05-test,
+.phase-04-prototype,
+.phase-02-define,
+.phase-03-ideate,
+.phase-01-empathize {
     height: 6.4rem;
     width: 24.2rem;
     border-radius: 1.6rem;
@@ -770,26 +755,26 @@ footer {
     background-color: rgba(201, 200, 216, 0.05);
 }
 
-.slideModule {
+.phaseModule {
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: right;
 }
 
-button {
+.btnIndex {
     border: none;
     background-color: transparent;
     cursor: pointer;
 }
 
-/*
-button:link,
-button:visited {}
 
-button:hover,
-button:active {
-    color: #292562;
-}*/
+.btnIndex:link,
+.btnIndex:visited {}
+
+.btnIndex:hover,
+.btnIndex:active {
+    color: #FCDC4A;
+}
 
 
 /* ********************************** */
@@ -1740,7 +1725,7 @@ button:active {
 .grid--5-rowsSlider {
     flex: 0 0 20rem;
     /* fixed slide width */
-    width: 20rem;
+    width: 32rem;
     box-sizing: border-box;
 
     display: grid;
@@ -1751,15 +1736,15 @@ button:active {
 
 .steps-header {
     height: 3.2rem;
-    width: 20rem;
+    width: 32rem;
     border-radius: 1.6rem;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1rem;
     font-weight: 400;
-    background-color: #292562;
-    color: #fff;
+    background-color: rgba(41, 37, 98, 0.3);
+    color: #292562;
     margin-bottom: 0.8rem;
 }
 
@@ -1769,13 +1754,13 @@ button:active {
 
 .phases-panel-slider {
     height: 10.4rem;
-    width: 20rem;
+    width: 32rem;
     border-radius: 1.6rem;
     padding: 0.8rem;
     font-size: 1rem;
     font-weight: 300;
     background-color: rgba(201, 200, 216, 0.1);
-    margin-right: 0.8rem;
+    margin-right: 1.6rem;
 }
 
 
@@ -1794,6 +1779,8 @@ button:active {
 
 .chevron-left,
 .chevron-right {
+    color: #292562;
+    font-size: 3rem;
     background: none;
     border: none;
     pointer-events: all;

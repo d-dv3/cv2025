@@ -17,113 +17,69 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
-// Get the button and the dropdown content
+//////////////////////////////////////////////////////////////////////////////////////////////////
 /*
-document.addEventListener("DOMContentLoaded", function () {
-    const btnDropdownComparisons = document.querySelector('.btnDropdownComparisons');
-    const analysesContentComparisons = document.querySelector('.analysesContentComparisons');
 
-    // Add an event listener to the button to toggle visibility
-    btnDropdownComparisons.addEventListener('click', function () {
-        if (analysesContentComparisons.classList.contains('hidden')) {
-            analysesContentComparisons.classList.remove('hidden');
-        } else {
-            analysesContentComparisons.classList.add('hidden');
+document.addEventListener("DOMContentLoaded", function () {
+    const slider = document.querySelector(".slider");
+    const slides = document.querySelectorAll(".grid--5-rowsSlider");
+    const btnLeft = document.querySelector(".chevron-left");
+    const btnRight = document.querySelector(".chevron-right");
+
+    let currentSlide = 0;
+    const maxSlide = slides.length;
+
+    const slideWidth = slides[0].offsetWidth + 16; // 32rem + 1.6rem margin
+
+    const goToSlide = (slideIndex) => {
+        slider.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
+    };
+
+    btnRight.addEventListener("click", function () {
+        if (currentSlide < maxSlide - 1) {
+            currentSlide++;
+            goToSlide(currentSlide);
+        }
+    });
+
+    btnLeft.addEventListener("click", function () {
+        if (currentSlide > 0) {
+            currentSlide--;
+            goToSlide(currentSlide);
         }
     });
 });
+
 */
 
-//////////////////////////////////////////////////////////////////////////////////////////////////
 
+const slider = document.querySelector(".slider");
+const slides = document.querySelectorAll(".grid--5-rowsSlider");
+const btnLeft = document.querySelector(".chevron-left");
+const btnRight = document.querySelector(".chevron-right");
 
+let currentSlide = 0;
+const maxSlide = slides.length;
 
+const slideWidth = slides[0].offsetWidth + 16; // 32rem + 1.6rem margin
 
-function toggleDropdown() {
-    const dropdown = document.querySelector('.userJourneyMap');
-    dropdown.classList.toggle('visible');
-}
+const goToSlide = (slideIndex) => {
+    slider.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
+};
 
-
-//////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-// Wait for the document to load
-document.addEventListener("DOMContentLoaded", function () {
-    // Get the button and the dropdown
-    const button = document.querySelector('.opportunitiesFromJourneyMapBtn');
-    const dropdown = document.getElementById('allOpportunitiesPostIt');
-
-    // Add an event listener to the button to toggle the dropdown visibility
-    button.addEventListener('click', function () {
-        // Toggle the display style between 'none' and 'grid'
-        if (dropdown.style.display === 'none' || dropdown.style.display === '') {
-            dropdown.style.display = 'grid';  // Show dropdown
-        } else {
-            dropdown.style.display = 'none';  // Hide dropdown
-        }
-    });
-});
-
-
-//////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-document.addEventListener('DOMContentLoaded', () => {
-    const dropdownBtn = document.querySelector('.btnDropdownContacts');
-    const dropdownContent = document.querySelector('.allContactsHeaderQuerie');
-
-    dropdownBtn.addEventListener('click', () => {
-        dropdownContent.classList.toggle('hidden');
-    });
-});
-
-//////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-document.addEventListener('DOMContentLoaded', function () {
-    const slider = document.querySelector('.slider');
-    const slides = document.querySelectorAll('.grid--5-rowsSlider');
-    const prevBtn = document.querySelector('.chevron-left');
-    const nextBtn = document.querySelector('.chevron-right');
-
-    let currentIndex = 0;
-    const slideWidth = slides[0].offsetWidth;
-
-    function updateSlider() {
-        const offset = currentIndex * slideWidth;
-        slider.style.transform = `translateX(-${offset}px)`;
+btnRight.addEventListener("click", function () {
+    if (currentSlide < maxSlide - 1) {
+        currentSlide++;
+        goToSlide(currentSlide);
     }
-
-    function getVisibleSlidesCount() {
-        const placeholder = document.querySelector('.placeholder');
-        return Math.floor(placeholder.offsetWidth / slideWidth);
-    }
-
-    nextBtn.addEventListener('click', () => {
-        const visibleSlides = getVisibleSlidesCount();
-        if (currentIndex < slides.length - visibleSlides) {
-            currentIndex++;
-            updateSlider();
-        }
-    });
-
-    prevBtn.addEventListener('click', () => {
-        if (currentIndex > 0) {
-            currentIndex--;
-            updateSlider();
-        }
-    });
-
-    window.addEventListener('resize', updateSlider); // Recalculate on resize
 });
 
-
-
-
-
+btnLeft.addEventListener("click", function () {
+    if (currentSlide > 0) {
+        currentSlide--;
+        goToSlide(currentSlide);
+    }
+});
 
 
 
