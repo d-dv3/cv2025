@@ -460,7 +460,6 @@ header {
 
 
 
-
 .grid--3-cols--1-row-sk {
     grid-template-columns:
         0.55fr 1.25fr 1.25fr;
@@ -784,9 +783,9 @@ footer {
 }
 
 /* DRY - EMPATHIZE 02-MAI */
-/* ********************************** */
-/* LECTURE DEVELOPMENT - 01-EMPATHIZE */
-/* ********************************** */
+/* ***************************************************** */
+/* LECTURE DEVELOPMENT - 01-EMPATHIZE - 02-DEFINE - 03-IDEATE - 04-PROTOTYPE - 05-TEST */
+/* ***************************************************** */
 .uxMethodology {
     margin-bottom: 24rem;
 }
@@ -801,6 +800,14 @@ footer {
     column-gap: 2.4rem;
 }
 
+.test-col-right,
+.test-col-left,
+.prototype-col-right,
+.prototype-col-left,
+.ideate-col-left,
+.ideate-col-right,
+.define-col-right,
+.define-col-left,
 .empathize-col-left,
 .empathize-col-right {
     height: 44rem;
@@ -816,25 +823,46 @@ footer {
     margin-bottom: 1.6rem;
 }
 
+.ideateTitle,
+.prototypeTitle,
+.ideateTitle,
+.defineTitle,
 .empathizeTitle {
     font-size: 1.6rem;
     font-weight: 500;
-
     color: #292562;
     padding-left: 1.6rem;
-    background-color: #fff;
 }
 
-
-.empathize-questions02,
-.empathize-questions01 {
+.test-redefineChallenge01,
+.test-redefineChallenge02,
+.prototype-redefineChallenge01,
+.prototype-redefineChallenge02,
+.ideate-redefineChallenge01,
+.ideate-redefineChallenge02,
+.define-questions01,
+.define-questions02,
+.empathize-questions01,
+.empathize-questions02 {
     font-size: 1.2rem;
     line-height: 1.2;
     background-color: rgba(201, 200, 216, 0.1);
 }
 
+.test-questions02,
+.test-questions01,
+.prototype-questions02,
+.prototype-questions01,
+.ideate-redefineChallenge01,
+.ideate-redefineChallenge02,
+.define-questions02,
+.define-questions01,
 .empathize-questions02,
 .empathize-questions01,
+.test-questions-center-border,
+.prototype-questions-center-border,
+.ideate-questions-center-border,
+.define-questions-center-border,
 .empathize-questions-center-border {
     padding: 1.6rem;
     border-radius: 2.4rem;
@@ -847,11 +875,24 @@ footer {
     background-color: #FCDC4A;
 }
 
+.test-questions-center,
+.prototype-questions-center,
+.ideate-questions-center,
+.define-questions-center,
+.dempathize-questions-center,
+.testCenterGrid,
+.prototypeCenterGrid,
+.ideateCenterGrid,
+.defineCenterGrid,
 .empathizeCenterGrid {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
 }
 
+.test-questions-center-border,
+.prototype-questions-center-border,
+.ideate-questions-center-border,
+.define-questions-center-border,
 .empathize-questions-center-border {
     border: 1px solid rgba(201, 200, 216);
 }
@@ -864,33 +905,73 @@ footer {
 /* ************ */
 /* empathize-col-right */
 /* empathize-userQuestions */
-
+.grid--2-rowsIdTest,
+.grid--2-rowsIPrototype,
+.grid--2-rowsIdeate,
+.grid--2-rowsDefine,
 .grid--2-rowsEmpathize {
     height: 39.2rem;
     grid-template-rows: 2;
 }
 
 /* row-01 */
+.testUserRow,
+.prototupeUserRow,
+.ideateUserRow,
+.defineUserRow,
 .empathizeUserRow {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
     height: 12rem;
     border: 1px solid rgba(201, 200, 216);
     border-radius: 2.4rem;
-    align-items: center;
+
 }
 
+.circleTest,
+.circleProtorype,
+.circleIdeate,
+.circleDefine,
 .circleEmpathize {
     /*
     height: 16rem;
     width: 16rem;
     border-radius: 50%;*/
+    height: 100%;
+    border: 1px solid rgba(201, 200, 216);
+    border-radius: 2.4rem;
     justify-self: center;
 }
 
 /*drawingSize*/
 /*
-.empathizeAllQ {}*/
+.arrowPersonasBck*/
+
+.testAllQ,
+.prototypeAllQ,
+.ideateAllQ,
+.defineAllQ,
+.empathizeAllQ {
+    height: 100%;
+    border: 1px solid rgba(201, 200, 216);
+    border-radius: 2.4rem;
+
+
+}
+
+.testQ01,
+.testQ02,
+.testQ03,
+.prototypeQ01,
+.prototypeQ02,
+.prototypeQ03,
+.ideateQ01,
+.ideateQ02,
+.ideateQ03,
+.defineQ01,
+.defineQ02,
+.defineQ03,
 .empathizeQ01,
 .empathizeQ02,
 .empathizeQ03 {
@@ -899,6 +980,7 @@ footer {
     font-weight: 200;
 
     color: #292562;
+
     justify-self: left;
     margin-bottom: 0.4rem;
     /*
@@ -915,6 +997,8 @@ footer {
 }
 
 /* row-02 */
+.ideateProcess,
+.defineProcess,
 .empathizeProcess {
     width: 100%;
     align-items: center;
@@ -931,6 +1015,8 @@ footer {
     justify-self: center;
 }
 
+.ideateKeywords,
+.defineKeyWords,
 .empathizeKeyWords {
     display: inline-block;
     background-color: #FCDC4A;
@@ -940,6 +1026,8 @@ footer {
 .empathizeKeyWordsArrow {}
 .arrowBlueEmpathize {}
 */
+.arrowBlueIdeate,
+.arrowBlueDefine,
 .arrowBlueEmpathize {
     font-size: 1.6rem;
     color: #292562;
@@ -1271,6 +1359,7 @@ footer {
 
 /**/
 /**/
+
 
 
 
@@ -1791,49 +1880,34 @@ footer {
 
 
 
-
-
-
-
-
-
 /* **************************** */
 /* ANALYSES MAP - OPPORTUNITIES */
 /* **************************** */
 .opportunitiesSelection {
-
     margin-bottom: 8.8rem;
 }
 
-.opportunitiesFromJourneyMapBtn {
-    width: 100%;
-    justify-self: center;
-    color: #fff;
-    height: 4.2rem;
-    cursor: pointer;
-    border: none;
-    border-radius: 32px;
-    padding: 0.8rem;
-    background-color: rgba(41, 37, 98, 0.8);
-}
-
-.opportunitiesBtnTitle {
-    align-items: center;
+.opportunitiesFromJourneyMap {
+    color: #292562;
 }
 
 .allOpportunitiesPostIt {
+    /*
     background-color: rgba(201, 200, 216, 0.1);
     border-radius: 0 0 1.6rem 1.6rem;
-    padding-bottom: 2.4rem;
+    padding-bottom: 2.4rem;*/
 }
 
-.opportPostItNew p,
+/*
+.opportPostItNew p,*/
 .opportPostItSelected p {
     font-size: 1rem;
     text-align: center;
 }
 
-.opportPostItNew,
+/*
+.opportPostItNew,*/
+.postItSelected,
 .opportPostItSelected {
     display: flex;
     align-items: center;
@@ -1846,14 +1920,20 @@ footer {
 
 }
 
+/*
 .opportPostItNew {
     background-color: rgba(201, 200, 216, 0.5);
 }
-
+*/
+.postItSelected,
 .opportPostItSelected {
-    background-color: rgba(191, 189, 208, 1);
+    width: 15.6rem;
+    height: 10.4rem;
+    border-radius: 1.6rem;
+    background-color: rgba(201, 200, 216, 0.5);
 }
 
+/*
 .opportunitiesPostIt-col-2 {
     grid-column: 2;
 }
@@ -1905,9 +1985,199 @@ footer {
 .subtitle-right-bottom {
     align-content: end;
 }
+    */
 
 /* **************************************** */
 /* LECTURE - 03-IDEATE - REDEFINE CHALLENGE */
+
+/* ********************************** */
+/* LECTURE DEVELOPMENT - 01-EMPATHIZE */
+/* ********************************** */
+.uxMethodology {
+    margin-bottom: 24rem;
+}
+
+.uxMethodology-allPhases {
+    height: 39.2rem;
+}
+
+.grid--2-colsUxMethodology {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2.4rem;
+}
+
+.empathize-col-left,
+.empathize-col-right {
+    height: 44rem;
+    width: 100%;
+    border-radius: 2.4rem;
+}
+
+/*  col-01 left */
+/* ************ */
+.hexagon-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.6rem;
+}
+
+.empathizeTitle {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #292562;
+    padding-left: 1.6rem;
+}
+
+
+.empathize-questions02,
+.empathize-questions01 {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    background-color: rgba(201, 200, 216, 0.1);
+}
+
+.empathize-questions02,
+.empathize-questions01,
+.empathize-questions-center-border {
+    padding: 1.6rem;
+    border-radius: 2.4rem;
+    margin-bottom: 1.6rem;
+}
+
+.txt {
+    font-size: 1.4rem;
+    font-weight: 300;
+    background-color: #FCDC4A;
+}
+
+.empathizeCenterGrid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.empathize-questions-center-border {
+    border: 1px solid rgba(201, 200, 216);
+}
+
+/*
+.empathize-questions02 */
+/* txtColor */
+
+/* col-02 right */
+/* ************ */
+/* empathize-col-right */
+/* empathize-userQuestions */
+
+.grid--2-rowsEmpathize {
+    height: 39.2rem;
+    grid-template-rows: 2;
+}
+
+/* row-01 */
+.empathizeUserRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    height: 12rem;
+    border: 1px solid rgba(201, 200, 216);
+    border-radius: 2.4rem;
+
+}
+
+.circleEmpathize {
+    /*
+    height: 16rem;
+    width: 16rem;
+    border-radius: 50%;*/
+    height: 100%;
+    border: 1px solid rgba(201, 200, 216);
+    border-radius: 2.4rem;
+    justify-self: center;
+}
+
+/*drawingSize*/
+
+
+.empathizeAllQ {
+    height: 100%;
+    border: 1px solid rgba(201, 200, 216);
+    border-radius: 2.4rem;
+
+
+}
+
+
+.empathizeQ01,
+.empathizeQ02,
+.empathizeQ03 {
+    background-color: #fff;
+    font-size: 1rem;
+    font-weight: 200;
+
+    color: #292562;
+
+    justify-self: left;
+    margin-bottom: 0.4rem;
+    /*
+    padding-left: 2.4rem;
+*/
+}
+
+.qMark {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #292562;
+    background-color: #fff;
+    padding-left: 0.4rem;
+}
+
+/* row-02 */
+.ideateProcess,
+.empathizeProcess {
+    width: 100%;
+    align-items: center;
+    color: #292562;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* grid--2-cols */
+
+.arrowCol {
+    font-size: 4rem;
+    color: #555;
+    justify-self: center;
+}
+
+.ideateKeyWords,
+.empathizeKeyWords {
+    display: inline-block;
+    background-color: #FCDC4A;
+}
+
+/*
+.empathizeKeyWordsArrow {}
+.arrowBlueEmpathize {}
+*/
+.arrowBlueIdeate,
+.arrowBlueEmpathize {
+    font-size: 1.6rem;
+    color: #292562;
+}
+
+/*.arrowTxtBlue*/
+
+
+
+
+
+
+
+
+
+
+
 /* **************************************** */
 .uxSheme-phaseIdeate {
     margin-bottom: 1.6rem;
@@ -1924,9 +2194,10 @@ footer {
 .sentenceToInsight {
     color: #292562;
     border: 1px solid #292562;
-    border-radius: 15px;
-    font-size: 18px;
-    font-weight: 600;
+    border-radius: 1.6rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 0.8rem;
     margin-bottom: 2.4rem;
     margin-top: 2.4rem;
 }
@@ -1956,6 +2227,81 @@ footer {
 }
 
 /**/
+/* ------------------------------ */
+/* IDEATE_ REDEFINE THE CHALLENGE */
+/* ------------------------------ */
+
+/* redefineChallenge */
+/* redefineChallenge */
+
+/* how the competitors would solve the challenge */
+
+.dropdown-how-might-competition {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2.4rem;
+    margin-bottom: 8rem;
+}
+
+.how-might-competitionBTN {
+    width: 100%;
+    background-color: #FCDC4A;
+    border: none;
+    border-radius: 1.6rem;
+    cursor: pointer;
+}
+
+.how-might-competitionBTN:link,
+.how-might-competitionBTN:visited {
+    transition: all 0.3s;
+}
+
+.how-might-competitionBTN:hover,
+.how-might-competitionBTN:active {
+    background-color: #292562;
+}
+
+.competitionBTN-title {
+    font-size: 1.4rem;
+    color: #fff;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+
+
+.competitionBTN-competitors {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 0.8rem;
+    border-bottom-right-radius: 1.6rem;
+    border-bottom-left-radius: 1.6rem;
+    border: 0.5px solid #999;
+}
+
+.allContent {}
+
+.hmw-row {
+    width: 100%;
+    border: 0.5px solid #999;
+    border-radius: 1.6rem;
+    padding: 0.8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1.6rem;
+}
+
+.hmw-row p {
+    font-size: 1rem;
+}
+
+
+
+
+
 
 /* ************ */
 /* HOW MIGHT WE */

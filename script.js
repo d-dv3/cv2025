@@ -17,7 +17,39 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-//////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////
+// 
+// 
+
+const pressMe = document.querySelector('.how-might-competitionBTN');
+const contents = document.querySelector('.allContent');
+
+pressMe.forEach((press, index) => {
+    press.addEventListener('click', () => {
+        contents[index].classList.toggle('hidden');
+    });
+});
+
+
+press.addEventListener('click', () => {
+    console.log('Clicked!');
+    contents[index].classList.toggle('hidden');
+});
+
+
+
+
+
+
+
+
+
+
+
+// 
+// 
+// 
+// ///////////////////////////////////////////////
 /*
 
 document.addEventListener("DOMContentLoaded", function () {
