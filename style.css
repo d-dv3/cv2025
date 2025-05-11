@@ -416,6 +416,7 @@ header {
     margin-bottom: 8.8rem;
 }
 
+/*
 .mini-grid {
     height: 9.6rem;
     width: 9.6rem;
@@ -455,7 +456,7 @@ header {
     grid-row: 2;
 }
 
-
+*/
 
 
 
@@ -823,7 +824,7 @@ footer {
     margin-bottom: 1.6rem;
 }
 
-.ideateTitle,
+.testTitle,
 .prototypeTitle,
 .ideateTitle,
 .defineTitle,
@@ -832,6 +833,7 @@ footer {
     font-weight: 500;
     color: #292562;
     padding-left: 1.6rem;
+    padding-right: 1.6rem;
 }
 
 .test-redefineChallenge01,
@@ -1088,6 +1090,10 @@ footer {
 .arrowPersonasBck {
     display: flex;
     justify-content: space-around;
+}
+
+.arrow-upPage {
+    color: #999;
 }
 
 .arrowTxt {
@@ -2328,6 +2334,33 @@ footer {
     margin-bottom: 8.8rem;
 }
 
+.matrixTitle {
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+}
+
+.matrixSubTitle01 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.matrixSubTitle02 {
+    font-size: 1.4rem;
+    margin-bottom: 2.4rem;
+}
+
+.impactEffortMatrix {
+    display: grid;
+    grid-template-columns: 2;
+}
+
+.matrix-grid {
+    width: 33%;
+    display: grid;
+    grid-template-columns: 5;
+    grid-template-rows: 0.2fr 0.5fr 0.2fr 0.5fr 0.2fr;
+}
+
 /* MATRIX --- GRID - ALL-BUTTONS + ARROWS */
 .matrixBtnArrowDown,
 .matrixBtnArrowUp,
@@ -2336,16 +2369,15 @@ footer {
     display: flex;
 }
 
-.matrixBtnArrowUp {
-    grid-column: 3;
-    grid-row: 1;
+.matrixArrow {
+    font-size: 1.4rem;
 }
-
 
 .matrixBtnArrowDown {
     justify-content: center;
 }
 
+.matrixBtnArrowLeft,
 .arrow-left,
 .arrow-right {
     align-self: center;
@@ -2354,10 +2386,6 @@ footer {
 .matrixBtnArrowRight {
     justify-content: right;
     align-items: center;
-}
-
-.matrixBtnArrowLeft {
-    align-self: center;
 }
 
 .lowImpact,
@@ -2374,39 +2402,6 @@ footer {
 }
 
 
-.lowEffortBtnPlaceholder {
-    grid-column: 1;
-    grid-row: 3;
-}
-
-
-.arrow-up {
-    border-right: 0.8rem solid transparent;
-    border-left: 0.8rem solid transparent;
-    border-bottom: 1.2rem solid rgba(201, 200, 216, 1);
-    margin-top: 1.6rem;
-}
-
-.arrow-left,
-.arrow-right {
-    margin-left: 1.6rem;
-    margin-right: 1.6rem;
-}
-
-.arrow-down {
-    border-left: 0.8rem solid transparent;
-    border-right: 0.8rem solid transparent;
-    border-top: 1.2rem solid rgba(201, 200, 216, 1);
-    margin-bottom: 1.6rem;
-}
-
-.arrow-left {
-    border-top: 0.8rem solid transparent;
-    border-bottom: 0.8rem solid transparent;
-    border-right: 1.2rem solid rgba(201, 200, 216, 1);
-
-}
-
 /* MATRIX --- BTN - UP - DOWN - LEFT - RIGHT */
 .matrixBtnArrowUp {
     grid-column: 3;
@@ -2422,16 +2417,10 @@ footer {
     justify-items: center;
 }
 
-.matrixBtnArrowLeft {
-    grid-column: 1;
-    grid-row: 3;
-}
-
 .matrixBtnArrowRight {
     grid-column: 5;
     grid-row: 3;
 }
-
 
 /* MATRIX --- LOW EFFORT - HIGH IMPACT - top-left */
 .lowEffort-highImpact {
@@ -2440,39 +2429,62 @@ footer {
     grid-column: 2;
     grid-row: 2;
     justify-self: right;
-
 }
 
+.chosen-community,
+.bottomLeft-01,
+.topRight-01 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.chosen-culturalDepartment,
+.bottomLeft-02,
+.topRight-02,
 .topLeft-01 {
     grid-column: 1;
     grid-row: 2;
 }
 
+.chosen-partnerships01,
+.lowEffortBtnPlaceholder,
+.matrixBtnArrowLeft,
+.bottomLeft-03,
+.topRight-03,
 .topLeft-02 {
     grid-column: 1;
     grid-row: 3;
 }
 
+
+.community,
+.bottomRight-01,
+.bottomLeft-04,
 .topLeft-03 {
     grid-column: 2;
     grid-row: 1;
 }
 
+.bottomLeft-05,
 .topLeft-04 {
     grid-column: 2;
     grid-row: 3;
 }
 
+.matrixBtnArrowUp,
+.topRight-04,
 .topLeft-05 {
     grid-column: 3;
     grid-row: 1;
 }
 
+.topRight-05,
 .topLeft-06 {
     grid-column: 3;
     grid-row: 2;
 }
 
+.topRight-06,
 .topLeft-07 {
     grid-column: 3;
     grid-row: 3;
@@ -2486,81 +2498,23 @@ footer {
     grid-row: 2;
 }
 
-.topRight-01 {
-    grid-column: 1;
-    grid-row: 1;
-}
-
-.topRight-02 {
-    grid-column: 1;
-    grid-row: 2;
-}
-
-.topRight-03 {
-    grid-column: 1;
-    grid-row: 3;
-}
-
-.topRight-04 {
-    grid-column: 3;
-    grid-row: 1;
-}
-
-.topRight-05 {
-    grid-column: 3;
-    grid-row: 2;
-}
-
-.topRight-06 {
-    grid-column: 3;
-    grid-row: 3;
-}
-
 /* MATRIX --- LOW IMPACT - LOW EFFORT - bottom-left */
+.lowImpact-highEffort,
 .lowImpact-lowEffort {
     height: 9.6rem;
     width: 9.6rem;
+}
+
+.lowImpact-lowEffort {
     grid-column: 2;
     grid-row: 4;
     justify-self: right;
 }
 
-.bottomLeft-01 {
-    grid-column: 1;
-    grid-row: 1;
-}
-
-.bottomLeft-02 {
-    grid-column: 1;
-    grid-row: 2;
-}
-
-.bottomLeft-03 {
-    grid-column: 1;
-    grid-row: 3;
-}
-
-.bottomLeft-04 {
-    grid-column: 2;
-    grid-row: 1;
-}
-
-.bottomLeft-05 {
-    grid-column: 2;
-    grid-row: 3;
-}
-
 /* MATRIX --- LOW IMPACT - HIGH EFFORT - bottom-right */
 .lowImpact-highEffort {
-    height: 9.6rem;
-    width: 9.6rem;
     grid-column: 4;
     grid-row: 4;
-}
-
-.bottomRight-01 {
-    grid-column: 2;
-    grid-row: 1;
 }
 
 /***  ***/
@@ -2570,17 +2524,6 @@ footer {
     margin: 0.4rem;
     border: 1px solid #292562;
     border-radius: 0.8rem;
-
-}
-
-.mini-square-small {
-    height: 1.6rem;
-    width: 1.6rem;
-    margin: 0.4rem;
-    border: 1px solid #292562;
-    border-radius: 0.4rem;
-    background-color: rgba(201, 200, 216, 1);
-    align-self: center;
 }
 
 .proposal-square {
@@ -2596,11 +2539,17 @@ footer {
     align-self: center;
 }
 
-.matrix-grid {
-    width: 33%;
-    display: grid;
-    grid-template-columns: 5;
-    grid-template-rows: 0.2fr 0.5fr 0.2fr 0.5fr 0.2fr;
+
+.impact-effort-matrix {
+    height: 32rem;
+    margin-bottom: 8.8rem;
+}
+
+/* MATRIX --- LOW EFFORT - HIGH IMPACT - chosen */
+/* ******************************************** */
+.lowEffort-highImpact-chosen {
+    width: 50%;
+    grid-column: 2;
 }
 
 .matrix-chosen-grid {
@@ -2611,26 +2560,66 @@ footer {
     row-gap: 0.8rem;
 }
 
-.impact-effort-matrix {
-    height: 32rem;
-    margin-bottom: 8.8rem;
+.mini-square-small {
+    height: 1.6rem;
+    width: 1.6rem;
+    margin: 0.4rem;
+    border: 1px solid #292562;
+    border-radius: 0.4rem;
+    background-color: rgba(201, 200, 216, 1);
+    align-self: center;
 }
 
-.impactEffortMatrix {
-    display: grid;
-    grid-template-columns: 2;
+.chosen-gallery {
+    grid-column: 1;
+    grid-row: 4;
 }
 
-.lowEffort-highImpact-chosen {
-    width: 50%;
-    grid-column: 2;
+.chosen-partnerships02 {
+    grid-column: 1;
+    grid-row: 5;
+}
 
+.chosen-imageRecognition {
+    grid-column: 1;
+    grid-row: 6;
+}
+
+.chosen-googleArtsACulture {
+    grid-column: 1;
+    grid-row: 7;
+}
+
+.culturalDepartment {
+    grid-row: 2
+}
+
+.partnerships01 {
+    grid-row: 3
+}
+
+.gallery {
+    grid-row: 4;
+}
+
+.partnerships02 {
+    grid-row: 5
+}
+
+.imageRecognition {
+    grid-row: 6;
+}
+
+.googleArtsACulture {
+    grid-row: 7
 }
 
 .chosen-proposal {
     display: flex;
     align-items: center;
 }
+
+
 
 /* ************************************** */
 /* HOW MIGHT WE - SKETCHING / STORYBOARD  */
@@ -2653,14 +2642,6 @@ footer {
 /* ********************** */
 
 
-/**/
-
-
-/* ***************** */
-/* LECTURE - 05-TEST */
-/* ***************** */
-
-
 /* usabilityTestReporting */
 /* usabilityTestReporting-steps*/
 
@@ -2674,8 +2655,10 @@ footer {
     margin-bottom: 8.8rem;
 }
 
-/* usabilityTestReporting-prototype */
-/* usabilityTestReporting-plan */
+
+/* **************************** */
+/* TEST SCHEME - CIRCLE-DIAMOND */
+/* **************************** */
 
 .circleDiamondScheme {
     display: flex;
@@ -2704,23 +2687,9 @@ footer {
     text-align: center;
 }
 
-.arrow-rightTestScheme,
-.arrow-right,
-.arrow-left,
-.arrow-down,
-.arrow-up {
-    height: 0;
-    width: 0;
-}
-
-.arrow-rightTestScheme,
-.arrow-right {
-    border-top: 0.8rem solid transparent;
-    border-bottom: 0.8rem solid transparent;
-    border-left: 1.2rem solid rgba(201, 200, 216, 1);
-}
-
-.arrow-rightTestScheme {
+.circleDiamondArrow {
+    font-size: 3rem;
+    color: rgba(201, 200, 216, 1);
     margin-right: 3rem;
 }
 
@@ -2743,43 +2712,6 @@ footer {
 
 
 
-/* ****************************************** */
-/* ****************************************** */
-/* ****************************************** */
-
-
-.hexagon {
-    transform: rotate(90deg);
-    width: 50px;
-    height: 29px;
-    background-color: #292562;
-    position: relative;
-    margin: 25px;
-}
-
-.hexagon::before,
-.hexagon::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 0;
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
-}
-
-.hexagon::before {
-    top: -14.5px;
-    border-bottom: 14.5px solid #292562;
-}
-
-.hexagon::after {
-    bottom: -14.5px;
-    border-top: 14.5px solid #292562;
-}
-
-
-/* ********************************************************************************************** */
-
 /*
 8-16-24-32-40-48-56-64-72-80-88-96-104-112-120-
 128-136-144-152-160-168-176-184-192-200-208-216-
@@ -2794,8 +2726,6 @@ footer {
     font-size: 14px;
 }
 
-
-
 .grid--5-rows {
     grid-template-rows: repeat (5, 1fr);
 }
@@ -2808,6 +2738,7 @@ footer {
 /* *************************************** */
 /* *************************************** */
 
+/*
 .linkSamePage {
     display: flex;
     font-size: 10px;
@@ -2823,7 +2754,7 @@ footer {
     padding-bottom: 2px;
     margin-right: 8px;
 }
-
+*/
 /* *************************************** */
 /* *************************************** */
 /* *************************************** */
@@ -2875,6 +2806,7 @@ footer {
     margin-bottom: 6.4rem;
 }
 
+/*
 .uxStepTest img,
 .uxStepPrototype img,
 .uxStepIdeate img,
@@ -2889,12 +2821,10 @@ footer {
 .uxMethodology-allPhases p {
     padding-right: 16px;
 }
-
-
-
-
+*/
 
 /* LECTURE ux methodology - SECTION */
+/*
 .uxStepTest,
 .uxStepPrototype,
 .uxStepIdeate,
@@ -2902,7 +2832,7 @@ footer {
     display: flex;
     align-items: center;
 }
-
+*/
 /* **************************** */
 /* comparisons table experiment */
 /* **************************** */
