@@ -1509,8 +1509,11 @@ footer {
 /* **************************** */
 /* FINAL PERSONA - USER JOURNEY */
 /* **************************** */
+.finalPersona {}
 
-
+.contentFinalPersona {
+    justify-self: center;
+}
 
 
 .personaMargaridaUserJourney {
@@ -1892,10 +1895,15 @@ footer {
 }
 
 .allOpportunitiesPostIt {
+    display: flex;
     /*
     background-color: rgba(201, 200, 216, 0.1);
     border-radius: 0 0 1.6rem 1.6rem;
     padding-bottom: 2.4rem;*/
+}
+
+.opportPostItSelected {
+    margin-right: 2.4rem;
 }
 
 /*
