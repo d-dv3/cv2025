@@ -62,7 +62,8 @@ body {
     width: 100%;
     border-radius: 2.4rem;
     padding: 2.4rem;
-    background-color: rgba(201, 200, 216, 0.2);
+    /*
+    background-color: rgba(201, 200, 216, 0.2);*/
     margin-bottom: 12rem;
     display: flex;
 }

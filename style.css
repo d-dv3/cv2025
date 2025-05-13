@@ -525,7 +525,7 @@ footer {
 
 /* ******************************** */
 /* ******************************** */
-/* REVISÃO 02 MAIO - DRY */
+
 
 /* ******************************** */
 /* ******************************** */
@@ -783,7 +783,7 @@ footer {
     display: none;
 }
 
-/* DRY - EMPATHIZE 02-MAI */
+
 /* ***************************************************** */
 /* LECTURE DEVELOPMENT - 01-EMPATHIZE - 02-DEFINE - 03-IDEATE - 04-PROTOTYPE - 05-TEST */
 /* ***************************************************** */
@@ -907,8 +907,8 @@ footer {
 /* ************ */
 /* empathize-col-right */
 /* empathize-userQuestions */
-.grid--2-rowsIdTest,
-.grid--2-rowsIPrototype,
+.grid--2-rowsTest,
+.grid--2-rowsPrototype,
 .grid--2-rowsIdeate,
 .grid--2-rowsDefine,
 .grid--2-rowsEmpathize {
@@ -918,7 +918,7 @@ footer {
 
 /* row-01 */
 .testUserRow,
-.prototupeUserRow,
+.prototypeUserRow,
 .ideateUserRow,
 .defineUserRow,
 .empathizeUserRow {
@@ -926,24 +926,29 @@ footer {
     grid-template-columns: 1fr 1fr;
 
     height: 12rem;
+    /*
     border: 1px solid rgba(201, 200, 216);
     border-radius: 2.4rem;
-
+*/
 }
 
 .circleTest,
-.circleProtorype,
+.circlePrototype,
 .circleIdeate,
 .circleDefine,
 .circleEmpathize {
-    /*
+
     height: 16rem;
     width: 16rem;
+    /*
     border-radius: 50%;*/
     height: 100%;
     border: 1px solid rgba(201, 200, 216);
     border-radius: 2.4rem;
     justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*drawingSize*/
@@ -999,6 +1004,8 @@ footer {
 }
 
 /* row-02 */
+.testProcess,
+.prototypeProcess,
 .ideateProcess,
 .defineProcess,
 .empathizeProcess {
@@ -1017,6 +1024,8 @@ footer {
     justify-self: center;
 }
 
+.testKeyWords,
+.prototypeKeyWords,
 .ideateKeywords,
 .defineKeyWords,
 .empathizeKeyWords {
@@ -1028,6 +1037,8 @@ footer {
 .empathizeKeyWordsArrow {}
 .arrowBlueEmpathize {}
 */
+.arrowBlueTest,
+.arrowBluePrototype,
 .arrowBlueIdeate,
 .arrowBlueDefine,
 .arrowBlueEmpathize {
@@ -1249,7 +1260,6 @@ footer {
     margin-bottom: 20rem;
 }
 
-
 .interviewGuide-grid--2-cols {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1420,7 +1430,10 @@ footer {
 }
 
 
-
+.grid--3-colsCompetitorDropdown {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1.6rem;
+}
 
 
 
@@ -2094,8 +2107,9 @@ footer {
     grid-template-columns: 1fr 1fr;
 
     height: 12rem;
+    /*
     border: 1px solid rgba(201, 200, 216);
-    border-radius: 2.4rem;
+    border-radius: 2.4rem;*/
 
 }
 
@@ -2107,20 +2121,14 @@ footer {
     height: 100%;
     border: 1px solid rgba(201, 200, 216);
     border-radius: 2.4rem;
-    justify-self: center;
+    display: flex;
+    align-items: center;
+
 }
 
 /*drawingSize*/
 
-
-.empathizeAllQ {
-    height: 100%;
-    border: 1px solid rgba(201, 200, 216);
-    border-radius: 2.4rem;
-
-
-}
-
+.empathizeAllQ {}
 
 .empathizeQ01,
 .empathizeQ02,
@@ -2130,7 +2138,7 @@ footer {
     font-weight: 200;
 
     color: #292562;
-
+    align-self: center;
     justify-self: left;
     margin-bottom: 0.4rem;
     /*
