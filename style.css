@@ -13,6 +13,7 @@ html {
     background-color: #eeeeee;
 }
 
+.bodyLanding,
 body {
     /* weight from 100 to 900 */
     font-family: "Inter", sans-serif;
@@ -20,11 +21,13 @@ body {
     font-weight: 200;
     color: #111;
     overflow-x: hidden;
-
     max-width: 120rem;
     padding-right: 8rem;
     padding-left: 8rem;
     margin: auto;
+}
+
+body {
     background-color: white;
 }
 
@@ -35,13 +38,14 @@ body {
 /* *********** */
 header {
     margin-top: 8.8rem;
-    margin-bottom: 8.8rem;
+    margin-bottom: 11.2rem;
 }
 
+/*
 .headerMain {
     margin-bottom: 12rem;
-    /* before 4.2 */
-}
+    
+}*/
 
 /* **************** */
 /* HEADER MAIN-left */
@@ -117,7 +121,7 @@ header {
 }
 
 .linkMakingOfPlaceholder {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .linkMakingOf {
@@ -189,6 +193,116 @@ header {
     color: #333;
 }
 
+/* ********************** */
+/* LANDING - PRESENTATION */
+/* ********************** */
+.bodyLanding {
+    background-color: #b8d5e6;
+}
+
+.landingPhoto {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8rem;
+}
+
+.meLandingPhoto {
+    width: 100px;
+    margin-right: 4.8rem;
+}
+
+.landingText {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.4;
+    margin-right: 4.8rem;
+}
+
+.landingPresentation {
+    margin-top: 8.8rem;
+}
+
+/*
+.landingPresentationGrid {
+    display: grid;
+    grid-template-columns: 2;
+    column-gap: 2.4rem;
+}
+*/
+/* **** */
+/* left */
+
+
+
+/* ***** */
+/* right */
+.landingBoxesGrid {
+    display: grid;
+    grid-template-rows: 3;
+    row-gap: 1.6rem;
+}
+
+.lectureUxBox {
+    font-size: 2.4rem;
+    background-color: #222;
+    margin-right: 1.6rem;
+}
+
+.thirtyWBox {
+    display: flex;
+    justify-content: center;
+}
+
+.thirtyWBox,
+.seventyWBox,
+.fullWBox,
+.lectureUxBox,
+.cvBox {
+    display: flex;
+    align-items: center;
+    border-radius: 1.6rem;
+    height: 30rem;
+    width: 50%;
+    font-weight: 500;
+    box-shadow: 4px 4px 5px rgba(19, 9, 159, 0.1);
+}
+
+.cvBox {
+    font-size: 4.8rem;
+    background-color: #6C92E6;
+}
+
+.personasCardModule {
+    box-shadow: 4px 4px 5px rgba(201, 200, 216, 0.1);
+}
+
+.lectureUxBoxLink,
+.cvBoxLink {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.cvBoxLink:link,
+.cvBoxLink:visited {
+    transition: all 0.3s;
+}
+
+.cvBoxLink:hover,
+.cvBoxLink:active {
+    background-color: #fff;
+    color: #FCDC4A;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* *************** */
 /* CV-PRESENTATION */
@@ -204,7 +318,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-
 }
 
 .mePhoto {
@@ -218,12 +331,53 @@ header {
     line-height: 1.4;
 }
 
+/* ****** */
+/* FOOTER */
+/* ****** */
+.footerLanding {
+    border-top: 0.5px solid #fff;
+}
 
+.footerLanding,
+footer {
+    height: 8rem;
+    margin-top: 8.8rem;
+}
 
+footer {
+    border-top: 0.5px solid #999;
+}
 
+.footerLandingContent,
+.footerContent {
+    justify-self: right;
 
+    display: flex;
+}
 
+.footerLandingContent {
+    color: #fff;
+}
 
+.footerContent {
+    color: #333;
+}
+
+.currentYear,
+.footerMyName {
+    align-self: center;
+    font-size: 1.2rem;
+}
+
+.registeredMark {
+    font-size: 2.4rem;
+    padding-top: 0.6rem;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+}
+
+/* ******************************** */
+/* ******************************** */
 
 
 /* *************** */
@@ -494,37 +648,7 @@ header {
 }
 
 
-/* ****** */
-/* FOOTER */
-/* ****** */
 
-footer {
-    height: 8rem;
-    border-top: 0.5px solid #999;
-    margin-top: 8.8rem;
-}
-
-.footerContent {
-    justify-self: right;
-    color: #333;
-    display: flex;
-}
-
-.currentYear,
-.footerMyName {
-    align-self: center;
-    font-size: 1.2rem;
-}
-
-.registeredMark {
-    font-size: 2.4rem;
-    padding-top: 0.6rem;
-    padding-left: 1.6rem;
-    padding-right: 1.6rem;
-}
-
-/* ******************************** */
-/* ******************************** */
 
 
 /* ******************************** */
@@ -769,7 +893,9 @@ footer {
 
 
 .btnIndex:link,
-.btnIndex:visited {}
+.btnIndex:visited {
+    transition: all 0.3s;
+}
 
 .btnIndex:hover,
 .btnIndex:active {
@@ -1528,8 +1654,9 @@ footer {
 /* **************************** */
 /* FINAL PERSONA - USER JOURNEY */
 /* **************************** */
+/*
 .finalPersona {}
-
+*/
 .contentFinalPersona {
     justify-self: center;
 }
@@ -2127,9 +2254,9 @@ footer {
 }
 
 /*drawingSize*/
-
+/*
 .empathizeAllQ {}
-
+*/
 .empathizeQ01,
 .empathizeQ02,
 .empathizeQ03 {
@@ -2304,8 +2431,9 @@ footer {
     border: 0.5px solid #999;
 }
 
+/*
 .allContent {}
-
+*/
 .hmw-row {
     width: 100%;
     border: 0.5px solid #999;
