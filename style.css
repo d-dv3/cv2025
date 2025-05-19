@@ -221,8 +221,23 @@ header {
     margin-right: 4.8rem;
 }
 
-.landingPresentation {
+.textPassions p {
+    font-size: 1.4rem;
+    margin-bottom: 2.4rem;
+    margin-right: 4.8rem;
+}
+
+.currentlyText {
+    font-size: 1rem;
+    margin-top: 1.6rem;
+    margin-right: 4.8rem;
+}
+
+.landingPresentationGrid {
     margin-top: 8.8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2.4rem;
 }
 
 /*
@@ -251,6 +266,14 @@ header {
     margin-right: 1.6rem;
 }
 
+.fullWBox {
+    height: 30rem;
+    width: 100%;
+    border-radius: 1.6rem;
+    background-color: #292562;
+    box-shadow: 4px 4px 5px rgba(19, 9, 159, 0.1);
+}
+
 .thirtyWBox {
     display: flex;
     justify-content: center;
@@ -258,7 +281,12 @@ header {
 
 .thirtyWBox,
 .seventyWBox,
-.fullWBox,
+
+
+
+.thirtyWBox,
+.seventyWBox,
+
 .lectureUxBox,
 .cvBox {
     display: flex;
@@ -275,10 +303,6 @@ header {
     background-color: #6C92E6;
 }
 
-.personasCardModule {
-    box-shadow: 4px 4px 5px rgba(201, 200, 216, 0.1);
-}
-
 .lectureUxBoxLink,
 .cvBoxLink {
     text-decoration: none;
@@ -293,14 +317,24 @@ header {
 
 .cvBoxLink:hover,
 .cvBoxLink:active {
-
     color: #222;
 }
 
+.whiteBentoRowQuerie {
+    display: flex;
+}
 
+.whiteBentoRow {
+    display: none;
+}
 
+.qrCode {
+    height: 12rem;
+}
 
-
+.linkBox {
+    display: flex;
+}
 
 
 
@@ -3002,4 +3036,51 @@ footer {
 
 .comparisonsTitle p {
     justify-self: center;
+}
+
+
+/* **************** */
+/* MAKING OF - PAGE */
+/* **************** */
+.page-index {
+    min-height: 10rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.circle-greys img,
+.circle-colors img {
+    height: 1.6rem;
+}
+
+/*
+.figmaSection {}
+*/
+.figmaSectionTitles {
+    margin-bottom: 4.8rem;
+}
+
+.figmaIcon {
+    font-size: 2.4rem;
+    color: #999;
+    margin-bottom: 0.8rem;
+}
+
+.figmaSectionTitles p {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.figmaSectionSubTitles {
+    margin-bottom: 12rem;
+}
+
+.figmaSectionSubTitles p {
+    font-size: 1.4rem;
+    margin-bottom: 1.6rem;
+}
+
+.figma-sliderComponent,
+.figma-personaCardComponent {
+    max-width: 100%;
 }

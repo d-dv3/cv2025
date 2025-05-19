@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>diana dóris</title>
 
-    <link rel="shortcut icon" href="/imgCV/logoDd.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="img/logos/logoDd.svg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -27,37 +27,20 @@
         <!-- ----------- -->
         <!-- HEADER MAIN -->
         <!-- ----------- -->
-        <div class="headerMain grid grid--2-cols">
+        <div class="headerMain grid grid--2-colsHeaderMain">
             <!-- ----------- -->
             <!-- HEADER left -->
             <!-- ----------- -->
             <div class="headerMainLeft">
-                <img class="logoDd" src="imgCV/logoDd-draw-grey.svg" alt="" srcset="">
+                <img class="logoDd" src="img/logos/logoDd-draw-grey.svg" alt="" srcset="">
 
-                <a class="myName" href="index.html">diana dóris</a>
+                <a class="myName" href="index.html" id="topPage">diana dóris</a>
             </div>
-            <!-- ------------ -->
-            <!-- HEADER right MEDIA QUERIE-->
-            <!-- ------------ -->
-            <div class="headerMenuQuerie hiddenMenuQ">
-                <a class="headerLinkPortfolio" href="lecture.html">lecture</a>
-                <a class="headerLinkCurriculumVitae" href="curriculumVitae.html">cv</a>
-                <div class="headerContactsQuerie">
-                    <button class="btnDropdownContacts">contacts</button>
-                    <div class="allContactsHeaderQuerie hidden">
-                        <p class="contactMailQ">diana.doris@gmail.com</p>
-                        <!-- 
-                        <a class="jewelryDesignBrandQ" href="#">dianadoris.com</a>-->
-                        <a class="contactHeaderLinkedinQ" href="https://www.linkedin.com/in/diana-doris/">linkedin</a>
-                        <a class="contactHeaderGithubQ" href="https://github.com/d-dv3/cv2025">github</a>
-                    </div>
-                </div>
-            </div>
+
+
             <!-- ------------ -->
             <!-- HEADER right -->
             <!-- ------------ -->
-
-
             <div class="headerMainRight grid grid--3-colsHeaderMainRight">
 
                 <!-- COL-01 -->
@@ -66,7 +49,6 @@
                     <div class="linkPortfolioPlaceholder">
                         <a class="headerLinkPortfolio" href="lecture.html">lecture</a>
                     </div>
-
                     <div class="linkMakingOfPlaceholder"><a class="linkMakingOf" href="makingOf.html">making of</a>
                     </div>
                 </div>
@@ -86,7 +68,7 @@
                             <p class="contactMail">diana.doris@gmail.com</p>
                             <a class="contactHeaderLinkedin" href="https://www.linkedin.com/in/diana-doris/">linkedin
                             </a>
-                            <!--
+                            <!-- 
                             <a class="jewelryDesignBrand" href="https://dianadoris.com/">dianadoris.com</a>-->
                             <a class="contactHeaderGithub" href="https://github.com/d-dv3/cv2025">github</a>
                         </div>
@@ -100,12 +82,14 @@
     <!-- ------------ -->
     <!-- PRESENTATION -->
     <!-- ------------ -->
-    <section class="landingPresentation grid grid--2-cols">
+    <section class="landingPresentationGrid">
         <!-- left -->
         <!-- ---- -->
         <div>
             <div class="landingPhoto">
-                <div><img class="meLandingPhoto" src="imgCV/dianaDoris-cores.png" alt="" srcset=""></div>
+                <div>
+                    <img class="meLandingPhoto" src="imgCV/dianaDoris-cores.png" alt="" srcset="">
+                </div>
 
                 <div>
                     <p class="landingText">Hi, I'm Diana and I'm looking forward to working with you as a <span
@@ -116,20 +100,19 @@
 
             </div>
 
-            <div style="margin-right:4.8rem ;">
+            <div class="textPassions">
                 <!-- 
                 <p style="font-size: 1.8rem; font-weight: 600; margin-bottom: 5.6rem;">as a UX/ UI Designer | Front-End
                     Developer</p>-->
 
-                <p style="font-size: 1.4rem; margin-bottom: 2.4rem;">Passionate about <span
-                        style="font-weight: 400;">making a difference</span> in people's
+                <p>Passionate about <span style="font-weight: 400;">making a difference</span> in people's
                     life and planet</p>
-                <p style="font-size: 1.4rem; margin-bottom: 8rem;">Believing
+                <p style="margin-bottom: 8rem;">Believing
                     technology can be fantastic for achieving and promoting the <span style="font-weight: 400;">common
                         good</span></p>
 
-                <p style="font-size: 1.1rem; margin-top: 1.6rem; margin-right: 2.4rem;">Currently working on <span
-                        style="font-weight: 300;">ux
+                <p class="currentlyText ">Currently
+                    working on <span style="font-weight: 300;">ux
                         portfolio</span> and studying
                     <span style="font-weight: 300;">Become a Wordpress Developer</span> and <span
                         style="font-weight: 300;">Webflow Essencials</span> at
@@ -143,7 +126,7 @@
         <!-- ---- -->
         <div class="landingBoxesGrid">
 
-            <div style="display: flex;">
+            <div class="linkBox">
 
                 <div class="lectureUxBox"><a class="lectureUxBoxLink" href="lecture.html">
                         <p>case study<br>LECTURE_<br>UX design</p>
@@ -156,19 +139,24 @@
             </div>
 
             <div style="display: flex;">
-                <div class="fullWBox"
-                    style="height: 20rem; width: 100%;border-radius: 1.6rem; background-color: #292562;">
+                <div class="fullWBox">
                 </div>
 
             </div>
 
-            <div style="display: flex;">
+            <div class="whiteBentoRowQuerie">
                 <div class="seventyWBox"
                     style="height: 15rem; width: 70%;border-radius: 1.6rem; background-color: #fff; margin-right: 1.6rem;">
                 </div>
                 <div class="thirtyWBox"
                     style="height: 15rem; width: 30%;border-radius: 1.6rem; background-color: #fff;"><img
                         style="height: 12rem;" src="img/QR CODE.png" alt="" srcset="">
+                </div>
+            </div>
+
+            <div class="whiteBentoRow">
+                <div style="display: flex; justify-content: center;">
+                    <img class="qrCode" src="img/QR CODE.png" alt="" srcset="">
                 </div>
 
             </div>
