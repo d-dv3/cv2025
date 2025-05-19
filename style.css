@@ -197,7 +197,10 @@ header {
 /* LANDING - PRESENTATION */
 /* ********************** */
 .bodyLanding {
-    background-color: #b8d5e6;
+    /*
+    background-color: linear-gradient(to bottom-right, #B8D5E6, #fff);*/
+
+    background: linear-gradient(135deg, #b8d5e6 30%, #fff);
 }
 
 .landingPhoto {
@@ -290,8 +293,8 @@ header {
 
 .cvBoxLink:hover,
 .cvBoxLink:active {
-    background-color: #fff;
-    color: #FCDC4A;
+
+    color: #222;
 }
 
 
