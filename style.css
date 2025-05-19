@@ -1768,7 +1768,7 @@ footer {
 }
 
 .user-journey-title {
-    grid-column: 1;
+
     height: 48rem;
     width: 4rem;
     background-color: #292562;
@@ -1871,7 +1871,7 @@ footer {
     font-size: 1rem;
     font-weight: 300;
     background-color: rgba(201, 200, 216, 0.1);
-    margin-right: 1.6rem;
+
 }
 
 

@@ -31,44 +31,26 @@ body {
 /* UX METHODOLOGY 01-EMPATHIZE */
 /* *************************** */
 .page-index {
-    min-height: 30rem;
+    min-height: 10rem;
     margin-top: 10rem;
     margin-bottom: 10rem;
-
-
 }
 
 .circle-greys img,
 .circle-colors img {
     height: 1.6rem;
-
 }
 
-.icons {
-    font-size: 2.4rem;
-    color: #DE5F2A;
-}
-
-.draw-instructions,
-.drawing-instructions {
-    width: 100%;
-    padding-left: 2.4rem;
-}
-
-.draw-instructions {}
-
+/*
 .uxMethodology {
     height: 44rem;
     width: 100%;
     border-radius: 2.4rem;
     padding: 2.4rem;
-    /*
-    background-color: rgba(201, 200, 216, 0.2);*/
+    background-color: rgba(201, 200, 216, 0.2);
     margin-bottom: 12rem;
     display: flex;
 }
-
-
 
 .uxMethodology-drawing {
     height: 39.2rem;
@@ -80,22 +62,18 @@ body {
     height: 39.2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-
 }
 
 .template-col-left {
     height: 100%;
-
     display: flex;
     justify-content: right;
     padding-right: 0.8rem;
     border-top: 1px solid #DE5F2A;
-
-
 }
 
 .template-col-right {
     height: 100%;
-
     border-bottom: 1px solid #DE5F2A;
 }
+*/
