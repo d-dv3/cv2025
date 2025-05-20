@@ -219,6 +219,7 @@ header {
     font-weight: 300;
     line-height: 1.4;
     margin-right: 4.8rem;
+    text-shadow: 4px 4px 5px rgba(19, 9, 159, 0.1);
 }
 
 .textPassions p {
@@ -310,6 +311,8 @@ header {
     cursor: pointer;
 }
 
+.lectureUxBoxLink:link,
+.lectureUxBoxLink:visited,
 .cvBoxLink:link,
 .cvBoxLink:visited {
     transition: all 0.3s;
@@ -318,6 +321,11 @@ header {
 .cvBoxLink:hover,
 .cvBoxLink:active {
     color: #222;
+}
+
+.lectureUxBoxLink:hover,
+.lectureUxBoxLink:active {
+    color: #6C92E6;
 }
 
 .whiteBentoRowQuerie {
@@ -385,16 +393,18 @@ footer {
     border-top: 0.5px solid #999;
 }
 
-.footerLandingContent,
+/*
+.footerLandingContent,*/
 .footerContent {
     justify-self: right;
 
     display: flex;
 }
 
+/*
 .footerLandingContent {
     color: #fff;
-}
+}*/
 
 .footerContent {
     color: #333;
