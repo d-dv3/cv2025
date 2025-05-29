@@ -299,6 +299,7 @@ header {
     justify-content: center;
 }
 
+/*
 .thirtyWBox,
 .seventyWBox,
 
@@ -306,7 +307,7 @@ header {
 
 .thirtyWBox,
 .seventyWBox,
-
+*/
 .lectureUxBox,
 .cvBox {
     display: flex;
@@ -1023,7 +1024,8 @@ footer {
     height: 44rem;
     width: 100%;
     border-radius: 2.4rem;
-    border: 1px solid rgba(201, 200, 216, 0.9);
+    /*
+    border: 1px solid rgba(201, 200, 216, 0.9);*/
 }
 
 /*  col-01 left */
