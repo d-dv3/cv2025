@@ -18,7 +18,7 @@ body {
     /* weight from 100 to 900 */
     font-family: "Inter", sans-serif;
     line-height: 1;
-    font-weight: 200;
+    font-weight: 300;
     color: #111;
     overflow-x: hidden;
     max-width: 120rem;
@@ -245,6 +245,7 @@ header {
 
 .textPassions p {
     font-size: 1.4rem;
+    line-height: 1.4;
     margin-bottom: 2.4rem;
     margin-right: 4.8rem;
 }
@@ -872,8 +873,8 @@ footer {
 
 .briefingTxt {
     grid-row: 3;
-    font-size: 1rem;
-    line-height: 1.2;
+    font-size: 1.2rem;
+    line-height: 1.3;
     padding-right: 1.6rem;
 }
 
@@ -918,7 +919,7 @@ footer {
 }
 
 .hexagonsGroupSubtitlesQuerie {
-    font-size: 0.8rem;
+    font-size: 1rem;
     line-height: 1.2;
     display: flex;
     align-items: center;
@@ -939,10 +940,14 @@ footer {
 }
 
 .caseStudySubTitleTextLine {
-    font-size: 0.8rem;
+    font-size: 1rem;
+    line-height: 1.2;
 }
 
 
+/* *************** */
+/* *************** */
+/* playingHexagons */
 /*
 .playingHexagons {}
 */
@@ -955,11 +960,8 @@ footer {
     display: flex;
 }
 
-.phase-05-test,
-.phase-04-prototype,
-.phase-02-define,
-.phase-03-ideate,
-.phase-01-empathize {
+
+.playingHexagons-phases {
     height: 6.4rem;
     width: 24.2rem;
     border-radius: 1.6rem;
@@ -969,6 +971,14 @@ footer {
     padding: 0.4rem;
     /*
     background-color: rgba(201, 200, 216, 0.05);*/
+}
+
+.playingHexagons-phasesImg {
+    height: 6rem;
+}
+
+.playingHexagons-imgIndividual {
+    height: 1.6rem;
 }
 
 .phaseModule {
@@ -983,15 +993,8 @@ footer {
     cursor: pointer;
 }
 
-
-.btnIndex:link,
-.btnIndex:visited {
-    transition: all 0.3s;
-}
-
-.btnIndex:hover,
-.btnIndex:active {
-    color: #FCDC4A;
+.phaseIndexTxt {
+    font-size: 1rem;
 }
 
 
