@@ -225,10 +225,12 @@ header {
 .landingTextSpan {
     font-weight: 600;
     color: #fff;
+    /*
     animation-name: letterChangeColor;
-    animation-duration: 4s;
+    animation-duration: 4s;*/
 }
 
+/*
 @keyframes letterChangeColor {
     from {
         color: #222;
@@ -238,7 +240,7 @@ header {
         color: #111;
     }
 }
-
+*/
 
 
 .textPassions p {
@@ -372,10 +374,11 @@ header {
     display: none;
 }
 
+/*
 .qrCode {
     height: 12rem;
 }
-
+*/
 .linkBox {
     display: flex;
 }
@@ -622,6 +625,11 @@ footer {
 .infoSoftware-skill05,
 .infoSoftware-skill06 {
     grid-row: 3;
+}
+
+.infoSoftware-skill09 {
+    grid-row: 4;
+    grid-column: 2;
 }
 
 .infoSoftwareJS,
@@ -1001,6 +1009,16 @@ footer {
     margin-bottom: 24rem;
 }
 
+.hexagon-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.6rem;
+}
+
+.hexagonIndexIndividual {
+    height: 2.2rem;
+}
+
 .uxMethodology-allPhases {
     height: 39.2rem;
 }
@@ -1010,6 +1028,8 @@ footer {
     grid-template-columns: 1fr 1fr;
     column-gap: 2.4rem;
 }
+
+
 
 .test-col-right,
 .test-col-left,
@@ -1021,7 +1041,11 @@ footer {
 .define-col-left,
 .empathize-col-left,
 .empathize-col-right {
-    height: 44rem;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+
+
     width: 100%;
     border-radius: 2.4rem;
     /*
@@ -1030,11 +1054,7 @@ footer {
 
 /*  col-01 left */
 /* ************ */
-.hexagon-title {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1.6rem;
-}
+
 
 .testTitle,
 .prototypeTitle,
@@ -1060,7 +1080,8 @@ footer {
 .empathize-questions02 {
     font-size: 1.2rem;
     line-height: 1.2;
-    background-color: rgba(201, 200, 216, 0.1);
+    border: 1px solid rgba(201, 200, 216, 0.5);
+
 }
 
 .test-questions02,
@@ -1089,11 +1110,12 @@ footer {
     background-color: #FCDC4A;
 }
 
+/*
 .test-questions-center,
 .prototype-questions-center,
 .ideate-questions-center,
 .define-questions-center,
-.dempathize-questions-center,
+.empathize-questions-center,
 .testCenterGrid,
 .prototypeCenterGrid,
 .ideateCenterGrid,
@@ -1101,14 +1123,14 @@ footer {
 .empathizeCenterGrid {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-}
+}*/
 
 .test-questions-center-border,
 .prototype-questions-center-border,
 .ideate-questions-center-border,
 .define-questions-center-border,
 .empathize-questions-center-border {
-    border: 1px solid rgba(201, 200, 216);
+    border: 1px solid rgba(201, 200, 216, 0.5);
 }
 
 
@@ -1124,29 +1146,24 @@ footer {
 /* ************ */
 /* empathize-col-right */
 /* empathize-userQuestions */
+
+
 .grid--2-rowsTest,
 .grid--2-rowsPrototype,
 .grid--2-rowsIdeate,
-.grid--2-rowsDefine,
-.grid--2-rowsEmpathize {
+.grid--2-rowsDefine {
     height: 39.2rem;
-    grid-template-rows: 2;
+    grid-template-rows: 2fr 1fr;
 }
 
 /* row-01 */
+
 .testUserRow,
 .prototypeUserRow,
 .ideateUserRow,
 .defineUserRow,
 .empathizeUserRow {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    height: 12rem;
-    /*
-    border: 1px solid rgba(201, 200, 216);
-    border-radius: 2.4rem;
-*/
+    box-shadow: 4px 4px 5px rgba(201, 200, 216, 0.5);
 }
 
 .circleTest,
@@ -1172,17 +1189,7 @@ footer {
 /*
 .arrowPersonasBck*/
 
-.testAllQ,
-.prototypeAllQ,
-.ideateAllQ,
-.defineAllQ,
-.empathizeAllQ {
-    height: 100%;
-    border: 1px solid rgba(201, 200, 216);
-    border-radius: 2.4rem;
 
-
-}
 
 .testQ01,
 .testQ02,
@@ -1227,27 +1234,30 @@ footer {
 .defineProcess,
 .empathizeProcess {
     width: 100%;
-    align-items: center;
-    color: #292562;
+    height: 100%;
+
     font-size: 1.2rem;
     font-weight: 400;
+    border: 1px solid #FCDC4A;
+    border-radius: 2.4rem;
 }
 
-/* grid--2-cols */
-
-.arrowCol {
-    font-size: 4rem;
-    color: #555;
-    justify-self: center;
+.empathizearrow02,
+.empathizearrow01,
+.empathizeKeyWords03,
+.empathizeKeyWords02,
+.empathizeKeyWords01 {
+    display: flex;
+    justify-content: center;
 }
 
 .testKeyWords,
 .prototypeKeyWords,
 .ideateKeywords,
 .defineKeyWords,
-.empathizeKeyWords {
-    display: inline-block;
-    background-color: #FCDC4A;
+{
+display: inline-block;
+background-color: #FCDC4A;
 }
 
 /*
@@ -1622,12 +1632,27 @@ footer {
 .btnDropdown {
     height: 2.4rem;
     width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+
     border: 0.5px solid #555;
     border-radius: 16px;
     color: #555;
     font-size: 1.2rem;
     background-color: white;
     cursor: pointer;
+}
+
+.btnDropdown p {
+    grid-column: 2;
+}
+
+.dropdownArrow {
+    font-size: 1.4rem;
+    justify-self: center;
+    grid-column: 3;
 }
 
 .btnDropdown:link,
@@ -2238,13 +2263,16 @@ footer {
 /* ********************************** */
 /* LECTURE DEVELOPMENT - 01-EMPATHIZE */
 /* ********************************** */
-.uxMethodology {
-    margin-bottom: 24rem;
-}
+
+
+
+
 
 .uxMethodology-allPhases {
     height: 39.2rem;
 }
+
+
 
 .grid--2-colsUxMethodology {
     width: 100%;
@@ -2261,11 +2289,7 @@ footer {
 
 /*  col-01 left */
 /* ************ */
-.hexagon-title {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1.6rem;
-}
+
 
 .empathizeTitle {
     font-size: 1.6rem;
@@ -2296,11 +2320,6 @@ footer {
     background-color: #FCDC4A;
 }
 
-.empathizeCenterGrid {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-}
-
 .empathize-questions-center-border {
     border: 1px solid rgba(201, 200, 216);
 }
@@ -2315,34 +2334,20 @@ footer {
 /* empathize-userQuestions */
 
 .grid--2-rowsEmpathize {
-    height: 39.2rem;
-    grid-template-rows: 2;
+    height: 100%;
+    grid-template-rows: 2fr 1fr;
 }
 
 /* row-01 */
 .empathizeUserRow {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
-    height: 12rem;
-    /*
-    border: 1px solid rgba(201, 200, 216);
-    border-radius: 2.4rem;*/
-
-}
-
-.circleEmpathize {
-    /*
-    height: 16rem;
-    width: 16rem;
-    border-radius: 50%;*/
-    height: 100%;
-    border: 1px solid rgba(201, 200, 216);
-    border-radius: 2.4rem;
-    display: flex;
     align-items: center;
-
+    border-radius: 2.4rem;
+    margin-bottom: 1.6rem;
 }
+
+
 
 /*drawingSize*/
 /*

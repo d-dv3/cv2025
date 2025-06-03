@@ -1,0 +1,111 @@
+/* ************************************* */
+/* ************************************* */
+/* UX METHODOLOGY - ALL PHASES COMPONENT */
+/* UX PHASES COMPONENT */
+.uxPhase {
+    margin-bottom: 24rem;
+}
+
+.hexagon-title {
+    margin-bottom: 1.6rem;
+}
+
+.hexagonComponentIndividual {
+    height: 2.2rem;
+}
+
+.uxPhaseTitle {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #292562;
+    padding-left: 1.6rem;
+}
+
+.internalLink-arrow-up {
+    padding-left: 1.6rem;
+}
+
+.internalLink-arrow-up-icon {
+    font-size: 1.4rem;
+    color: #999;
+}
+
+.grid--2-cols-ux-phase-component {
+    height: 44rem;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2.4rem;
+}
+
+.uxPhaseComponent-col-right,
+.uxPhaseComponent-col-left {
+    height: 100%;
+    /*
+    display: flex;
+    align-items: ;*/
+}
+
+.grid--3-rows-uxPhasePresentation {
+    height: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 1.6rem;
+}
+
+.uxPhasePresentation-bottom,
+.uxPhasePresentation-top {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    border: 1px solid rgba(201, 200, 216, 0.2);
+    border-radius: 2.4rem;
+    padding: 1.6rem;
+}
+
+.uxPhasePresentation-middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(201, 200, 216, 0.2);
+    border-radius: 2.4rem;
+    padding: 1.6rem;
+}
+
+.uxPhase-middle-keywords {
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.txtUnderlineYellow {
+    background-color: #FCDC4A;
+}
+
+.txtColorBoldBlue {
+    font-weight: 400;
+    color: #292562;
+}
+
+.grid--2-rows-uxPhaseComponent-drawings-keywords {
+    height: 100%;
+    grid-template-rows: 2fr 1fr;
+    row-gap: 1.6rem;
+}
+
+.uxPhaseComponent-drawings-row {
+    /* 2 col grid ? */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2.4rem;
+    padding: 1.6rem;
+    box-shadow: 4px 4px 5px rgba(201, 200, 216, 0.1);
+}
+
+.uxPhaseComponent-drawings {
+    height: 8rem;
+}
+
+.uxPhaseComponent-drawings-keywords-row {
+    border-radius: 2.4rem;
+    padding: 1.6rem;
+    border: 1px solid #FCDC4A;
+}

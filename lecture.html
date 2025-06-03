@@ -17,6 +17,7 @@
     <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleComponents.css">
     <link rel="stylesheet" href="queries.css">
     <link rel="stylesheet" href="general.css">
     <script src="script.js"></script>
@@ -371,135 +372,107 @@
         <!-- ---------------------------------- -->
         <!-- LECTURE DEVELOPMENT - 01-EMPATHIZE -->
         <!-- ---------------------------------- -->
-        <section class="uxMethodology">
+        <section class="uxPhase empathize">
 
-            <div class="uxMethodology-allPhases grid grid--2-colsUxMethodology" id="empathize">
+            <div class="hexagon-title">
+                <img class="hexagonComponentIndividual" src="img/ux/01_EMPATHIZE/hexagon-small-blue.svg"
+                    alt="hexagon figure: empathize" srcset="">
+                <p class="uxPhaseTitle">empathize</p>
+                <!--
+            <a class="internalLink-arrow-up" href="#topPage" style="align-self: self-end;"><ion-icon class="internalLink-arrow-up-icon" name="arrow-up-outline"></ion-icon></a> -->
+            </div>
 
+            <div class="uxPhaseComponent grid grid--2-cols-ux-phase-component" id="empathize">
+                <!--  ---------- -->
+                <!--  ---------- -->
                 <!-- COL 01 left -->
-                <div class="empathize-col-left">
+                <div class="uxPhaseComponent-col-left">
 
-                    <div class="hexagon-title">
-                        <img style="height: 2.2rem;" src="img/ux/01_EMPATHIZE/hexagon-small-blue.svg" alt="" srcset="">
-                        <p class="empathizeTitle">empathize</p>
-                    </div>
+                    <div class="component-left grid grid--3-rows-uxPhasePresentation">
 
-                    <div class="empathize-questions01" style="margin-bottom: 1.6rem;">
-                        <p>An online educational platform is an existing product already,<br>we need to investigate
-                            what
-                            could
-                            be the user's needs that are still not fullfilled.
-                        </p>
+                        <div class="uxPhasePresentation-top">
+                            <p>An online educational platform is an existing product
+                                already,<br>we need to investigate
+                                what
+                                could
+                                be the user's needs that are still not fullfilled.
+                            </p>
+                            <p>If we can find and respond to this needs, we can add value to the user's life an to our
+                                client. This is why we start by:
+                            </p>
+                        </div>
 
-                        <p>If we can find and respond to this needs, we can add value to the user's life an to our
-                            client. This is why we start by:
-                        </p>
-
-                    </div>
-
-
-                    <div class="empathize-questions-center">
-
-                        <div class="empathizeCenterGrid">
-
-                            <div></div>
-
-                            <div class="empathize-questions-center-border">
-                                <div class="txtCenter" style="margin-bottom: 1.6rem;">
-                                    <p class="txt">defining the problem</p>
-                                </div>
-                                <div class="arrowTxt">
-                                    <ion-icon name="arrow-down-outline"></ion-icon>
-                                </div>
-                                <div class="txtCenter">
-                                    <p>User Research<br>What is our problem statement?</p>
-                                </div>
+                        <div class="uxPhasePresentation-middle">
+                            <div class="uxPhase-middle-keywords">
+                                <p><span class="txtUnderlineYellow">defining the problem</span><br><ion-icon
+                                        name="arrow-down-outline"></ion-icon><br>User
+                                    Research<br>What is our problem statement?
+                                </p>
                             </div>
+                        </div>
 
-                            <div></div>
-
-
+                        <div class="uxPhasePresentation-bottom">
+                            <p>We'll built [product] an online educational platform for
+                                <span class="txtColorBoldBlue">[who]</span>
+                                student's who's goal is <span class="txtColorBoldBlue">[what]</span>
+                                to
+                                obtain
+                                knowledge in artistic areas, <span class="txtColorBoldBlue">[where/ when]</span> in the
+                                moment
+                                they consider most convenient.
+                            </p>
+                            <p>We believe we will succeed because <span class="txtColorBoldBlue">[why]</span> : The
+                                courses
+                                in
+                                which
+                                student's invest will always be available so
+                                students can take the
+                                course at any time of the day; the platform will be diverse and organized.</p>
                         </div>
                     </div>
-
-
-
-
-                    <div class="empathize-questions02">
-
-                        <p style="margin-bottom: 1.6rem;">We'll built [product] an online educational platform for
-                            <span class="txtColor">[who]</span>
-                            student's who's goal is <span class="txtColor">[what]</span>
-                            to
-                            obtain
-                            knowledge in an artistic areas, <span class="txtColor">[where/ when]</span> in the
-                            moment
-                            they consider most convenient.
-                        </p>
-                        <p>We believe we will succeed because <span class="txtColor">[why]</span> : The courses in
-                            which
-                            student's invest will always be available so
-                            students can take the
-                            course at any time of the day; the platform will be diverse and organized.</p>
-                    </div>
-
                 </div>
-
-
+                <!--  ---------- -->
+                <!--  ---------- -->
                 <!-- COL 02 right-->
-                <div class="empathize-col-right">
+                <div class="uxPhaseComponent-col-right">
 
-                    <div class="empathize-userQuestions grid grid--2-rowsEmpathize">
+                    <div
+                        class="uxPhaseComponent-drawings-keywords grid grid--2-rows-uxPhaseComponent-drawings-keywords">
+
                         <!-- row 01 -->
-                        <div class="empathizeUserRow">
-
-                            <div class="circleEmpathize">
-
-                                <img class="drawingSize" src="img/ux/userOnLaptop-blue.svg" alt="" srcset=""> <!-- 
-                                <img style="height: 10rem;" src="/img/ux/01_EMPATHIZE/ill-persona-empathize4.svg" alt=""
-                                    srcset="">-->
-                            </div>
-
-                            <div class="empathizeAllQ">
-                                <p class="empathizeQ01">what user's needs are still not
-                                    fullfilled<span class="qMark">?</span></p>
-                                <p class="empathizeQ02">what can bring more value to our users<span
-                                        class="qMark">?</span>
-                                </p>
-                                <p class="empathizeQ03">what can be a differentiated
-                                    factor<br> for our client as well<span class="qMark">?</span>
-                                </p>
-                            </div>
-
+                        <div class="uxPhaseComponent-drawings-row">
+                            <img class="uxPhaseComponent-drawings" src="img/icon-illustration.svg" alt="" srcset="">
+                            <!-- 
+                        <div class="uxPhaseComponent-keywords">
+                            <p class="uxPhaseComponent-keywords-top">what user's needs are still not
+                                fullfilled?</p>
+                            <p class="uxPhaseComponent-keywords-middle">what can bring more value to our users?
+                            </p>
+                            <p class="uxPhaseComponent-keywords-bottom">what can be a differentiated
+                                factor<br> for our client as well?
+                            </p>
+                        </div>
+-->
                         </div>
 
 
                         <!-- row 02 -->
-                        <div class="empathizeProcess grid grid--2-cols">
-
-                            <div class="arrowCol">
-                                <ion-icon name="chevron-forward-outline"></ion-icon>
+                        <div class="uxPhaseComponent-drawings-keywords-row">
+                            <div class="uxPhase-middle-keywords">
+                                <p><span class="txtUnderlineYellow">personas | user research</span><br><ion-icon
+                                        name="chevron-down-outline"></ion-icon><br><span
+                                        class="txtUnderlineYellow">interviews | competition analyses</span><br>
+                                    <ion-icon name="chevron-down-outline"></ion-icon><br><span
+                                        class="txtUnderlineYellow">findings
+                                        | opportunities</span>
+                                </p>
                             </div>
 
-                            <div>
-                                <p class="empathizeKeyWords">personas | user research</p>
-
-                                <p class="empathizeKeyWordsArrow"><ion-icon class="arrowBlueEmpathize"
-                                        name="chevron-down-outline"></ion-icon></p>
-
-                                <p class="empathizeKeyWords">interviews | competition analyses</p>
-
-                                <p class="empathizeKeyWordsArrow"><ion-icon class="arrowBlueEmpathize"
-                                        name="chevron-down-outline"></ion-icon></p>
-
-                                <p class="empathizeKeyWords">findings | opportunities</p>
-
-                            </div>
 
                         </div>
 
                     </div>
                 </div>
-
             </div>
         </section>
 
@@ -691,12 +664,12 @@
                 </div>
                 <div class="interviewSubTitles">
                     <p>
-                        in order to deepen our investigation, we chose the interview method as research.
+                        In order to deepen our investigation, we chose the interview method as research.
                     </p>
-                    <p>the main goal of our interviews is to understans how the process
+                    <p>The main goal of our interviews is to understand how the process
                         of choosing a course works -
-                        what are the criteria used by our users. understans their experience in inline learning</p>
-                    <p>what kind of courses can lead to a better job</p>
+                        what are the criteria used by our users. Understand their experience in online learning</p>
+                    <p>What kind of courses can lead to a better job</p>
                     <p><span class="txtTarget" style="background-color: #FCDC4A;">we try
                             to investigate what the
                             competitors have to offer and if they respond to our users needs -
@@ -813,10 +786,10 @@
                     <p>Interview analyses</p>
                 </div>
                 <div style="font-size: 1.2rem;">
-                    <p> after grouping al the informaition we got from the interviewa we take the nxt step -
+                    <p> after grouping all the information we got from the interviews we take the next step -
                         invesigating the competition</p>
                     <p>direct competitors</p>
-                    <p>besides investingating how thw work, what they have to offer - having our personas in mind we
+                    <p>besides investigating how they work, what they have to offer - having our personas in mind we
                         try
                         to understand if the competition is able to respond to our users needs</p>
                     <p>we gather the strenghs and weeknessess - and try to get from there - opportunities we might
@@ -854,7 +827,10 @@
                                 <img class="logos" src="img/logos/logoDomestika120x34.svg" alt="" srcset="">
                             </div>
 
-                            <button class="btnDropdown">competitor description</button>
+                            <button class="btnDropdown">
+                                <p>competitor description</p><ion-icon class="dropdownArrow"
+                                    name="chevron-down-outline"></ion-icon>
+                            </button>
                             <div class="analysesContent hidden">
                                 <div class="grid grid--3-colsCompetitorDropdown">
                                     <p name="udemy" class="responseTxt paragraph-2">
@@ -890,7 +866,9 @@
                                 </div>
                             </div>
 
-                            <button class="btnDropdown">categories</button>
+                            <button class="btnDropdown">
+                                <p>categories</p><ion-icon class="dropdownArrow" name="chevron-down-outline"></ion-icon>
+                            </button>
                             <div class="analysesContent hidden">
                                 <div class="grid grid--3-colsCompetitorDropdown">
                                     <p name="udemy" class="responseTxt paragraph-2">Development | Business |
@@ -922,7 +900,9 @@
                                 </div>
                             </div>
 
-                            <button class="btnDropdown">features</button>
+                            <button class="btnDropdown">
+                                <p>features</p><ion-icon class="dropdownArrow" name="chevron-down-outline"></ion-icon>
+                            </button>
                             <div class="analysesContent hidden">
                                 <div class="grid grid--3-colsCompetitorDropdown">
                                     <p name="udemy" class="responseTxt paragraph-2">Free Courses; Discounts; No
@@ -955,7 +935,10 @@
                                 </div>
                             </div>
 
-                            <button class="btnDropdown">unique features</button>
+                            <button class="btnDropdown">
+                                <p>unique features</p><ion-icon class="dropdownArrow"
+                                    name="chevron-down-outline"></ion-icon>
+                            </button>
                             <div class="analysesContent hidden">
                                 <div class="grid grid--3-colsCompetitorDropdown">
                                     <p name="udemy" class="response"><ion-icon name="remove"></ion-icon></p>
@@ -970,7 +953,9 @@
                                 </div>
                             </div>
 
-                            <button class="btnDropdown">strengths</button>
+                            <button class="btnDropdown">
+                                <p>strengths</p><ion-icon class="dropdownArrow" name="chevron-down-outline"></ion-icon>
+                            </button>
                             <div class="analysesContent hidden">
                                 <div class="grid grid--3-colsCompetitorDropdown">
                                     <p name="udemy" class="responseTxt">You will continue to have access to the
@@ -998,7 +983,9 @@
                                 </div>
                             </div>
 
-                            <button class="btnDropdown">weaknesses</button>
+                            <button class="btnDropdown">
+                                <p>weaknesses</p><ion-icon class="dropdownArrow" name="chevron-down-outline"></ion-icon>
+                            </button>
                             <div class="analysesContent hidden">
                                 <div class="grid grid--3-colsCompetitorDropdown">
                                     <p name="udemy" class="responseTxt">Certificates on Udemy are not legally
@@ -1015,7 +1002,10 @@
                                 </div>
                             </div>
 
-                            <button class="btnDropdown">opportunities</button>
+                            <button class="btnDropdown">
+                                <p>opportunities</p><ion-icon class="dropdownArrow"
+                                    name="chevron-down-outline"></ion-icon>
+                            </button>
                             <div class="analysesContent hidden">
                                 <div class="grid grid--3-colsCompetitorDropdown">
                                     <p name="udemy" class="responseTxt">Official Certificates</p>
@@ -1175,116 +1165,107 @@
             <!-- ------------------------------- -->
             <!-- LECTURE DEVELOPMENT - 02-DEFINE -->
             <!-- ------------------------------- -->
+            <section class="uxPhase define">
 
+                <div class="hexagon-title">
+                    <img class="hexagonComponentIndividual" src="img/ux/01_EMPATHIZE/hexagon-small-blue.svg"
+                        alt="hexagon figure: define" srcset="">
+                    <p class="uxPhaseTitle">define</p>
+
+                    <a class="internalLink-arrow-up" href="#topPage"><ion-icon class="internalLink-arrow-up-icon"
+                            name="arrow-up-outline"></ion-icon></a>
+                </div>
+
+                <div class="uxPhaseComponent grid grid--2-cols-ux-phase-component" id="define">
+                    <!--  ---------- -->
+                    <!--  ---------- -->
+                    <!-- COL 01 left -->
+                    <div class="uxPhaseComponent-col-left">
+
+                        <div class="component-left grid grid--3-rows-uxPhasePresentation">
+
+                            <div class="uxPhasePresentation-top">
+
+                                <p>In order to refine our investigation we gathered the analyzed data from the
+                                    interviews
+                                    and the competitors analyses and confront it with our proto persona's needs.
+                                </p>
+                                <p>With this new analyses we intend to refine our personas:
+                                </p>
+
+                            </div>
+
+                            <div class="uxPhasePresentation-middle">
+                                <div class="uxPhase-middle-keywords">
+                                    <p><span class="txtUnderlineYellow">qualitative personas</span><br><ion-icon
+                                            name="arrow-down-outline"></ion-icon><br>User Map<br>What is our journey
+                                        goal?
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="uxPhasePresentation-bottom">
+                                <p>Defining the journey's steps:</p>
+
+                                <p>search for a course<span class="txtColorBoldBlue"> | </span>
+                                    buy the course <span class="txtColorBoldBlue"> | </span>
+                                    complete the course <span class="txtColorBoldBlue"> | </span> organize the
+                                    resume<span class="txtColorBoldBlue">
+                                        | </span>looking for a job
+                                </p>
+
+                                <p><span class="txtColorBoldBlue">what is the user experience?</span>
+                                </p>
+                                <p>actions | pains and needs | emotions | touchpoints and means</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  ---------- -->
+                    <!--  ---------- -->
+                    <!-- COL 02 right-->
+                    <div class="uxPhaseComponent-col-right">
+
+                        <div
+                            class="uxPhaseComponent-drawings-keywords grid grid--2-rows-uxPhaseComponent-drawings-keywords">
+
+                            <!-- row 01 -->
+                            <div class="uxPhaseComponent-drawings-row">
+                                <img class="uxPhaseComponent-drawings" src="img/icon-illustration.svg" alt="" srcset="">
+                                <!-- 
+                        <div class="uxPhaseComponent-keywords">
+                            <p class="uxPhaseComponent-keywords-top">what is the scenario?</p>
+                            <p class="uxPhaseComponent-keywords-middle">what are my expectations?
+                            </p>
+                            <p class="uxPhaseComponent-keywords-bottom">should I take an online course?
+                            </p>
+                        </div>
+-->
+                            </div>
+
+
+                            <!-- row 02 -->
+                            <div class="uxPhaseComponent-drawings-keywords-row">
+                                <div class="uxPhase-middle-keywords">
+                                    <p><span class="txtUnderlineYellow">qualitative persona</span><br><ion-icon
+                                            name="chevron-down-outline"></ion-icon><br><span
+                                            class="txtUnderlineYellow">journey goal | change job</span><br>
+                                        <ion-icon name="chevron-down-outline"></ion-icon><br><span
+                                            class="txtUnderlineYellow">opportunities | insights</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
             <!-- ----------------------------------------- -->
             <!-- COMPETITORS ANALYSES & INTERVIEW FINDINGS -->
             <!-- ----------------------------------------- -->
 
 
 
-            <section class="uxMethodology">
 
-                <div class="uxMethodology-allPhases grid grid--2-colsUxMethodology" id="define">
-
-                    <!-- COL 01 left -->
-                    <div class="define-col-left">
-
-                        <div class="hexagon-title">
-                            <img src="img/ux/PolygonFCDC4A-100.svg" alt="" srcset="">
-                            <p class="defineTitle">define</p>
-                            <a href="#topPage" style="align-self: self-end;"><ion-icon class="arrow-upPage"
-                                    name="arrow-up-outline"></ion-icon></a>
-                        </div>
-
-                        <div class="define-questions01" style="margin-bottom: 1.6rem;">
-                            <p>In order to refine our investigation we gathered the analyzed data from the interviews
-                                and the competitors analyses and confront it with our proto persona's needs.
-                            </p>
-
-                            <p>With this new analyses we intend to refine our personas:
-                            </p>
-
-                        </div>
-
-
-                        <div class="define-questions-center">
-
-                            <div class="txtCenter" style="margin-bottom: 1.6rem;">
-                                <p class="txt">qualitative personas</p>
-                            </div>
-                            <div class="arrowTxt">
-                                <ion-icon name="arrow-down-outline"></ion-icon>
-                            </div>
-                            <div class="txtCenter">
-                                <p>User Map<br>What is our journey goal?</p>
-                            </div>
-                        </div>
-
-                        <div class="define-questions02">
-
-                            <p style="margin-bottom: 1.6rem;">Defining the journey's steps:</p>
-                            <p style="margin-bottom: 1.6rem;">search for a course<span class="txtColor"> | </span>
-                                buy the course <span class="txtColor"> | </span>
-                                complete the course <span class="txtColor"> | </span> organize the resume<span
-                                    class="txtColor"> | </span>looking for a job
-                            </p>
-                            <p><span class="txtColor">what is the user experience?</span>
-                            </p>
-                            <p>actions | pains and needs | emotions | touchpoints and means</p>
-                        </div>
-                    </div>
-
-
-                    <!-- COL 02 right-->
-                    <div class="define-col-right">
-
-                        <div class="define-userQuestions grid grid--2-rowsDefine">
-                            <!-- row 01 -->
-                            <div class="defineUserRow">
-
-                                <div class="circleDefine">
-                                    <ion-icon style="font-size: 8rem; color: #999; justify-self: center;"
-                                        name="image-outline"></ion-icon>
-                                    <!-- <img class="emojidrawing" src="img/ux/02_DEFINE/6-emojis-circle-white.svg" alt=""
-                                        srcset="">-->
-                                </div>
-
-                                <div class="defineAllQ">
-                                    <p class="defineQ01">what is the scenario<span class="qMark">?</span>></p>
-                                    <p class="defineQ02">what are my expectations<span class="qMark">?</span>
-                                    </p>
-                                    <p class="defineQ03">should I take an online
-                                        course<span class="qMark">?</span>
-                                    </p>
-                                </div>
-
-                            </div>
-
-
-                            <!-- row 02 -->
-                            <div class="defineProcess grid grid--2-cols">
-
-                                <div class="arrowCol">
-                                    <ion-icon name="chevron-forward-outline"></ion-icon>
-                                </div>
-
-                                <div>
-                                    <p class="defineKeyWords">qualitative persona</p>
-                                    <p class="defineKeyWordsArrow"><ion-icon class="arrowBlueDefine"
-                                            name="chevron-down-outline"></ion-icon></p>
-                                    <p class="defineKeyWords">journey goal | change job</p>
-                                    <p class="defineKeyWordsArrow"><ion-icon class="arrowBlueDefine"
-                                            name="chevron-down-outline"></ion-icon></p>
-                                    <p class="defineKeyWords">opportunities | insights</p>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-            </section>
 
 
             <!-- ------------------------------- -->
@@ -2046,26 +2027,27 @@
                     - interviews - we'll keep up dating our personas to a final one </p>
                     - interviews - we'll keep up dating our personas to a final one </p>
             </div>-->
+        <section class="uxPhase ideate">
 
-        <!-- ------------------------------ -->
-        <!-- IDEATE_ REDEFINE THE CHALLENGE -->
-        <!-- ------------------------------ -->
+            <div class="hexagon-title">
+                <img class="hexagonComponentIndividual" src="img/ux/01_EMPATHIZE/hexagon-small-blue.svg"
+                    alt="hexagon figure: ideate" srcset="">
+                <p class="uxPhaseTitle">ideate</p>
 
-        <section class="uxMethodology">
-            <div class="uxMethodology-ideate grid grid--2-colsUxMethodology" id="ideate">
+                <a class="internalLink-arrow-up" href="#topPage"><ion-icon class="internalLink-arrow-up-icon"
+                        name="arrow-up-outline"></ion-icon></a>
+            </div>
 
-                <!-- COL 01 -->
+            <div class="uxPhaseComponent grid grid--2-cols-ux-phase-component" id="ideate">
+                <!--  ---------- -->
+                <!--  ---------- -->
+                <!-- COL 01 left -->
+                <div class="uxPhaseComponent-col-left">
 
-                <div class="ideate-col-left">
-                    <div class="hexagon-title">
-                        <img style="height: 2.2rem;" src="img/ux/01_EMPATHIZE/hexagon-small-blue.svg" alt="" srcset="">
-                        <p class="ideateTitle">ideate</p>
-                        <a href="#topPage" style="align-self: self-end;"><ion-icon class="arrow-upPage"
-                                name="arrow-up-outline"></ion-icon></a>
-                    </div>
+                    <div class="component-left grid grid--3-rows-uxPhasePresentation">
 
-                    <div class="ideate-redefineChallenge01">
-                        <div>
+                        <div class="uxPhasePresentation-top">
+
                             <p>In order to redefine the challenge, we need to: structure the problem statement.<br>We
                                 start
                                 by discussing between ourselves the type of user, and from the journey's map needs and
@@ -2074,100 +2056,79 @@
                                 identified,
                                 we decide which problem statement should be developed.</p>
                         </div>
-                    </div>
-                    <div class="ideate-questions-center">
-                        <div class="ideateCenterGrid">
 
-                            <div></div>
-
-                            <div class="ideate-questions-center-border">
-                                <div class="txtCenter" style="margin-bottom: 1.6rem;">
-                                    <p class="txt">redefine the problem statement:</p>
-                                </div>
-                                <div class="arrowTxt">
-                                    <ion-icon name="arrow-down-outline"></ion-icon>
-                                </div>
-                                <div class="txtCenter">
-                                    <p>"How might we?" <br>improve the user's experience</p>
-                                </div>
-                            </div>
-
-                            <div></div>
-
-                        </div>
-                    </div>
-
-                    <div class="ideate-redefineChallenge01">
-                        <p style="margin-bottom: 1.6rem;">Define the<span class="txtColor">type of user</span>,
-                            decide which problem statement should be developed</p>
-                        <p>Discuss<span class="txtColor">which problem statement is considered to
-                                provide the most value</span>
-                            to
-                            the
-                            user
-                            and <span class="txtColor">would be easiest/ appropriate to solve</span> </p>
-                    </div>
-
-                </div>
-
-                <!-- COL 01 -->
-                <div class="ideate-col-right">
-
-                    <div class="ideateQuestions grid grid--2-rowsIdeate">
-                        <!-- row 01 -->
-                        <div class="ideateUserRow">
-
-                            <div class="circleEmpathize">
-                                <ion-icon style="font-size: 8rem; color: #999; justify-self: center;"
-                                    name="image-outline"></ion-icon>
-                                <!--  <img class="drawingSize" src="img/ux/userOnLaptop-blue.svg" alt="" srcset="">-->
-                            </div>
-
-                            <div class="ideateAllQ">
-                                <p class="ideateQ01">TYPE OF USER:people trained in artistic fields</p>
-
-                                <p class="ideateQ02">NEEDS:find a course that suits you and its connected to the job
-                                    market
-                                    | find a community where you feel culturally motivated| have the support of a mentor
-                                    to guide you in your future job
-                                    search
+                        <div class="uxPhasePresentation-middle">
+                            <div class="uxPhase-middle-keywords">
+                                <p><span class="txtUnderlineYellow">redefine the problem statement:</span><br><ion-icon
+                                        name="arrow-down-outline"></ion-icon><br>"How might we?<br>improve the user's
+                                    experience
                                 </p>
                             </div>
+                        </div>
+
+
+
+                        <div class="uxPhasePresentation-bottom">
+
+                            <p>Define the <span class="txtColorBoldBlue">type of user</span>
+                                ,
+                                decide which problem statement should be developed</p>
+
+                            <p>Discuss <span class="txtColorBoldBlue">which problem statement is considered to
+                                    provide the most value</span> to
+                                the
+                                user
+                                and <span class="txtColorBoldBlue">
+                                    would be easiest/ appropriate to solve</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--  ---------- -->
+                <!--  ---------- -->
+                <!-- COL 02 right-->
+                <div class="uxPhaseComponent-col-right">
+
+                    <div
+                        class="uxPhaseComponent-drawings-keywords grid grid--2-rows-uxPhaseComponent-drawings-keywords">
+
+                        <!-- row 01 -->
+                        <div class="uxPhaseComponent-drawings-row">
+                            <img class="uxPhaseComponent-drawings" src="img/icon-illustration.svg" alt="" srcset="">
+                            <!-- 
+                        <div class="uxPhaseComponent-keywords">
+                            <p class="uxPhaseComponent-keywords-top">TYPE OF USER:people trained in artistic fields</p>
+                            <p class="uxPhaseComponent-keywords-middle">NEEDS:find a course that suits you and its connected to the job
+                        market
+                        | find a community where you feel culturally motivated| have the support of a mentor
+                        to guide you in your future job
+                        search
+                            </p>
+-->
                         </div>
 
 
                         <!-- row 02 -->
-                        <div class="ideateProcess grid grid--2-cols">
-
-                            <div class="arrowCol">
-                                <ion-icon name="chevron-forward-outline"></ion-icon>
-                            </div>
-
-                            <div>
-                                <p class="ideateKeyWords">
-                                    investigate the competitors once more
+                        <div class="uxPhaseComponent-drawings-keywords-row">
+                            <div class="uxPhase-middle-keywords">
+                                <p><span class="txtUnderlineYellow">investigate the competitors once
+                                        more</span><br><ion-icon name="chevron-down-outline"></ion-icon><br><span
+                                        class="txtUnderlineYellow">how would the competitors solve<br>how can we
+                                        solve?</span><br>
+                                    <ion-icon name="chevron-down-outline"></ion-icon><br><span
+                                        class="txtUnderlineYellow">impact/ effort matrix</span>
                                 </p>
-
-                                <p class="ideateKeyWordsArrow"><ion-icon class="arrowBlueIdeate"
-                                        name="chevron-down-outline"></ion-icon></p>
-
-                                <p class="ideateKeyWords">
-                                    how would the competitors solve<br>how can we solve?
-                                </p>
-
-                                <p class="ideateKeyWordsArrow"><ion-icon class="arrowBlueIdeate"
-                                        name="chevron-down-outline"></ion-icon></p>
-
-                                <p class="ideateKeyWords">
-                                    impact/ effort matrix
-                                </p>
-
                             </div>
                         </div>
 
                     </div>
                 </div>
+            </div>
         </section>
+        <!-- ------------------------------ -->
+        <!-- IDEATE_ REDEFINE THE CHALLENGE -->
+        <!-- ------------------------------ -->
+
 
         <!-- -------------------------------- -->
 
@@ -2874,6 +2835,107 @@
  -->
             </section>
         </section>
+        <!-- --------- -->
+        <!-- PROTOTYPE -->
+        <!-- --------- -->
+
+        <section class="uxPhase prototype">
+
+            <div class="hexagon-title">
+                <img class="hexagonComponentIndividual" src="img/ux/01_EMPATHIZE/hexagon-small-blue.svg"
+                    alt="hexagon figure: prototype" srcset="">
+                <p class="uxPhaseTitle">prototype</p>
+
+                <a class="internalLink-arrow-up" href="#topPage"><ion-icon class="internalLink-arrow-up-icon"
+                        name="arrow-up-outline"></ion-icon></a>
+            </div>
+
+            <div class="uxPhaseComponent grid grid--2-cols-ux-phase-component" id="prototype">
+                <!--  ---------- -->
+                <!--  ---------- -->
+                <!-- COL 01 left -->
+                <div class="uxPhaseComponent-col-left">
+
+                    <div class="component-left grid grid--3-rows-uxPhasePresentation">
+
+                        <div class="uxPhasePresentation-top">
+
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Tempore
+                                cupiditate similique eos beatae commodi quide.
+                            </p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consectetur necessitatibus
+                                magni libero repudiandaeo
+                            </p>
+
+                        </div>
+
+                        <div class="uxPhasePresentation-middle">
+                            <div class="uxPhase-middle-keywords">
+                                <p><span class="txtUnderlineYellow">lorem ipsum</span><br><ion-icon
+                                        name="arrow-down-outline"></ion-icon><br>lorem ipsum<br>lorem ipsum
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="uxPhasePresentation-bottom">
+                            <p>lorem ipsum lorem ipsum lorem ipsum</p>
+
+                            <p>lorem ipsum lorem<span class="txtColorBoldBlue">lorem ipsum lorem</span>
+                                lorem ipsum lorem<span class="txtColorBoldBlue">lorem ipsum lorem</span>
+                                lorem ipsum lorem<span class="txtColorBoldBlue">lorem ipsum lorem</span> lorem ipsum
+                                lorem<span class="txtColorBoldBlue">
+                                    | </span>lorem ipsum lorem
+                            </p>
+
+                            <p><span class="txtColorBoldBlue">lorem ipsum lorem</span>
+                            </p>
+                            <p>lorem ipsum lorem</p>
+                        </div>
+                    </div>
+                </div>
+                <!--  ---------- -->
+                <!--  ---------- -->
+                <!-- COL 02 right-->
+                <div class="uxPhaseComponent-col-right">
+
+                    <div
+                        class="uxPhaseComponent-drawings-keywords grid grid--2-rows-uxPhaseComponent-drawings-keywords">
+
+                        <!-- row 01 -->
+                        <div class="uxPhaseComponent-drawings-row">
+                            <img class="uxPhaseComponent-drawings" src="img/icon-illustration.svg" alt="" srcset="">
+                            <!-- 
+                        <div class="uxPhaseComponent-keywords">
+                            <p class="uxPhaseComponent-keywords-top">Lorem ipsum,
+                        dolor sit amet consectetur</p>
+                            <p class="uxPhaseComponent-keywords-middle">Lorem ipsum,
+                        dolor sit amet consectetur
+                            </p>
+                            <p class="uxPhaseComponent-keywords-bottom">Lorem ipsum,
+                        dolor sit amet consectetur
+                            </p>
+                        </div>
+-->
+                        </div>
+
+
+                        <!-- row 02 -->
+                        <div class="uxPhaseComponent-drawings-keywords-row">
+                            <div class="uxPhase-middle-keywords">
+                                <p><span class="txtUnderlineYellow">lorem ipsum | lorem ipsum
+                                        persona</span><br><ion-icon name="chevron-down-outline"></ion-icon><br><span
+                                        class="txtUnderlineYellow">lorem ipsum | lorem ipsum </span><br>
+                                    <ion-icon name="chevron-down-outline"></ion-icon><br><span
+                                        class="txtUnderlineYellow">lorem ipsum | lorem ipsum </span>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
 
         </main>
@@ -2881,130 +2943,102 @@
 
 
         <!-- --------- -->
-        <!-- PROTOTYPE -->
+        <!-- TEST -->
         <!-- --------- -->
-        <section class="uxMethodology">
+        <section class="uxPhase test">
 
-            <div class="uxMethodology-allPhases grid grid--2-colsUxMethodology" id="prototype">
+            <div class="hexagon-title">
+                <img class="hexagonComponentIndividual" src="img/ux/01_EMPATHIZE/hexagon-small-blue.svg"
+                    alt="hexagon figure: test" srcset="">
+                <p class="uxPhaseTitle">test</p>
 
+                <a class="internalLink-arrow-up" href="#topPage"><ion-icon class="internalLink-arrow-up-icon"
+                        name="arrow-up-outline"></ion-icon></a>
+            </div>
+
+            <div class="uxPhaseComponent grid grid--2-cols-ux-phase-component" id="test">
+                <!--  ---------- -->
+                <!--  ---------- -->
                 <!-- COL 01 left -->
-                <div class="prototype-col-left">
+                <div class="uxPhaseComponent-col-left">
 
-                    <div class="hexagon-title">
-                        <img style="height: 2.2rem;" src="img/ux/01_EMPATHIZE/hexagon-small-blue.svg" alt="" srcset="">
-                        <p class="prototypeTitle">prototype</p>
-                        <a href="#topPage" style="align-self: self-end;"><ion-icon class="arrow-upPage"
-                                name="arrow-up-outline"></ion-icon></a>
-                    </div>
+                    <div class="component-left grid grid--3-rows-uxPhasePresentation">
 
-                    <div class="prototype-questions01" style="margin-bottom: 1.6rem;">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Tempore
-                            cupiditate similique eos beatae commodi quide.
-                        </p>
+                        <div class="uxPhasePresentation-top">
 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consectetur necessitatibus
-                            magni libero repudiandaeo
-                        </p>
-
-                    </div>
-
-
-                    <div class="prototype-questions-center">
-
-                        <div class="prototypeCenterGrid">
-
-                            <div></div>
-
-                            <div class="prototype-questions-center-border">
-                                <div class="txtCenter" style="margin-bottom: 1.6rem;">
-                                    <p class="txt">lorem ipsum </p>
-                                </div>
-                                <div class="arrowTxt">
-                                    <ion-icon name="arrow-down-outline"></ion-icon>
-                                </div>
-                                <div class="txtCenter">
-                                    <p>lorem ipsum <br>lorem ipsum </p>
-                                </div>
-                            </div>
-
-                            <div></div>
-
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias. Tempore
+                                cupiditate similique eos beatae commodi quide.
+                            </p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consectetur necessitatibus
+                                magni libero repudiandaeo
+                            </p>
 
                         </div>
+
+                        <div class="uxPhasePresentation-middle">
+                            <div class="uxPhase-middle-keywords">
+                                <p><span class="txtUnderlineYellow">lorem ipsum</span><br><ion-icon
+                                        name="arrow-down-outline"></ion-icon><br>lorem ipsum<br>lorem ipsum
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="uxPhasePresentation-bottom">
+                            <p>lorem ipsum lorem ipsum lorem ipsum</p>
+
+                            <p>lorem ipsum lorem<span class="txtColorBoldBlue">lorem ipsum lorem</span>
+                                lorem ipsum lorem<span class="txtColorBoldBlue">lorem ipsum lorem</span>
+                                lorem ipsum lorem<span class="txtColorBoldBlue">lorem ipsum lorem</span> lorem ipsum
+                                lorem<span class="txtColorBoldBlue">
+                                    | </span>lorem ipsum lorem
+                            </p>
+
+                            <p><span class="txtColorBoldBlue">lorem ipsum lorem</span>
+                            </p>
+                            <p>lorem ipsum lorem</p>
+                        </div>
                     </div>
-
-
-
-
-                    <div class="prototype-questions02">
-
-                        <p style="margin-bottom: 1.6rem;">lorem ipsum lorem ipsum lorem ipsum
-                            <span class="txtColor">lorem ipsum </span>
-                            student's who's goal is <span class="txtColor">lorem ipsum </span>
-                            lorem ipsum <span class="txtColor">lorem ipsum </span> Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit.
-                        </p>
-                        <p>We believe we will succeed because <span class="txtColor">lorem ipsum </span>Lorem ipsum,
-                            dolor sit amet consectetur adipisicing elit. Maxime vero vitae nemo tenetur quasi corporis
-                            dolorum, minus cum pariatur! Expedita, eos ad accusamus suscipit aliquid quidem nobis
-                            ratione adipisci odio!</p>
-                    </div>
-
                 </div>
-
-
+                <!--  ---------- -->
+                <!--  ---------- -->
                 <!-- COL 02 right-->
-                <div class="prototype-col-right">
+                <div class="uxPhaseComponent-col-right">
 
-                    <div class="prototype-userQuestions grid grid--2-rowsPrototype">
+                    <div
+                        class="uxPhaseComponent-drawings-keywords grid grid--2-rows-uxPhaseComponent-drawings-keywords">
+
                         <!-- row 01 -->
-                        <div class="prototypeUserRow">
-
-                            <div class="circlePrototype">
-                                <ion-icon style="font-size: 8rem; color: #999; justify-self: center;"
-                                    name="image-outline"></ion-icon>
-                                <!-- 
-                                <img class="drawingSize" src="img/ux/userOnLaptop-blue.svg" alt="" srcset="">-->
-                            </div>
-
-                            <div class="prototypeAllQ">
-                                <p class="prototypeQ01">lorem ipsum <span class="qMark">?</span></p>
-                                <p class="prototypeQ02">lorem ipsum <span class="qMark">?</span>
-                                </p>
-                                <p class="prototypeQ03">lorem ipsum <br>lorem ipsum <span class="qMark">?</span>
-                                </p>
-                            </div>
-
+                        <div class="uxPhaseComponent-drawings-row">
+                            <img class="uxPhaseComponent-drawings" src="img/icon-illustration.svg" alt="" srcset="">
+                            <!-- 
+                        <div class="uxPhaseComponent-keywords">
+                            <p class="uxPhaseComponent-keywords-top">Lorem ipsum,
+                        dolor sit amet consectetur</p>
+                            <p class="uxPhaseComponent-keywords-middle">Lorem ipsum,
+                        dolor sit amet consectetur
+                            </p>
+                            <p class="uxPhaseComponent-keywords-bottom">Lorem ipsum,
+                        dolor sit amet consectetur
+                            </p>
+                        </div>
+-->
                         </div>
 
 
                         <!-- row 02 -->
-                        <div class="prototypeProcess grid grid--2-cols">
-
-                            <div class="arrowCol">
-                                <ion-icon name="chevron-forward-outline"></ion-icon>
+                        <div class="uxPhaseComponent-drawings-keywords-row">
+                            <div class="uxPhase-middle-keywords">
+                                <p><span class="txtUnderlineYellow">lorem ipsum | lorem ipsum
+                                        persona</span><br><ion-icon name="chevron-down-outline"></ion-icon><br><span
+                                        class="txtUnderlineYellow">lorem ipsum | lorem ipsum </span><br>
+                                    <ion-icon name="chevron-down-outline"></ion-icon><br><span
+                                        class="txtUnderlineYellow">lorem ipsum | lorem ipsum </span>
+                                </p>
                             </div>
-
-                            <div>
-                                <p class="prototypeKeyWords">lorem ipsum | lorem ipsum </p>
-
-                                <p class="prototypeKeyWordsArrow"><ion-icon class="arrowBluePrototype"
-                                        name="chevron-down-outline"></ion-icon></p>
-
-                                <p class="prototypeKeyWords">lorem ipsum | lorem ipsum </p>
-
-                                <p class="prototypeKeyWordsArrow"><ion-icon class="arrowBluePrototype"
-                                        name="chevron-down-outline"></ion-icon></p>
-
-                                <p class="prototypeKeyWords">lorem ipsum | Lorem ipsum dolor</p>
-
-                            </div>
-
                         </div>
 
                     </div>
                 </div>
-
             </div>
         </section>
 
@@ -3020,132 +3054,7 @@
 
 
 
-        <section class="uxMethodology">
-
-            <div class="uxMethodology-allPhases grid grid--2-colsUxMethodology" id="test">
-
-                <!-- COL 01 left -->
-                <div class="test-col-left">
-
-                    <div class="hexagon-title">
-                        <img style="height: 2.2rem;" src="img/ux/01_EMPATHIZE/hexagon-small-blue.svg" alt="" srcset="">
-                        <p class="testTitle">test</p>
-                        <a href="#topPage" style="align-self: self-end;"><ion-icon class="arrow-upPage"
-                                name="arrow-up-outline"></ion-icon></a>
-                    </div>
-
-                    <div class="test-questions01" style="margin-bottom: 1.6rem;">
-                        <p>lorem ipsum.
-                        </p>
-
-                        <p>lorem ipsum
-                        </p>
-
-                    </div>
-
-
-                    <div class="test-questions-center">
-
-                        <div class="testCenterGrid">
-
-                            <div></div>
-
-                            <div class="test-questions-center-border">
-                                <div class="txtCenter" style="margin-bottom: 1.6rem;">
-                                    <p class="txt">lorem ipsum</p>
-                                </div>
-                                <div class="arrowTxt">
-                                    <ion-icon name="arrow-down-outline"></ion-icon>
-                                </div>
-                                <div class="txtCenter">
-                                    <p>Ulorem ipsum<br>lorem ipsum</p>
-                                </div>
-                            </div>
-
-                            <div></div>
-
-
-                        </div>
-                    </div>
-
-
-
-
-                    <div class="test-questions02">
-
-                        <p style="margin-bottom: 1.6rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Laudantium.
-                            <span class="txtColor">lorem ipsum</span>
-                            slorem ipsum<span class="txtColor">lorem ipsum</span>
-                            lorem ipsum <span class="txtColor">lorem ipsum</span>Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit.
-                        </p>
-                        <p>Wlorem ipsum<span class="txtColor">lorem ipsum</span>Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Pariatur ea, quos iure ex consequatur eius voluptatibus sapiente, velit
-                            ducimus possimus aliquam rerum quia atque veniam nisi magnam excepturi harum fugit!</p>
-                    </div>
-
-                </div>
-
-
-                <!-- COL 02 right-->
-                <div class="test-col-right">
-
-                    <div class="test-userQuestions grid grid--2-rowsTest">
-                        <!-- row 01 -->
-                        <div class="testUserRow">
-
-                            <div class="circleTest">
-                                <ion-icon style="font-size: 8rem; color: #999; justify-self: center;"
-                                    name="image-outline"></ion-icon>
-                                <!-- 
-                                <img class="drawingSize" src="img/ux/userOnLaptop-blue.svg" alt="" srcset="">-->
-                            </div>
-
-                            <div class="testAllQ">
-                                <p class="testQ01">lorem ipsum<span class="qMark">?</span></p>
-                                <p class="testQ02">lorem ipsum<span class="qMark">?</span>
-                                </p>
-                                <p class="testQ03">lorem ipsum<br>lorem ipsum<span class="qMark">?</span>
-                                </p>
-                            </div>
-
-                        </div>
-
-
-                        <!-- row 02 -->
-                        <div class="testProcess grid grid--2-cols">
-
-                            <div class="arrowCol">
-                                <ion-icon name="chevron-forward-outline"></ion-icon>
-                            </div>
-
-                            <div>
-                                <p class="testKeyWords">plorem ipsum | lorem ipsum</p>
-
-                                <p class="testKeyWordsArrow"><ion-icon class="arrowBlueTest"
-                                        name="chevron-down-outline"></ion-icon></p>
-
-                                <p class="testKeyWords">lorem ipsum | lorem ipsum</p>
-
-                                <p class="testKeyWordsArrow"><ion-icon class="arrowBlueTest"
-                                        name="chevron-down-outline"></ion-icon></p>
-
-                                <p class="testKeyWords">lorem ipsum | lorem ipsum</p>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-
-
-        <section class="usabilityTestReporting">
+        < <section class="usabilityTestReporting">
             <div class="usabilityTestReporting-steps grid grid--6-cols">
 
                 <div>
@@ -3311,21 +3220,21 @@
             </div>
 
 
-        </section>
+    </section>
 
 
 
-        <!-- 
+    <!-- 
             <div>
                 <a href="landing.html">landing</a>
             </div>-->
-        <footer>
-            <div class="footerContent">
-                <p class="footerMyName">diana dóris</p>
-                <p class="registeredMark">&reg</p>
-                <p class="currentYear">2025</p>
-            </div>
-        </footer>
+    <footer>
+        <div class="footerContent">
+            <p class="footerMyName">diana dóris</p>
+            <p class="registeredMark">&reg</p>
+            <p class="currentYear">2025</p>
+        </div>
+    </footer>
 
 
 
