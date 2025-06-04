@@ -2860,15 +2860,38 @@ background-color: #FCDC4A;
 /* HOW MIGHT WE - SKETCHING / STORYBOARD  */
 /* ************************************** */
 
-
+/*
 .grid--5-colsStoryboard {
     grid-template-columns: 1.25fr 1.25fr 1.25fr 1.25fr 2fr;
+}*/
+.storyboardBackground {
+    background-color: #99999924;
+    margin-bottom: 10rem;
 }
 
-.grid--3-colsStoryboard {
-    grid-template-columns: 1fr 1fr 2fr;
+.storyMuseum-steps {
+    display: flex;
+    justify-content: center;
 }
 
+.storyMuseum {
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+
+}
+
+.grid--3-cols-storyboard {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid--2-cols-storyboard {
+    grid-template-columns: 1fr 2fr;
+}
+
+.grid--5-cols-storyboard {
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+
+}
 
 /**/
 
