@@ -7,6 +7,8 @@
 }
 
 .hexagon-title {
+    display: flex;
+    align-items: center;
     margin-bottom: 1.6rem;
 }
 
@@ -106,4 +108,96 @@
     border-radius: 2.4rem;
     padding: 1.6rem;
     border: 1px solid #FCDC4A;
+}
+
+
+/* ************************ */
+/* PERSONAS CARD COMPONENT  */
+/* PERSONAS CARD COMPONENT  */
+
+.personaAbout {
+    height: 2.4rem;
+    background-color: rgba(41, 37, 98, 0.8);
+    color: #fff;
+    display: flex;
+    border-radius: 1.6rem;
+
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+
+    padding-left: 1.6rem;
+    display: flex;
+    margin-bottom: 0.8rem;
+}
+
+.personasName {
+    align-self: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.personasNameData {
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.gridPersonasCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 1.6rem;
+    row-gap: 1.6rem;
+}
+
+.personasCardModule,
+.personasCardModuleDrawing {
+    width: 15.6rem;
+    height: 10.4rem;
+    border-radius: 1.6rem;
+}
+
+.persona-card-drawing {
+    height: 8rem;
+}
+
+.personasCardModule {
+    box-shadow: 4px 4px 5px rgba(201, 200, 216, 0.1);
+}
+
+.personasCardModuleDrawing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 4px 5px rgba(201, 200, 216, 0.5);
+    background-color: rgba(201, 200, 216, 0.1);
+}
+
+.card-title {
+    height: 2.4rem;
+    background-color: rgba(41, 37, 98, 0.3);
+    border-top-right-radius: 1.6rem;
+    border-top-left-radius: 1.6rem;
+    display: flex;
+}
+
+.personasDataTitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    align-self: center;
+    padding-left: 1.6rem;
+}
+
+.card-txt-data {
+    height: 8rem;
+    background-color: rgba(41, 37, 98, 0.05);
+    border-bottom-left-radius: 1.6rem;
+    border-bottom-right-radius: 1.6rem;
+    display: flex;
+}
+
+.personasDataTxt {
+    font-size: 1rem;
+    align-self: center;
+    padding-left: 0.8rem;
 }

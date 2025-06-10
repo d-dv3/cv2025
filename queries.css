@@ -12,7 +12,8 @@
         grid-template-rows: 3.6rem 4.8rem;
     }
 
-    .drawingSize,
+    /**/
+
     .photoAbout img {
         height: 8rem;
     }
@@ -407,7 +408,7 @@
     /* ********************** */
     /* LECTURE - 01-EMPATHIZE */
     /* ********************** */
-    .uxMethodology {
+    .uxPhase {
         margin-bottom: 7.2rem;
         padding: 1.6rem;
     }
@@ -415,6 +416,7 @@
 
     /* col-01 left */
     /* **************** */
+    /*
     .empathize-questions02,
     .empathize-questions01 {
         padding-right: 0.4rem;
@@ -424,7 +426,7 @@
     .empathize-questions01 p {
         margin-bottom: 0.8rem;
 
-    }
+    }*/
 
     /* col-02 right */
     /* **************** */
@@ -700,32 +702,22 @@
         font-size: 1.4rem;
     }
 
+
+    /* ? */
+
+    /* ? */
     .uxTitle-subtitleNewRow01 {
         padding-left: 0.8rem;
     }
 
-    .uxMethodology {
+    /* ? */
+    .uxPhase {
         padding: 0.8rem;
     }
 
-    .empathizeUserRow {
-        padding-top: 0.8rem;
-        padding-bottom: 0.8rem;
-        align-items: end;
-    }
 
-    .empathizeAllQ {
-        margin-top: 0.8rem;
-    }
 
-    .empathizeQ01,
-    .empathizeQ02,
-    .empathizeQ03 {
-        font-size: 1rem;
-        line-height: 1;
-        margin-bottom: 0.8rem;
-    }
-
+    /* interview */
     .Q-A {
         font-size: 1rem;
     }
@@ -783,7 +775,7 @@
     }
 
     /*
-    .uxMethodology {
+   .uxPhase {
         display: flex;
 
         justify-content: center;
@@ -824,12 +816,7 @@
         font-size: 1.2rem;
     }
 
-    .empathize-questions02,
-    .empathize-questions01 {
-        font-size: 1rem;
-        line-height: 1;
-        padding-right: 0.8rem;
-    }
+
 
     .txt {
         font-size: 1.2rem;
