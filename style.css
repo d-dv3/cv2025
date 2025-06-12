@@ -2332,6 +2332,30 @@ footer {
     margin-bottom: 8.8rem;
 }
 
+.nonChosenProposals {
+    font-size: 0.8rem;
+    color: #555;
+    padding-right: 2.4rem;
+}
+
+.nonChosenBtnDropdown {
+    padding: 0.2rem 0.8rem;
+    border-radius: 0.8rem;
+    margin-bottom: 0.4rem;
+
+    border: 1px solid #999;
+}
+
+.nonChosenBtnTxt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nonChosenTxt {
+    padding: 0.4rem;
+}
+
 /* MATRIX --- LOW EFFORT - HIGH IMPACT - chosen */
 /* ******************************************** */
 .lowEffort-highImpact-chosen {
