@@ -2136,9 +2136,24 @@ footer {
     margin-bottom: 4.8rem;
 }
 
+.votedPropositions {
+    margin-bottom: 4.8rem;
+}
+
+.grid--3-colsMatrixPropositions {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2.4rem;
+}
+
+
+
 .impactEffortMatrix {
     display: grid;
     grid-template-columns: 2;
+
+    border: 1px solid rgba(201, 200, 216, 0.9);
+    border-radius: 2.4rem;
+    padding: 1.6rem;
 }
 
 .matrix-grid {
@@ -2333,6 +2348,7 @@ footer {
 }
 
 .nonChosenProposals {
+    width: 33%;
     font-size: 0.8rem;
     color: #555;
     padding-right: 2.4rem;
@@ -2373,6 +2389,9 @@ footer {
 
 .matrix-chosenPlaceholder {
     display: flex;
+    border: 1px solid rgba(201, 200, 216, 0.9);
+    border-radius: 2.4rem;
+    padding: 1.6rem;
 }
 
 .mini-square-small {
@@ -2436,7 +2455,11 @@ footer {
 
 .matrix-chosenPropositions {
     display: flex;
-    align-items: center
+    align-items: center;
+    border: 1px solid rgba(201, 200, 216, 0.9);
+    border-radius: 2.4rem;
+    padding: 1.6rem;
+
 }
 
 .chosenPropositionsTxt {
@@ -2454,6 +2477,7 @@ footer {
 .storyboardBackground {
     background-color: #99999924;
     margin-bottom: 2.4rem;
+    border-radius: 2.4rem;
 }
 
 .storyClerigosOnSiteMobile,
@@ -2464,15 +2488,33 @@ footer {
     justify-content: center;*/
 }
 
+.colsForArrowStoryboard {
+    display: grid;
+    grid-template-columns: 2;
+}
+
 .rowsForSubtitles {
     display: grid;
     row-gap: 0.8rem;
+    grid-template-columns: 2;
     grid-template-rows: 2;
     padding-left: 2.4rem;
 }
 
 .sketchSubtitle {
     font-size: 1.2rem;
+}
+
+.col2ForStoryboardArrow {
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+}
+
+.storyboardArrow {
+    font-size: 2.4rem;
+    align-self: center;
+
 }
 
 .storyClerigosOnSiteMobile {
