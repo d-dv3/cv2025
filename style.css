@@ -104,6 +104,11 @@ header {
     border-top: 2px solid #292562;
 }
 
+.linkCaseStudy-second {
+    border-top: 2px solid #6C92E6;
+}
+
+
 .linkCvPlaceholder {
     border-top: 2px solid #FCDC4A;
 }
@@ -111,9 +116,13 @@ header {
 .headerLinkPortfolio {
     margin-top: 0.8rem;
     padding-right: 1.6rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #333;
 }
 
-.headerLinkPortfolio,
+.linkCaseStudy-second,
+.headerLinkPortfolioTitle,
 .headerLinkCurriculumVitae {
     font-size: 1.6rem;
     font-weight: 300;
@@ -136,8 +145,9 @@ header {
 }
 
 .contactLinksTop {
-    border-top: 1px solid #292562;
-    padding-top: 0.4rem;
+    /*
+    border-top: 1px solid #292562;*/
+    padding-top: 0.8rem;
     padding-bottom: 0.4rem;
 }
 
@@ -186,6 +196,7 @@ header {
     color: #555;
 }
 
+.linkCaseStudy-second,
 .headerLinkPortfolio,
 .headerLinkCurriculumVitae {
     text-decoration: none;
@@ -289,6 +300,16 @@ header {
     margin-right: 1.6rem;
 }
 
+.caseStudyTitle {
+    font-size: 2.4rem;
+}
+
+.grid--3-rows {
+    display: grid;
+    grid-template-rows: 3;
+}
+
+
 .fullWBox {
     height: 30rem;
     width: 100%;
@@ -311,10 +332,17 @@ header {
 .thirtyWBox,
 .seventyWBox,
 */
+.lectureUxBox {
+    padding-top: 2.4rem;
+}
+
+.caseStudyMiddleTitle {
+    align-self: flex-end;
+}
+
 .lectureUxBox,
 .cvBox {
-    display: flex;
-    align-items: center;
+    padding-left: 0.8rem;
     border-radius: 1.6rem;
     height: 30rem;
     width: 50%;
@@ -340,18 +368,23 @@ header {
         background-color: #FCDC4A;
     }
 }*/
+.caseStudyTitle,
+.lectureBoxLink {
+    font-size: 2.4rem;
+}
 
 
-
-.lectureUxBoxLink,
+.caseStudyTitle,
+.lectureBoxLink,
 .cvBoxLink {
+
     text-decoration: none;
     color: #fff;
     cursor: pointer;
 }
 
-.lectureUxBoxLink:link,
-.lectureUxBoxLink:visited,
+.lectureBoxLink:link,
+.lectureBoxLink:visited,
 .cvBoxLink:link,
 .cvBoxLink:visited {
     transition: all 0.3s;
@@ -362,8 +395,8 @@ header {
     color: #222;
 }
 
-.lectureUxBoxLink:hover,
-.lectureUxBoxLink:active {
+.lectureBoxLink:hover,
+.lectureBoxLink:active {
     color: #6C92E6;
 }
 
@@ -2337,7 +2370,7 @@ footer {
 }
 
 .proposal-txt {
-    font-size: 1rem;
+    font-size: 1.2rem;
     align-self: center;
 }
 
@@ -2349,7 +2382,7 @@ footer {
 
 .nonChosenProposals {
     width: 33%;
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: #555;
     padding-right: 2.4rem;
 }
@@ -2375,7 +2408,7 @@ footer {
 /* MATRIX --- LOW EFFORT - HIGH IMPACT - chosen */
 /* ******************************************** */
 .lowEffort-highImpact-chosen {
-    width: 50%;
+    width: 100%;
     grid-column: 2;
 }
 
