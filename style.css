@@ -304,11 +304,16 @@ header {
     font-size: 2.4rem;
 }
 
+/*
 .grid--3-rows {
     display: grid;
     grid-template-rows: 3;
-}
+}*/
 
+.grid--2-rowslanding {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+}
 
 .fullWBox {
     height: 30rem;
@@ -337,7 +342,7 @@ header {
 }
 
 .caseStudyMiddleTitle {
-    align-self: flex-end;
+    align-self: flex-start
 }
 
 .lectureUxBox,
