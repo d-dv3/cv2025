@@ -271,6 +271,7 @@ header {
 
 .landingPresentationGrid {
     margin-top: 8.8rem;
+    margin-bottom: 12rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2.4rem;
@@ -424,10 +425,43 @@ header {
     display: flex;
 }
 
+.landingSliderPlaceholder {
+    height: 30rem;
+    width: 100%;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
 
+.landingSlider {
+    display: flex;
+    background-color: #fff;
 
+}
 
+.landingSlide {
+    height: 30rem;
+    width: 60rem;
+    display: flex;
+    border: 1px solid red;
+    margin-right: 2.4rem;
+}
 
+.landingSliderBtn {}
+
+.landingSliderLeft,
+.landingSliderRight {
+    position: absolute;
+    top: 50%;
+}
+
+.landingSliderLeft {
+    left: 0;
+}
+
+.landingSliderRight {
+    right: 0;
+}
 
 /* *************** */
 /* CV-PRESENTATION */
