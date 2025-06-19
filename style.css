@@ -38,7 +38,7 @@ body {
 /* *********** */
 header {
     margin-top: 8.8rem;
-    margin-bottom: 11.2rem;
+    margin-bottom: 12.8rem;
 }
 
 /*
@@ -93,25 +93,43 @@ header {
     grid-template-columns: repeat(3, 1fr);
 }
 
-.headerMainContacts,
-.headerMainCv,
 .headerMainPortfolio {
     margin-right: 20%;
+
+}
+
+/* nav-header-titles */
+.nav-header-titles {
     font-size: 1.2rem;
 }
 
+
+
+/* nav-color-lines */
 .linkPortfolioPlaceholder {
     border-top: 2px solid #292562;
 }
 
-.linkCaseStudy-second {
-    border-top: 2px solid #6C92E6;
-}
-
-
 .linkCvPlaceholder {
     border-top: 2px solid #FCDC4A;
 }
+
+.contactLinksTop {
+    border-top: 2px solid #6C92E6;
+}
+
+.linkCaseStudy-second,
+.headerLinkTitle,
+.headerLinkCurriculumVitae {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #333;
+}
+
+
+
+
+
 
 .headerLinkPortfolio {
     margin-top: 0.8rem;
@@ -121,13 +139,7 @@ header {
     color: #333;
 }
 
-.linkCaseStudy-second,
-.headerLinkPortfolioTitle,
-.headerLinkCurriculumVitae {
-    font-size: 1.6rem;
-    font-weight: 300;
-    color: #333;
-}
+
 
 .linkMakingOfPlaceholder {
     font-size: 1.2rem;
@@ -443,7 +455,7 @@ header {
     height: 30rem;
     width: 60rem;
     display: flex;
-    border: 1px solid red;
+
     margin-right: 2.4rem;
 }
 
@@ -853,6 +865,10 @@ footer {
 
 /****************************/
 /* COL-01 */
+.grid--2cols {
+    grid-template-columns: 2;
+}
+
 .grid--2cols--3rows-briefing {
     grid-template-columns: 2;
     grid-template-rows: 1fr 1fr 1fr;
@@ -1028,37 +1044,47 @@ footer {
 /* *************** */
 /* *************** */
 /* playingHexagons */
-/*
-.playingHexagons {}
-*/
+
 .hexagonsContainer {
-    height: 8rem;
+    height: 10rem;
     margin-bottom: 12rem;
 }
 
 .hexagonsAllPhases {
-    display: flex;
+    display: grid;
+    grid-template-columns: 5;
 }
 
+.empathize {
+    grid-column: 1;
+}
+
+.define {
+    grid-column: 2;
+}
+
+.ideate {
+    grid-column: 3;
+}
+
+.prototype {
+    grid-column: 4;
+}
+
+.test {
+    grid-column: 5;
+}
 
 .playingHexagons-phases {
     height: 6.4rem;
-    width: 24.2rem;
-    border-radius: 1.6rem;
+    width: 18rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-right: 1.6rem;
-    padding: 0.4rem;
-    /*
-    background-color: rgba(201, 200, 216, 0.05);*/
+    grid-template-columns: 9rem 5rem;
+    grid-template-rows: 6.4rem 2rem;
 }
 
 .playingHexagons-phasesImg {
     height: 6rem;
-}
-
-.playingHexagons-imgIndividual {
-    height: 1.6rem;
 }
 
 .phaseModule {
@@ -1067,15 +1093,37 @@ footer {
     justify-content: right;
 }
 
-.btnIndex {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-}
-
 .phaseIndexTxt {
     font-size: 1rem;
 }
+
+.hexagon-mini-btn {
+    justify-self: end;
+    margin-top: 0.4rem;
+}
+
+.hexagonBtn-xs {
+    display: block;
+    height: 1.6rem;
+    width: 1.8rem;
+    background: #292562;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    text-decoration: none;
+    transition: background 0.1s ease;
+}
+
+.hexagonBtn-xs:link,
+.hexagonBtn-xs:hover {
+    background: #FCDC4A;
+}
+
+
+
+
+
+
+
+
 
 
 /* ********************************** */
