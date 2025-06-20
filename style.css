@@ -301,23 +301,52 @@ header {
 
 
 
-/* ***** */
-/* right */
-.landingBoxesGrid {
-    display: grid;
-    grid-template-rows: 3;
-    row-gap: 1.6rem;
+/* **************************** */
+/* ********** right************ */
+
+.landingBoxes {
+    display: flex;
+    align-items: center;
 }
 
-.lectureUxBox {
+.lectureBox {
+    height: 20rem;
+    width: 70%;
+    margin-left: 15%;
+    padding: 1.6rem;
+    border-radius: 1.6rem;
+    background-color: #333;
+    color: #fff;
     font-size: 2.4rem;
-    background-color: #222;
-    margin-right: 1.6rem;
+    font-weight: 500;
+
+    box-shadow: 4px 4px 5px rgba(19, 9, 159, 0.1);
+
 }
 
-.caseStudyTitle {
-    font-size: 2.4rem;
+/*
+.caseStudyTitle {}
+*/
+.caseStudySubTitle {
+    align-self: center;
 }
+
+.lectureBoxLink {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.lectureBoxLink:link,
+.lectureBoxLink:visited {
+    transition: all 0.3s;
+}
+
+.lectureBoxLink:hover,
+.lectureBoxLink:active {
+    color: #6C92E6;
+}
+
 
 /*
 .grid--3-rows {
@@ -325,11 +354,7 @@ header {
     grid-template-rows: 3;
 }*/
 
-.grid--2-rowslanding {
-    display: grid;
-    grid-template-rows: 2fr 1fr;
-}
-
+/*
 .fullWBox {
     height: 30rem;
     width: 100%;
@@ -343,41 +368,14 @@ header {
     justify-content: center;
 }
 
-/*
-.thirtyWBox,
-.seventyWBox,
-
-
-
-.thirtyWBox,
-.seventyWBox,
-*/
-.lectureUxBox {
-    padding-top: 2.4rem;
-}
-
-.caseStudyMiddleTitle {
-    align-self: flex-start
-}
-
-.lectureUxBox,
-.cvBox {
-    padding-left: 0.8rem;
-    border-radius: 1.6rem;
-    height: 30rem;
-    width: 50%;
-    font-weight: 500;
-    box-shadow: 4px 4px 5px rgba(19, 9, 159, 0.1);
-}
-
 .cvBox {
     font-size: 4.8rem;
     background-color: #6C92E6;
-    /*
+    
     animation-name: changeColor;
-    animation-duration: 4s;*/
+    animation-duration: 4s;
 }
-
+*/
 /*
 @keyframes changeColor {
     from {
@@ -388,38 +386,8 @@ header {
         background-color: #FCDC4A;
     }
 }*/
-.caseStudyTitle,
-.lectureBoxLink {
-    font-size: 2.4rem;
-}
 
-
-.caseStudyTitle,
-.lectureBoxLink,
-.cvBoxLink {
-
-    text-decoration: none;
-    color: #fff;
-    cursor: pointer;
-}
-
-.lectureBoxLink:link,
-.lectureBoxLink:visited,
-.cvBoxLink:link,
-.cvBoxLink:visited {
-    transition: all 0.3s;
-}
-
-.cvBoxLink:hover,
-.cvBoxLink:active {
-    color: #222;
-}
-
-.lectureBoxLink:hover,
-.lectureBoxLink:active {
-    color: #6C92E6;
-}
-
+/*
 .whiteBentoRowQuerie {
     display: flex;
 }
@@ -427,15 +395,13 @@ header {
 .whiteBentoRow {
     display: none;
 }
-
+*/
 /*
 .qrCode {
     height: 12rem;
 }
 */
-.linkBox {
-    display: flex;
-}
+
 
 .landingSliderPlaceholder {
     height: 30rem;
