@@ -329,7 +329,8 @@ header {
 .caseStudyTitle {}
 */
 .caseStudySubTitle {
-    align-self: center;
+    align-self: flex-end;
+    padding-bottom: 1.8rem;
 }
 
 .lectureBoxLink {
@@ -411,6 +412,16 @@ header {
     align-self: center;
     font-size: 1.8rem;
     line-height: 1.4;
+}
+
+.grid--3-rowsBox {
+    grid-template-rows: 1fr 1.5fr 0.5fr;
+}
+
+.landingLogosPlaceholder {
+    display: flex;
+    justify-content: center;
+    align-items: end;
 }
 
 /* ****** */
@@ -549,6 +560,16 @@ footer {
 .landingLogosF {
     height: 1.6rem;
     padding-left: 1.6rem;
+}
+
+
+.landingLogosFBox {
+    height: 1.8rem;
+    padding-left: 8rem;
+}
+
+.landingLogosEBox {
+    height: 1.8rem;
 }
 
 .grid--2-cols--3-rows-cv {
@@ -1059,12 +1080,16 @@ footer {
     background: #292562;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     text-decoration: none;
-    transition: background 0.1s ease;
+
+    /*transition: background 0.1s ease;*/
+    transition: background 0.1s;
 }
 
 .hexagonBtn-xs:link,
 .hexagonBtn-xs:hover {
-    background: #FCDC4A;
+    background: #6C92E6;
+    /*
+    background: #FCDC4A;*/
 }
 
 
@@ -2599,9 +2624,10 @@ footer {
     margin-right: 3rem;
 }
 
+/*
 .txtUsabilityTestSchemeDiamond {
     transform: rotate(-45deg);
-}
+}*/
 
 .txtUsabilityTestSchemeDiamond,
 .txtUsabilityTestScheme {
@@ -2616,6 +2642,7 @@ footer {
     margin-right: 3rem;
 }
 
+/*
 .diamond {
     display: flex;
     width: 6.4rem;
@@ -2623,7 +2650,7 @@ footer {
     border: 1px solid #292562;
     transform: rotate(45deg);
     margin-right: 3rem;
-}
+}*/
 
 /* usabilityTestReporting-script*/
 /* usabilityTestReporting-test */

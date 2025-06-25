@@ -19,7 +19,8 @@
 .uxPhaseTitle {
     font-size: 1.6rem;
     font-weight: 500;
-    color: #292562;
+    color: #444;
+    /*color: #292562;*/
     padding-left: 1.6rem;
 }
 
@@ -28,8 +29,10 @@
 }
 
 .internalLink-arrow-up-icon {
-    font-size: 1.4rem;
-    color: #999;
+    font-size: 1.8rem;
+    /*
+    color: #999;*/
+    color: #292562;
 }
 
 .grid--2-cols-ux-phase-component {
