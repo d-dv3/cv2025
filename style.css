@@ -225,7 +225,7 @@ header {
     /*
     background-color: linear-gradient(to bottom-right, #B8D5E6, #fff);*/
 
-    background: linear-gradient(135deg, #b8d5e6 30%, #fff);
+    background: linear-gradient(135deg, #b8d5e6 20%, #fff);
 }
 
 .landingPhoto {
@@ -315,13 +315,14 @@ header {
     margin-left: 15%;
     padding: 1.6rem;
     border-radius: 1.6rem;
-    background-color: #333;
+    background-color: #444;
     color: #fff;
     font-size: 2.4rem;
-    font-weight: 500;
-
-    box-shadow: 4px 4px 5px rgba(19, 9, 159, 0.1);
-
+    font-weight: 400;
+    box-shadow: 4px 4px 5px rgba(68, 68, 68, 0.4);
+    /*
+    box-shadow: 4px 4px 5px rgba(19, 9, 159, 0.1;
+*/
 }
 
 /*
@@ -348,65 +349,9 @@ header {
 }
 
 
-/*
-.grid--3-rows {
-    display: grid;
-    grid-template-rows: 3;
-}*/
-
-/*
-.fullWBox {
-    height: 30rem;
-    width: 100%;
-    border-radius: 1.6rem;
-    background-color: #292562;
-    box-shadow: 4px 4px 5px rgba(19, 9, 159, 0.1);
-}
-
-.thirtyWBox {
-    display: flex;
-    justify-content: center;
-}
-
-.cvBox {
-    font-size: 4.8rem;
-    background-color: #6C92E6;
-    
-    animation-name: changeColor;
-    animation-duration: 4s;
-}
-*/
-/*
-@keyframes changeColor {
-    from {
-        background-color: #6C92E6;
-    }
-
-    to {
-        background-color: #FCDC4A;
-    }
-}*/
-
-/*
-.whiteBentoRowQuerie {
-    display: flex;
-}
-
-.whiteBentoRow {
-    display: none;
-}
-*/
-/*
-.qrCode {
-    height: 12rem;
-}
-*/
-
-
 .landingSliderPlaceholder {
     height: 30rem;
     width: 100%;
-    border: 1px solid black;
     position: relative;
     overflow: hidden;
 }
@@ -421,11 +366,11 @@ header {
     height: 30rem;
     width: 60rem;
     display: flex;
-
     margin-right: 2.4rem;
 }
 
-.landingSliderBtn {}
+/*
+.landingSliderBtn {}*/
 
 .landingSliderLeft,
 .landingSliderRight {
@@ -714,47 +659,6 @@ footer {
     margin-bottom: 8.8rem;
 }
 
-/*
-.mini-grid {
-    height: 9.6rem;
-    width: 9.6rem;
-    display: grid;
-    grid-template-columns: 2;
-    grid-template-rows: 2;
-}
-
-.mini-grid-inside-d,
-.mini-grid-inside-c,
-.mini-grid-inside-b,
-.mini-grid-inside-a {
-    display: grid;
-    grid-template-columns: 3.2rem 3.2rem 3.2rem;
-    grid-template-rows: 3.2rem 3.2rem 3.2rem;
-    column-gap: 0.4rem;
-    row-gap: 0.4rem;
-}
-
-.mini-grid-inside-a {
-    grid-column: 1;
-    grid-row: 1;
-}
-
-.mini-grid-inside-b {
-    grid-column: 1;
-    grid-row: 2;
-}
-
-.mini-grid-inside-c {
-    grid-column: 2;
-    grid-row: 1;
-}
-
-.mini-grid-inside-d {
-    grid-column: 2;
-    grid-row: 2;
-}
-
-*/
 
 
 
@@ -804,29 +708,58 @@ footer {
 /* ***************************************** */
 /* LECTURE-BRIEFING-PRESENTATION-METHODOLOGY */
 /* ***************************************** */
+/* background: linear-gradient(135deg, #b8d5e6 20%, #fff);*/
+/*
 .sitePresentationUI {
     min-height: 10rem;
     border-top: 1px solid black;
     margin-bottom: 8.8rem;
-}
+}*/
 
 .sitePresentation {
-    min-height: 30rem;
-    margin-bottom: 8.8rem;
+    min-height: 5rem;
+    margin-bottom: 16rem;
 }
 
+.sitePresentationMvp {
+    min-height: 10rem;
+    margin-bottom: 8rem;
+}
+
+/*
 .sitePresentationContainer {
     margin-bottom: 1.6rem;
-}
+}*/
 
 .grid--3-colsSitePresentation {
     grid-template-columns: repeat(3, 1fr);
 }
 
-.templatePresentation01,
+.briefingTitlePlaceholder,
+.templatePresentation,
 .templatePresentation02,
 .templatePresentation03 {
-    height: 30rem;
+    height: 15rem;
+}
+
+.templatePresentationMvp {
+    background-image: url(img/mvp/Mvp-sitePresentation.png);
+    background-repeat: no-repeat;
+}
+
+.briefingTitleMvp {
+    height: 5rem;
+
+    display: flex;
+    align-items: center;
+    padding-left: 0.8rem;
+
+    text-shadow: 4px 4px 5px rgba(68, 68, 68, 0.4);
+
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #fff;
+
 }
 
 /****************************/
@@ -835,26 +768,25 @@ footer {
     grid-template-columns: 2;
 }
 
-.grid--2cols--3rows-briefing {
-    grid-template-columns: 2;
-    grid-template-rows: 1fr 1fr 1fr;
+.grid--2cols-briefing {
+    grid-template-columns: 1fr 2fr;
 }
 
 .briefingEdit-logo {
-    background-color: black;
-    grid-column: 1;
-    grid-row: 1;
+    height: 4rem;
+    background-color: #222;
     padding-left: 0.8rem;
 }
 
+
+
 .briefingTitle {
-    background-color: black;
-    grid-column: 1;
-    grid-row: 2;
+    height: 9rem;
+    background-color: #222;
     display: flex;
     align-items: end;
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 400;
     color: #fff;
     padding-left: 0.8rem;
 }
@@ -867,77 +799,72 @@ footer {
 
 .titleWhiteLettersSmall {
     font-size: 1.1rem;
+    padding-right: 0.4rem;
 }
 
 .briefingCol01-Row03 {
-    grid-column: 1;
-    grid-row: 3;
-    background-color: black;
+    height: 2rem;
+    background-color: #222;
 }
 
 /* COL-02 */
+
+.briefingTitleYellowLine {}
+
 .briefingCol02-Row01 {
-    grid-column: 2;
-    grid-row: 1;
+    height: 11.5rem;
     background-color: rgba(201, 200, 216, 0.2);
 }
 
 .briefingSubTitle {
-    background-color: rgba(201, 200, 216, 0.2);
+    height: 2rem;
+    background-color: #FCDC4A;
     display: flex;
     align-items: end;
-    grid-column: 2;
-    grid-row: 2;
-    font-size: 1.1rem;
-    font-weight: 400;
+    justify-content: flex-end;
 }
 
 .subTitleYellowBackground {
-    background-color: #FCDC4A;
+    font-size: 1.3rem;
+    font-weight: 400;
     padding-right: 0.2rem;
     padding-left: 0.2rem;
-    display: flex;
-    align-items: end;
-}
-
-.arrowBckYellow {
-    line-height: 1;
-    font-size: 1.2rem;
 }
 
 .briefingCol02-Row03 {
-    grid-column: 2;
-    grid-row: 3;
+    height: 1.5rem;
     background-color: rgba(201, 200, 216, 0.2);
 }
+
 
 /* COL 02 */
+.templatePresentation03,
 .templatePresentation02 {
-    padding-left: 0.4rem;
+    height: 15rem;
     background-color: rgba(201, 200, 216, 0.2);
-}
-
-.grid--3rows-briefingSmallText {
-    grid-template-rows: 1fr 1fr 1fr;
 }
 
 .lectureTitlePlaceholder {
-    grid-row: 2;
+    height: 4rem;
     display: flex;
-    align-items: end;
+    align-items: center;
+    padding-left: 0.4rem;
 }
 
 .lectureTitleBriefing {
     color: #292562;
     font-size: 3.2rem;
-    font-weight: 350;
+    font-weight: 400;
 }
 
 .briefingTxt {
-    grid-row: 3;
+    height: 11rem;
     font-size: 1.2rem;
     line-height: 1.3;
     padding-right: 1.6rem;
+    display: flex;
+    align-content: center;
+    padding-left: 0.4rem;
 }
 
 .txtColor {
@@ -947,28 +874,97 @@ footer {
 
 /* ****** */
 /* COL 03 */
-.templatePresentation03 {
-    background-color: rgba(201, 200, 216, 0.2);
+.templatePresentation02Mvp,
+.templatePresentation03Mvp {
+    height: 5rem;
+    background-color: rgba(244, 200, 4, 0.2);
 }
 
-.grid--2rows-briefingUx {
-    grid-template-rows: 20rem 10rem;
+.edit-flag-projectPresentationUI {
+    height: 5rem;
+    display: grid;
+    grid-template-rows: 5rem 5rem 5rem;
 }
 
-/* row-1 */
-.hexagonsGroupQuerie {
-    margin-top: 0.8rem;
-    grid-row: 1;
+.edit-flag-projectPresentation {
+    display: flex;
+    align-items: center;
+    height: 7.5rem;
 }
 
-.uxTitlePlaceholder {
-    margin-bottom: 0.6rem;
-}
-
-.uxDesignTitle {
-    font-size: 1.6rem;
+.uxUidesignTitle {
+    font-size: 1.4rem;
     font-weight: 300;
     color: #292562;
+    margin-bottom: 0.8rem;
+}
+
+.flagProjectSubtitle,
+.uxUidesignSubtitle {
+    font-size: 1rem;
+    line-height: 1.2;
+    margin-bottom: 1.6rem;
+}
+
+.flagProjectTitle {
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+/* ****** */
+/* menu - buttons - index */
+/* ****** */
+
+.lecture-ux-index {}
+
+.lectureBtns {
+    margin-bottom: 2rem;
+}
+
+.lectureIndexBtn {
+    height: 2.2rem;
+    border: none;
+    border-radius: 1.6rem;
+    background-color: #292562;
+}
+
+.lecturePhaseBtnLetters {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fff;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+}
+
+.lectureIndexBtn a {
+    text-decoration: none;
+}
+
+.lectureIndexBtn:link,
+.lectureIndexBtn:visited {
+    transition: all 0.3s;
+}
+
+.lectureIndexBtn:hover,
+.lectureIndexBtn:active {
+
+    background-color: #6C92E6;
+}
+
+/* ****** */
+/* ux - index */
+/* ****** */
+
+.ux-index {
+    margin-bottom: 0.8rem;
+}
+
+.ux-index-title {
+    font-size: 1.2rem;
+}
+
+.indexLine {
+    border-top: 1px solid #FCDC4A;
 }
 
 .uxHexagonPlaceholder {
@@ -988,23 +984,11 @@ footer {
 }
 
 /* row-2 */
-.caseStudySubTitleHeader {
-    grid-row: 2;
-}
 
-.navCsSubtitle-2-Header {
-    font-size: 1.2rem;
-    line-height: 1.4;
-}
 
-.groupProject {
-    align-self: self-end;
-}
 
-.caseStudySubTitleTextLine {
-    font-size: 1rem;
-    line-height: 1.2;
-}
+
+.caseStudySubTitleTextLine {}
 
 
 /* *************** */
@@ -1099,63 +1083,14 @@ footer {
 }
 
 
-/* ***************************************************** */
-/* LECTURE DEVELOPMENT - 01-EMPATHIZE - 02-DEFINE - 03-IDEATE - 04-PROTOTYPE - 05-TEST */
-/* ***************************************************** */
-.uxMethodology {
-    margin-bottom: 24rem;
-}
+
+/* ************************************* */
+/* UX METHODOLOGY - ALL PHASES COMPONENT */
+/* UX PHASES COMPONENT */
 
 
+/* styleComponents.css */
 
-.uxMethodology-allPhases {
-    height: 39.2rem;
-}
-
-.grid--2-colsUxMethodology {
-    width: 100%;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2.4rem;
-}
-
-/*
-.test-col-right,
-.test-col-left,
-.prototype-col-right,
-.prototype-col-left,
-.ideate-col-left,
-.ideate-col-right,
-.define-col-right,
-.define-col-left,
-.empathize-col-left,
-.empathize-col-right {
-    height: 100%;
-    display: grid;
-    grid-template-rows: 2fr 1fr;
-    width: 100%;
-    border-radius: 2.4rem;
-    /*
-    border: 1px solid rgba(201, 200, 216, 0.9);
-}
-*/
-
-/*  col-01 left */
-
-/* row-01 */
-
-
-
-
-/*drawingSize*/
-/*
-.arrowPersonasBck*/
-
-/*
-.empathizeKeyWordsArrow {}
-.arrowBlueEmpathize {}
-*/
-
-/*.arrowTxtBlue*/
 
 
 /* ******************************************* */
@@ -1190,8 +1125,9 @@ footer {
 
 
 
-
+/* styleComponents.css */
 /* cards - personas */
+
 .personasResearchSubtitle {
     margin-bottom: 4rem;
 }
